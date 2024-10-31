@@ -26,6 +26,13 @@ footer h3 {
     padding: 1em; /* Adiciona 1 unidade de espaço interno ao redor do conteúdo da 'lista'. */
 }
 
+#footer-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 #footer-social-media {
     display: flex;
     gap: 2rem;
