@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -9,22 +8,29 @@
     font-size: 16px;
 }
 
+main { 
+    height: 80vh;
+ }
 
 footer {
-    width: 100%;
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da página */
+    background-color: #0A0F13;
     color: #FFFFFF;
 }
 
-footer h3 {
-    opacity: 0.5;
-    margin-bottom: 0.5em;
+#footer-contents {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em;
+    max-width: 1200px; /* Limita a largura do conteúdo centralizado */
+    margin: 0 auto; /* Centraliza o conteúdo */
 }
 
-#footer-contents {
-    background-color: #0A0F13;
-    display: flex; /* Define o elemento 'lista' como um contêiner flexível para layout. */
-    justify-content: space-between; /* Alinha os itens dentro da 'lista' com o máximo de espaço possível entre eles. */
-    padding: 4em; /* Adiciona 1 unidade de espaço interno ao redor do conteúdo da 'lista'. */
+#footer-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #footer-social-media {
@@ -35,10 +41,12 @@ footer h3 {
 
 #footer-social-media .footer-link {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 img {
     width: 72px;
+    margin-left: 40px;
 }
 
 .footer-list {
@@ -58,7 +66,15 @@ img {
     text-decoration: underline;
 }
 
-#copyright{
+footer h3 {
+    opacity: 0.6; /* Torna o título mais sutil */
+    font-size: 1rem; /* Define um tamanho adequado para o título */
+    font-weight: normal; /* Remove o negrito para um estilo mais leve */
+    margin-bottom: 0.5em; /* Espaçamento entre o título e os itens */
+    text-transform: capitalize; /* Mantém a primeira letra maiúscula */
+}
+
+
+#copyright {
     margin-top: 1em;
-    margin-right: 2em;
 }
