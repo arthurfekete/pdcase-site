@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --cor-primaria: #243650;
+    --cor-primaria-bg: rgba(42, 109, 210, 0.3);
+    --cor-secundaria: #F4BC1D;
+    --cor-terciaria: #A3C4BC;
+    --cor-secundaria-bg: rgba(243, 188, 50, 0.3);
+    --cor-cinza: #F7F6F4;
+    --cor-separador: rgba(0,0,0,.08);
+    --cor-bg: #161d26;
+    --cor-fonte: rgba(255,255,255,.85);
+    --cor-fonte-forte: #fff;
+    --cor-fonte-fraca: rgba(255,255,255,.5);
+    --margem: 24px;
+    --tam-titulo: 16px
+}
