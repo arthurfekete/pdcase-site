@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -45,4 +44,35 @@ footer h3 {
 
 img {
     width: 72px;
+    margin-left: 40px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    list-style: none;
+    unicode-bidi: isolate;
+}
+
+.footer-list .footer-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-list .footer-link:hover {
+    text-decoration: underline;
+}
+
+footer h3 {
+    opacity: 0.6; /* Torna o título mais sutil */
+    font-size: 1rem; /* Define um tamanho adequado para o título */
+    font-weight: normal; /* Remove o negrito para um estilo mais leve */
+    margin-bottom: 0.5em; /* Espaçamento entre o título e os itens */
+    text-transform: capitalize; /* Mantém a primeira letra maiúscula */
+}
+
+
+#copyright {
+    margin-top: 1em;
 }
