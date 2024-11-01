@@ -66,3 +66,13 @@ footer h3 {
 #copyright {
     margin-top: 1em;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+  }
