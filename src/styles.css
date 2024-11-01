@@ -1,3 +1,11 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
 :root {
     --cor-primaria: #243650;
     --cor-primaria-bg: rgba(42, 109, 210, 0.3);

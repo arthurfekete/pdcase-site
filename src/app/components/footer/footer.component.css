@@ -1,35 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
 footer {
-    width: 100vw;
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da página */
+    background-color: #0A0F13;
     color: #FFFFFF;
 }
 
-footer h3 {
-    opacity: 0.5;
-    margin-bottom: 0.5em;
-}
-
 #footer-contents {
-    background-color: #0A0F13;
-    display: flex; /* Define o elemento 'lista' como um contêiner flexível para layout. */
-    justify-content: space-between; /* Alinha os itens dentro da 'lista' com o máximo de espaço possível entre eles. */
-    padding: 1em; /* Adiciona 1 unidade de espaço interno ao redor do conteúdo da 'lista'. */
+    display: flex;
+    justify-content: space-between;
+    padding: 4em;
+    max-width: 1200px; /* Limita a largura do conteúdo centralizado */
+    margin: 0 auto; /* Centraliza o conteúdo */
 }
 
 #footer-contacts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #footer-social-media {
@@ -38,8 +27,9 @@ footer h3 {
     margin-top: 1.5rem;
 }
 
-#footer-social-media .footer-link{
+#footer-social-media .footer-link {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 img {
