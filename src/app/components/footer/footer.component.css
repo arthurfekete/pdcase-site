@@ -8,29 +8,28 @@
     font-size: 16px;
 }
 
-main { 
-    height: 80vh;
- }
-
 footer {
-    width: 100%; /* Garante que o rodapé ocupe toda a largura da página */
-    background-color: #0A0F13;
+    width: 100vw;
     color: #FFFFFF;
 }
 
+footer h3 {
+    opacity: 0.5;
+    margin-bottom: 0.5em;
+}
+
 #footer-contents {
-    display: flex;
-    justify-content: space-between;
-    padding: 4em;
-    max-width: 1200px; /* Limita a largura do conteúdo centralizado */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    background-color: #0A0F13;
+    display: flex; /* Define o elemento 'lista' como um contêiner flexível para layout. */
+    justify-content: space-between; /* Alinha os itens dentro da 'lista' com o máximo de espaço possível entre eles. */
+    padding: 1em; /* Adiciona 1 unidade de espaço interno ao redor do conteúdo da 'lista'. */
 }
 
 #footer-contacts {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #footer-social-media {
@@ -39,9 +38,8 @@ footer {
     margin-top: 1.5rem;
 }
 
-#footer-social-media .footer-link {
+#footer-social-media .footer-link{
     color: #FFFFFF;
-    text-decoration: none;
 }
 
 img {
