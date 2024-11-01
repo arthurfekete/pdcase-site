@@ -18,7 +18,7 @@ nav {
 .brand img {
     width: 72px; /* Define a largura da imagem dentro da classe '.brand' como 40px. */
     margin-right: 0.6em; /* Adiciona um espaço à direita da imagem de 0.6 unidades 'em'. */
-    padding-left: 8em;
+    padding-left: 8.5em;
   }
 
   .links li {
