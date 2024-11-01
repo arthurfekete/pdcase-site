@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+main { 
+    height: 80vh;
+ }
+
+footer {
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da página */
+    background-color: #0A0F13;
+    color: #FFFFFF;
+}
+
+#footer-contents {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em;
+    max-width: 1200px; /* Limita a largura do conteúdo centralizado */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+#footer-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer-social-media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer-social-media .footer-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+img {
+    width: 72px;
+    margin-left: 40px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    list-style: none;
+    unicode-bidi: isolate;
+}
+
+.footer-list .footer-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-list .footer-link:hover {
+    text-decoration: underline;
+}
+
+footer h3 {
+    opacity: 0.6; /* Torna o título mais sutil */
+    font-size: 1rem; /* Define um tamanho adequado para o título */
+    font-weight: normal; /* Remove o negrito para um estilo mais leve */
+    margin-bottom: 0.5em; /* Espaçamento entre o título e os itens */
+    text-transform: capitalize; /* Mantém a primeira letra maiúscula */
+}
+
+
+#copyright {
+    margin-top: 1em;
+}
