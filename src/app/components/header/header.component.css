@@ -1,0 +1,36 @@
+* {
+    background-color: var(--cor-primaria);
+}
+
+nav {
+    display: flex; /* Define o elemento 'nav' como um contêiner flexível para layout. */
+    justify-content: space-between; /* Alinha os itens dentro do 'nav' com o máximo de espaço possível entre eles. */
+    padding: 1em; /* Adiciona 1 unidade de espaço interno ao redor do conteúdo do 'nav'. */
+  }
+
+  .brand,
+.links {
+  display: flex; /* Define que tanto o contêiner '.brand' quanto '.links' usam layout flexível. */
+  justify-content: center; /* Alinha os itens dentro dos contêineres ao centro horizontalmente. */
+  align-items: center; /* Alinha verticalmente os itens dentro dos contêineres ao centro. */
+}
+
+.brand img {
+    width: 72px; /* Define a largura da imagem dentro da classe '.brand' como 40px. */
+    margin-right: 0.6em; /* Adiciona um espaço à direita da imagem de 0.6 unidades 'em'. */
+  }
+
+  .links li {
+    margin-right: 1em; /* Adiciona uma margem de 1em à direita de cada item 'li' dentro de '.links'. */
+    list-style: none; /* Remove o marcador de lista padrão dos itens 'li'. */
+  }
+
+  .links a {
+    padding: .1em .3em; /* Adiciona um espaçamento interno de 0.1em na vertical e 0.3em na horizontal aos links. */
+    text-decoration: none;
+    color: white;
+}
+
+.links li:hover {
+    text-decoration: underline;
+}
