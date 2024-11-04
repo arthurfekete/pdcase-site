@@ -5,7 +5,7 @@
 nav {
     display: flex; /* Define o elemento 'nav' como um contêiner flexível para layout. */
     justify-content: space-between; /* Alinha os itens dentro do 'nav' com o máximo de espaço possível entre eles. */
-    padding: 1em; /* Adiciona 1 unidade de espaço interno ao redor do conteúdo do 'nav'. */
+    padding: 2em 5em; /* Adiciona 1 unidade de espaço interno ao redor do conteúdo do 'nav'. */
   }
 
   .brand,
@@ -15,22 +15,50 @@ nav {
   align-items: center; /* Alinha verticalmente os itens dentro dos contêineres ao centro. */
 }
 
+.brand {
+  margin-top: -10px;
+}
+
 .brand img {
     width: 72px; /* Define a largura da imagem dentro da classe '.brand' como 40px. */
-    margin-right: 0.6em; /* Adiciona um espaço à direita da imagem de 0.6 unidades 'em'. */
+    margin-right: 0.4em; /* Adiciona um espaço à direita da imagem de 0.6 unidades 'em'. */
+    margin-left: 6.4em;
+  }
+
+  .links {
+    margin-top: -30px;
+    margin-right: 6.6em;
   }
 
   .links li {
-    margin-right: 1em; /* Adiciona uma margem de 1em à direita de cada item 'li' dentro de '.links'. */
+    margin-right: 0.3em; /* Adiciona uma margem de 1em à direita de cada item 'li' dentro de '.links'. */
     list-style: none; /* Remove o marcador de lista padrão dos itens 'li'. */
   }
 
   .links a {
-    padding: .1em .3em; /* Adiciona um espaçamento interno de 0.1em na vertical e 0.3em na horizontal aos links. */
+    border-radius: 24px;
+    padding: 11px 22px;
+    color: var(--cor-fonte);
+    position: relative;
     text-decoration: none;
-    color: white;
+    font-size: 16px;
+    transition: transform 0.3s ease;
 }
 
-.links li:hover {
-    text-decoration: underline;
+/* Estilos para o efeito de sublinhado */
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0; /* Começa a partir do meio */
+  bottom: -5px; /* Posiciona a barra abaixo do texto */
+  width: 0; /* Inicialmente invisível */
+  height: 2px; /* Espessura da barra */
+  background-color: var(--cor-fonte);
+  transition: width 0.18s ease, left 0.3s ease; /* Animações suaves */
 }
+
+.links a:hover::after {
+  width: 100%; /* Expande para cobrir o texto */
+  left: 0; /* Move para a esquerda para cobrir todo o link */
+}
+
