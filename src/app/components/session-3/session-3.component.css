@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    text-align: center;
+    background: radial-gradient(ellipse at left top, var(--cor-terciaria), var(--cor-secundaria) 300%);
+    height: 99vh;           /* Define a altura do container para a tela inteira */
+}
+
+.container h1 {
+    font: 50px / 1.625 "Vollkorn", sans-serif;
+    color: black;
+    text-align: left;
+    line-height: 2;
+}
+
+.container h3 {
+    font: 24px / 1.625 "Raleway", sans-serif;
+    color: black;
+    text-align: left;
+    line-height: 1.5;
+
+
+}
+
+
+.container span {
+    background-color: #A3C4BC;
+    font: 64px / 1.625 "Vollkorn", sans-serif;
+    padding: 0 7.6px;
+}
+
+.container span:before {
+        content: "";                         /* Adiciona um elemento vazio */
+        position: absolute;
+        top: -5px;                           /* Ajusta a posição do quadrado */
+        left: -5px;
+        width: 20px;                         /* Define o tamanho do quadrado */
+        height: 20px;
+        background-color: yellow;              /* Cor do quadrado */
+        z-index: -1;                         /* Coloca o quadrado atrás do texto */
+      }
+
+.container a {
+    text-decoration: none;
+}
+
+.container img {
+    transform: translate(-350px, 15px);
+    color: black;
+}
