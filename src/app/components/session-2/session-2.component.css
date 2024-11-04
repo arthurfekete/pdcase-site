@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    text-align: center;
+    background-color: yellow;
+    height: 99vh;           /* Define a altura do container para a tela inteira */
+}
