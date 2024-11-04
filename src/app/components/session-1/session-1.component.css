@@ -10,21 +10,26 @@
 .container h1 {
     font: 64px / 1.625 "Vollkorn", sans-serif;
     color: white;
+    text-align: left;
+    line-height: 0.9;
 }
 
 .container h2 {
     font: 24px / 1.625 "Raleway", sans-serif;
     color: white;
     float: left;
+    line-height: 4;
+    
     
 }
 
 
-.container button {
-    background-color: #111a2700
-}
-
 .container span {
     background-color: #243650;
-    font: 64px / 1.625 "Vollkorn", sans-serif
+    font: 64px / 1.625 "Vollkorn", sans-serif;
+    padding: 0 7.6px;
+}
+
+.container a {
+    text-decoration: none;
 }
