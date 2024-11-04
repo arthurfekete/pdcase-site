@@ -3,29 +3,21 @@
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center;     /* Centraliza verticalmente */
     text-align: center;
-    background-color: #111A27;
+    background: url(/logo-bg2.svg) 20% center / auto 110%, url(/logo-bg2.svg) 0 center / auto 160% fixed, radial-gradient(ellipse at left top, var(--cor-primaria), #000);
     height: 100vh;           /* Define a altura do container para a tela inteira */
+    
 }
     
 .container h1 {
     font: 64px / 1.625 "Vollkorn", sans-serif;
     color: white;
     text-align: left;
-<<<<<<< HEAD
-=======
-    line-height: 0.9;
->>>>>>> f94c3ce53384aedb1090068c0716f179d90acce3
 }
 
 .container h2 {
     font: 24px / 1.625 "Raleway", sans-serif;
     color: white;
     float: left;
-<<<<<<< HEAD
-}
-
-.container button {
-    background-color: #111a2700
 }
 
 
@@ -35,20 +27,5 @@
 }
 
 .container a{
-=======
-    line-height: 4;
-    
-    
-}
-
-
-.container span {
-    background-color: #243650;
-    font: 64px / 1.625 "Vollkorn", sans-serif;
-    padding: 0 7.6px;
-}
-
-.container a {
->>>>>>> f94c3ce53384aedb1090068c0716f179d90acce3
     text-decoration: none;
 }

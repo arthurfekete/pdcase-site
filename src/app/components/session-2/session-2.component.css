@@ -1,8 +1,28 @@
+* {
+    font-family: 'Volkorn', sans-serif;
+}
+
 .container {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;     /* Centraliza verticalmente */
+    align-items: center; /* Centraliza verticalmente */
     text-align: center;
     background-color: yellow;
-    height: 99vh;           /* Define a altura do container para a tela inteira */
+    height: 95vh; /* Define a altura do container para a tela inteira */
+}
+
+.container h2 {
+    font: 24px / 1.625 "Raleway", sans-serif;
+    color: black;
+    float: left; 
+}
+
+
+.container span {
+    background-color: #F3BC20;
+    font: 64px / 1.625 "Vollkorn", sans-serif
+}
+
+.container a {
+    text-decoration: none;
 }
