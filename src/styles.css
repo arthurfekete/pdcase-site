@@ -22,6 +22,11 @@
     --tam-titulo: 16px
 }
 
+h1,
+h2 {
+  font-family: "Vollkorn", serif;
+}
+
 /* cyrillic-ext */
 @font-face {
     font-family: 'Raleway';
