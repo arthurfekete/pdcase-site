@@ -7,22 +7,36 @@
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     text-align: center;
-    background-color: yellow;
-    height: 95vh; /* Define a altura do container para a tela inteira */
+    background: url(/manchete.svg) center center / cover, radial-gradient(ellipse at left top, var(--cor-secundaria), var(--cor-terciaria));
+    height: 100vh; /* Define a altura do container para a tela inteira */
 }
 
 .container h2 {
-    font: 24px / 1.625 "Raleway", sans-serif;
+    font: 40px / 1.625 "Vollkorn", sans-serif;
     color: black;
     float: left; 
+    text-align: left;
 }
 
+.container h3{
+    font: 24px / 1.625 "Raleway", lighter;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
 
 .container span {
+    font: 40px / 1.625 "Vollkorn", sans-serif;
     background-color: #F3BC20;
-    font: 64px / 1.625 "Vollkorn", sans-serif
 }
 
 .container a {
     text-decoration: none;
+}
+
+.selos{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
