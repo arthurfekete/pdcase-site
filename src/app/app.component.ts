@@ -15,4 +15,5 @@ import { Session2Component } from './components/session-2/session-2.component';
 })
 export class AppComponent {
   title = 'pdcase-site';
+  
 }
