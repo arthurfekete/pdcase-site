@@ -12,31 +12,52 @@
 }
 
 .container h2 {
-    font: 40px / 1.625 "Vollkorn", sans-serif;
+    font: 48px / 1.625 "Vollkorn", sans-serif;
     color: black;
-    float: left; 
+    float: left;
     text-align: left;
+    line-height: 0.7em;
+    margin-bottom: 1rem;
 }
 
-.container h3{
+.container h3 {
     font: 24px / 1.625 "Raleway", lighter;
     text-decoration: none;
     color: black;
     text-align: left;
+    margin-top: 5.6em;
 }
 
 .container span {
-    font: 40px / 1.625 "Vollkorn", sans-serif;
+    font: 48px / 1.625 "Vollkorn", sans-serif;
     background-color: #F3BC20;
+    box-shadow: calc(var(--margem) / 4) 0 var(--cor-secundaria), calc(var(--margem)* -0.5) 0 var(--cor-secundaria);
+    color: #000000D9;
 }
 
 .container a {
     text-decoration: none;
 }
 
-.selos{
+.ico {
+    display: flex;
+    margin-top: 1em;
+    transition: .2s ease-in-out;
+}
+
+.container a:hover span {
+    color: black; /* Muda a cor do texto dentro do span para preto */
+    transition: color 0.3s ease-in-out;
+}
+
+.container a:hover .ico {
+    transform: translateX(10px); /* Anima a seta para a direita */
+    transition: transform 0.3s ease-in-out;
+}
+
+.selos {
     display: flex;
     flex-direction: row-reverse;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-top: 1.5rem;
 }
