@@ -1,0 +1,50 @@
+#clientes {
+  background-color: var(--cor-bg);
+}
+
+.card {
+}
+
+.container-decor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  text-align: center;
+  height: 100vh;
+}
+
+.titulo {
+    width: 50%;
+    text-align: left;
+}
+
+
+h2.maior,
+span {
+  color: #fff;
+  font-size: 48px;
+}
+
+span {
+  background-color: #243650;
+  padding: 0 7.6px;
+  font-family: "Vollkorn", serif;
+}
+
+.grid-clientes {
+  display: grid; /* Define o container como um grid, permitindo organizar elementos em linhas e colunas. */
+  grid-template-columns: repeat(
+    6,
+    1fr
+  ); /* Cria 6 colunas de largura igual. Cada coluna ocupa 1 fração (1fr) do espaço disponível. */
+  margin-top: 48px;
+  gap: 0 48px; /*o primeiro define o espaçamento entre as linhas e o segundo entre as colunas */
+  max-width: 720px; /* Limita a largura máxima da grade a 720 pixels, para que não ultrapasse esse valor em telas grandes. */
+}
+
+.grid-clientes img {
+  display: block; /* Define a imagem como um elemento de bloco, removendo qualquer espaço extra abaixo dela. */
+  width: 100%; /* Ajusta a largura da imagem para ocupar 100% da largura da coluna onde está. */
+  height: auto; /* Mantém a proporção original da imagem ao ajustar a largura, evitando distorções. */
+}

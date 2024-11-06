@@ -6,6 +6,10 @@
     font-size: 16px;
 }
 
+html {
+  scroll-behavior: smooth
+}
+
 :root {
     --cor-primaria: #243650;
     --cor-primaria-bg: rgba(42, 109, 210, 0.3);
@@ -20,6 +24,11 @@
     --cor-fonte-fraca: rgba(255,255,255,.5);
     --margem: 24px;
     --tam-titulo: 16px
+}
+
+h1,
+h2 {
+  font-family: "Vollkorn", serif;
 }
 
 /* cyrillic-ext */
