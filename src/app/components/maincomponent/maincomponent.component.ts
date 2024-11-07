@@ -8,8 +8,8 @@ import { Session4Component } from '../session-4/session-4.component';
   selector: 'app-main-component',
   standalone: true,
   imports: [Session1Component, Session2Component, Session3Component, Session4Component],
-  templateUrl: './main-component.component.html',
-  styleUrl: './main-component.component.css'
+  templateUrl: './maincomponent.component.html',
+  styleUrl: './maincomponent.component.css'
 })
 export class MainComponentComponent {
 
