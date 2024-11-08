@@ -2,8 +2,7 @@
   color: white;
 }
 
-.class {
-}
+
 
 h1 {
   font-size: 48px;
@@ -58,8 +57,7 @@ img {
   gap: 20px;
 }
 
-.coluna-bloco {
-}
+
 
 .verde {
   width: 288px;
@@ -73,6 +71,4 @@ img {
   background-color: var(--cor-secundaria);
 }
 
-h4 {
-    
-}
+
