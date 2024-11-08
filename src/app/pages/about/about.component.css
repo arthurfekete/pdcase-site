@@ -20,6 +20,7 @@ p {
 .coluna-texto {
     max-width: 970px; /* Limita a largura do parágrafo */
     text-align: left;
+    margin-bottom: -35px;
 }
 
 h1 {
@@ -29,12 +30,71 @@ h1 {
 }
 
 h3 {
-    font: 24px / 8 "Raleway", sans-serif;
+    font: 24px / 6 "Raleway", sans-serif;
     color: white;
     text-align: left;
 }
 
-.grid-1{
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.blocos {
+    background-color: #243650;
+    padding: var(--margem);
+    width: 288px;
+    height: 100px;
+    color: white;
+}
+
+.verde {
+    background-color: #a3c4bc;
+    width: 288px;
+    height: 72px;
+}
+
+.amarelo {
+    width: 288px;
+    height: 240px;
+    background-color: #f4bc1d;
+    padding: var(--margem);
+    line-height: 28px;
+}
+
+.selos {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.verde-2 {
+    background-color: #a3c4bc;
+    width: 288px;
+    height: 72px;
+}
+
+.amarelo-2 {
+    width: 288px;
+    height: 240px;
+    background-color: #f4bc1d;
+    padding: var(--margem);
+    line-height: 28px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover .verde-2,
+a:hover .amarelo-2 {
+    background-color: #a3c4bc;
+    transition: background 0.3s;
+}
+
+.ico{
+    display: flex;
 }

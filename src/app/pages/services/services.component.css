@@ -2,7 +2,8 @@
   color: white;
 }
 
-
+.class {
+}
 
 h1 {
   font-size: 48px;
@@ -71,4 +72,7 @@ img {
   background-color: var(--cor-secundaria);
 }
 
-
+.selos{
+  display: flex;
+  flex-direction: column-reverse;
+}
