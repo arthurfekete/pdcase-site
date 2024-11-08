@@ -1,0 +1,37 @@
+* {
+    color: white;
+}
+
+.class {
+    
+}
+
+h1 {
+    font-size: 48px;
+    padding: 30px;
+    margin: 120px 0px 0px;
+}
+
+section {
+    background-color: #141B23;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    max-width: 950px;
+    padding-top: 60px;
+}
+
+.linha {
+    display: flex;
+    gap: 30px;
+}
+
+img {
+    flex-direction: column-reverse;
+}
