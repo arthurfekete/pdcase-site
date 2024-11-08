@@ -18,3 +18,10 @@ img.tam-100 {
     width: 100%;
     height: auto;
 }
+
+h1 {
+    font-size: 48px;
+    padding: 30px;
+    margin: 120px 0px 0px;
+    right: 150px;
+}
