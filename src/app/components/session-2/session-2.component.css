@@ -45,10 +45,13 @@
     transition: .2s ease-in-out;
 }
 
-.container a:hover span, h2, h3 {
-    color: black; /* Muda a cor do texto dentro do span para preto */
+.container a:hover span,
+.container a:hover h2,
+.container a:hover h3 {
+    color: black; /* Muda a cor do texto para preto ao passar o mouse */
     transition: color 0.3s ease-in-out;
 }
+
 
 .container a:hover .ico {
     transform: translateX(10px); /* Anima a seta para a direita */
