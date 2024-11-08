@@ -2,9 +2,6 @@
   background-color: var(--cor-bg);
 }
 
-.card {
-}
-
 .container-decor {
   display: flex;
   flex-direction: column;

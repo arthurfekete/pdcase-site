@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
-
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 //Componentes
 import { HeaderComponent } from "./components/header/header.component";
@@ -15,11 +15,22 @@ import { AboutComponent } from './pages/about/about.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, Session1Component,FooterComponent, Session2Component, Session3Component, Session4Component, AboutComponent],
+  imports: [RouterOutlet, HeaderComponent, Session1Component, FooterComponent, Session2Component, Session3Component, Session4Component, AboutComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'pdcase-site';
-  
+title = 'pdcase-site';
+
+  isHomePage: boolean = false;
+
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.isHomePage = this.router.url === '/'; // Verifique se está na página principal
+    });
+  }
 }
