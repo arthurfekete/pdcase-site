@@ -2,13 +2,11 @@
   color: white;
 }
 
-.class {
-}
-
 h1 {
   font-size: 48px;
   padding: 30px;
   margin: 120px 0px 0px;
+  margin-left: 3.9em;
 }
 
 section {
@@ -116,4 +114,5 @@ h4 {
 
 h2 {
   font-size: 30px;
+  margin-left: 4.3em;
 }
