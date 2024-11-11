@@ -1,10 +1,11 @@
 .container {
     height: 60vh;
     background-color: #141B23;
-    display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 60px;
+    display: grid;
+    gap: calc(var(--margem)* 2);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 body, input, textarea, select {
@@ -13,15 +14,44 @@ body, input, textarea, select {
     color: var(--cor-fonte);
 }
 
-img.tam-100 {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+
 
 h1 {
     font-size: 48px;
     padding: 30px;
     margin: 120px 0px 0px;
-    right: 150px;
+    margin-left: 3.9em;
+}
+
+
+.container {
+    display: grid;
+    gap: calc(var(--margem)* 2);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.paragrafo {
+    background-color: #243650;
+    padding: 30px;
+}
+
+.email {
+    color: white;
+}
+
+.caixa1 {
+    background-color: #A3C4BC;
+    color: black;
+    padding: 20px;
+}
+
+.caixa2 {
+    background-color: #F4BC1D;
+    color: black;
+    padding-left: 0;
+}
+
+img {
+    padding-left: 60%;
 }
