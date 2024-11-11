@@ -1,3 +1,4 @@
+//Imports
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
@@ -19,6 +20,7 @@ import { AboutComponent } from './pages/about/about.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
 title = 'pdcase-site';
 
