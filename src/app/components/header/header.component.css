@@ -31,7 +31,7 @@ nav {
   margin-left: 200px;
   width: 72px; /* Define a largura da imagem dentro da classe '.brand' como 40px. */
   margin-right: 0.4em; /* Adiciona um espaço à direita da imagem de 0.6 unidades 'em'. */
-  margin-left: 300px;
+  margin-left: 300px; 
 }
 
 .links {
