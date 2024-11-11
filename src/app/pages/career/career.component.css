@@ -3,7 +3,7 @@
 }
 
 .container {
-    height: 70vh;
+    height: auto;
     background-color: #141B23;
     display: flex;
     align-items: center;
@@ -29,7 +29,8 @@ body, input, textarea, select {
 
 
 .txt2 {
-    background-color: blue;
+    background-color: #243650;
+    padding: 30px;
 }
 
 .linha {
@@ -44,4 +45,35 @@ div {
 
 .coluna {
     flex: 1 1;
+}
+
+p {
+    padding: 25px;
+    margin-left: 50%;
+}
+
+.btn1{
+    background-color: #f4bc1d;
+    color: #161d26;
+    border: 0;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 10px 24px;
+    line-height: 25px;
+    margin: 24px 0px 0px;
+    font: 13px arial, sans-serif;
+}
+
+.link {
+    color: white;
+}
+
+h3 {
+    margin: 0px 0px 24px;
+}
+
+input {
+    padding: 9px 12px;
+    width: 100%;
+    box-sizing: border-box;
 }

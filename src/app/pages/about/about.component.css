@@ -27,12 +27,16 @@ h1 {
     font-size: 48px;
     padding: 30px;
     margin: 120px 0px 0px;
+    margin-left: 3.9em;
 }
 
 h3 {
     font: 24px / 6 "Raleway", sans-serif;
     color: white;
     text-align: left;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .grid {
@@ -43,16 +47,17 @@ h3 {
 
 .blocos {
     background-color: #243650;
-    padding: var(--margem);
     width: 288px;
     height: 100px;
     color: white;
+    padding: 30px 25px;
 }
 
 .verde {
     background-color: #a3c4bc;
     width: 288px;
     height: 72px;
+    padding: 22px 25px; 
 }
 
 .amarelo {
@@ -74,6 +79,7 @@ h3 {
     background-color: #a3c4bc;
     width: 288px;
     height: 72px;
+    padding: 22px 25px;
 }
 
 .amarelo-2 {
@@ -93,8 +99,4 @@ a:hover .verde-2,
 a:hover .amarelo-2 {
     background-color: #a3c4bc;
     transition: background 0.3s;
-}
-
-.ico{
-    display: flex;
 }

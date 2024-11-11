@@ -1,10 +1,11 @@
 .container {
     height: 60vh;
     background-color: #141B23;
-    display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 60px;
+    display: grid;
+    gap: calc(var(--margem)* 2);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 body, input, textarea, select {
@@ -13,12 +14,7 @@ body, input, textarea, select {
     color: var(--cor-fonte);
 }
 
-img.tam-100 {
-    width: 100%;
-    height: 10px;
-    left: 500px;
-    float: right;
-}
+
 
 h1 {
     font-size: 48px;
@@ -53,4 +49,9 @@ h1 {
 .caixa2 {
     background-color: #F4BC1D;
     color: black;
+    padding-left: 0;
+}
+
+img {
+    padding-left: 60%;
 }
