@@ -27,12 +27,16 @@ h1 {
     font-size: 48px;
     padding: 30px;
     margin: 120px 0px 0px;
+    margin-left: 3.9em;
 }
 
 h3 {
     font: 24px / 6 "Raleway", sans-serif;
     color: white;
     text-align: left;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .grid {
@@ -43,10 +47,10 @@ h3 {
 
 .blocos {
     background-color: #243650;
-    padding: var(--margem);
     width: 288px;
     height: 100px;
     color: white;
+    padding: 30px 25px;
 }
 
 .verde {
