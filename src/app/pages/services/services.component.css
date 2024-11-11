@@ -56,7 +56,7 @@ img {
 .container-blocos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
+  gap: 48px;
 }
 
 
@@ -79,13 +79,15 @@ a.bloco:hover {
   width: 288px;
   height: 72px;
   background-color: var(--cor-terciaria);
+  padding: 25px;
+  flex-direction: column;
 }
 
 .amarelo {
   width: 288px;
   height: 72px;
   background-color: var(--cor-secundaria);
-  padding: 20px;
+  padding: 25px;
   display: flex; /* Usamos flexbox para alinhar o conteúdo */
   flex-direction: column; /* Garante que o conteúdo seja alinhado verticalmente */
   justify-content: center; /* Alinha o conteúdo verticalmente no centro */
@@ -96,7 +98,5 @@ h4 {
     color: black;
     font-weight: normal;
     margin: 0;
+}
 
-.selos{
-  display: flex;
-  flex-direction: column-reverse;
