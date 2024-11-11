@@ -24,6 +24,7 @@ section {
 .container {
   max-width: 950px;
   padding-top: 60px;
+  padding-bottom: 50px;
 }
 
 .linha {
@@ -55,10 +56,24 @@ img {
 .container-blocos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 50px;
 }
 
 
+
+.bloco {
+    padding-bottom: 50px;
+}
+
+a.bloco {
+    text-decoration: none;
+    display: block;
+    color: inherit;    
+}
+
+a.bloco:hover {
+    background-color: var(--cor-terciaria);
+}
 
 .verde {
   width: 288px;
@@ -70,9 +85,18 @@ img {
   width: 288px;
   height: 72px;
   background-color: var(--cor-secundaria);
+  padding: 20px;
+  display: flex; /* Usamos flexbox para alinhar o conteúdo */
+  flex-direction: column; /* Garante que o conteúdo seja alinhado verticalmente */
+  justify-content: center; /* Alinha o conteúdo verticalmente no centro */
+  align-items: flex-start; /* Alinha os itens à esquerda (não colados na borda) */
 }
+
+h4 {
+    color: black;
+    font-weight: normal;
+    margin: 0;
 
 .selos{
   display: flex;
   flex-direction: column-reverse;
-}
