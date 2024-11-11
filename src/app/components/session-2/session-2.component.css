@@ -51,7 +51,7 @@
 .container a:hover h2,
 .container a:hover h3 {
     color: black; /* Muda a cor do texto para preto ao passar o mouse */
-    transition: color 0.3s ease-in-out;
+    transition: color 0.4s ease-in-out;
 }
 
 

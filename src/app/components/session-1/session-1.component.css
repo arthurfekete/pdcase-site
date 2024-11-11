@@ -27,7 +27,7 @@
 .container h2 {
     font: 24px / 1.625 "Raleway", sans-serif;
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.856);
     text-align: left;
     margin-top: 5.6em;
     line-height: 3;
@@ -57,7 +57,7 @@ span.txt-destaque {
     background-color: #243650;
     font: 64px / 1.625 "Vollkorn", sans-serif;
     padding: 0 8px;
-    color: white;
+    color: rgba(255, 255, 255, 0.856);
     z-index: 1; /* Coloca o quadrado atrás do texto */
 }
 
@@ -68,7 +68,7 @@ span.txt-destaque::before {
     left: -13px; /* Ajuste para posicionar o quadrado no lugar desejado */
     width: 60px; /* Largura do quadrado */
     height: 60px; /* Altura do quadrado */
-    background-color: #FFD700; /* Cor do quadrado (amarelo) */
+    background-color: #D3A520; /* Cor do quadrado (amarelo) */
     z-index: -1; /* Coloca o quadrado atrás do texto */
     transition: transform 0.2s ease-in-out; /* Transição para o quadrado */
 }
@@ -76,4 +76,11 @@ span.txt-destaque::before {
 .container a:hover span::before {
     transform: translateX(-11px); /* Anima o quadrado para a esquerda */
     transition: transform 0.3s ease-in-out;
+}
+
+.container a:hover span,
+.container a:hover h2,
+.container a:hover h3{
+    color: white;  
+    transition: transform 0.3s ease-in-out; 
 }
