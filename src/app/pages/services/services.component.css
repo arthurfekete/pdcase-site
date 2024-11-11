@@ -59,8 +59,7 @@ img {
   gap: 50px;
 }
 
-.coluna-bloco {
-}
+
 
 .bloco {
     padding-bottom: 50px;
@@ -97,4 +96,7 @@ h4 {
     color: black;
     font-weight: normal;
     margin: 0;
-}
+
+.selos{
+  display: flex;
+  flex-direction: column-reverse;

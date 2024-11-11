@@ -43,17 +43,18 @@
     transform: translateX(10px);
 }
 
+
 .selos{
     display: flex;
     justify-content: end;
-    gap: 1em;
+    gap: 0.8em;
 }
 
 .selos .ico2{
-    height: 60px;
-    width: 60px;
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
     margin: 0 5px;
     background-color: #f4bc1d;
-    padding: 1em;
-    gap: 2em;
+    padding: 0.8em;
 }

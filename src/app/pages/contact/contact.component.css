@@ -1,4 +1,27 @@
-p {
-    height: 100vh;
-    background-color: red;
+.container {
+    height: 60vh;
+    background-color: #141B23;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+body, input, textarea, select {
+    font: 16px / 1.625 "Raleway", sans-serif;
+    background: var(--cor-bg);
+    color: var(--cor-fonte);
+}
+
+img.tam-100 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 48px;
+    padding: 30px;
+    margin: 120px 0px 0px;
+    right: 150px;
 }
