@@ -14,14 +14,43 @@ body, input, textarea, select {
 }
 
 img.tam-100 {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 10px;
+    left: 500px;
+    float: right;
 }
 
 h1 {
     font-size: 48px;
     padding: 30px;
     margin: 120px 0px 0px;
-    right: 150px;
+    margin-left: 3.9em;
+}
+
+
+.container {
+    display: grid;
+    gap: calc(var(--margem)* 2);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.paragrafo {
+    background-color: #243650;
+    padding: 30px;
+}
+
+.email {
+    color: white;
+}
+
+.caixa1 {
+    background-color: #A3C4BC;
+    color: black;
+    padding: 20px;
+}
+
+.caixa2 {
+    background-color: #F4BC1D;
+    color: black;
 }
