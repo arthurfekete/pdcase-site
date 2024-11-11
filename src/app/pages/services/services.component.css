@@ -18,7 +18,8 @@ section {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 50px;
 }
 
 .container {
@@ -57,12 +58,17 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 48px;
+  padding-bottom: 8px;
 }
 
-
+.coluna-bloco {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 
 .bloco {
-    padding-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 a.bloco {
@@ -71,9 +77,11 @@ a.bloco {
     color: inherit;    
 }
 
-a.bloco:hover {
+a.bloco:hover .verde,
+a.bloco:hover .amarelo {
     background-color: var(--cor-terciaria);
 }
+
 
 .verde {
   width: 288px;
@@ -87,14 +95,25 @@ a.bloco:hover {
   height: 72px;
   background-color: var(--cor-secundaria);
   padding: 25px;
-  display: flex; /* Usamos flexbox para alinhar o conteúdo */
-  flex-direction: column; /* Garante que o conteúdo seja alinhado verticalmente */
-  justify-content: center; /* Alinha o conteúdo verticalmente no centro */
-  align-items: flex-start; /* Alinha os itens à esquerda (não colados na borda) */
+}
+
+.verde, .amarelo {
+  transition: background-color 0.3s ease;
 }
 
 h4 {
     color: black;
     font-weight: normal;
     margin: 0;
+}
+
+.produtos-financeiros {
+  text-align: left;
+  width: 65%;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+h2 {
+  font-size: 30px;
 }
