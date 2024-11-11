@@ -80,7 +80,6 @@ a.bloco:hover {
   height: 72px;
   background-color: var(--cor-terciaria);
   padding: 25px;
-  flex-direction: column;
 }
 
 .amarelo {
@@ -99,4 +98,3 @@ h4 {
     font-weight: normal;
     margin: 0;
 }
-
