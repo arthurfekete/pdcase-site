@@ -5,6 +5,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { CareerComponent } from './pages/career/career.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CoreBancarioComponent } from './pages/core-bancario/core-bancario.component';
+import { PoliticaDePrivacidadeComponent } from './pages/politica-de-privacidade/politica-de-privacidade.component';
 
 
 export const routes: Routes = [
@@ -14,5 +15,5 @@ export const routes: Routes = [
     { path: 'career', component: CareerComponent, },
     { path: 'contact', component: ContactComponent, },
     { path: 'core-bancario', component: CoreBancarioComponent, },
-    
+    {path: 'politica-de-privacidade', component: PoliticaDePrivacidadeComponent},
 ];
