@@ -3,12 +3,13 @@
 }
 
 .container {
-    height: 110vh;
+    height: auto;
     background-color: #141B23;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 60px;
+    padding-bottom: 50px;
 }
 
 p {
