@@ -1,5 +1,5 @@
 #clientes {
-  background-color: var(--cor-bg);
+  background-color: #141B23;
 }
 
 .container-decor {
@@ -21,12 +21,15 @@ h2.maior,
 span {
   color: #fff;
   font-size: 48px;
+  margin-left: 45px;
 }
 
 span {
+  position: relative;
   background-color: #243650;
-  padding: 0 7.6px;
+  padding: 0 7.8px;
   font-family: "Vollkorn", serif;
+  z-index: 1;
 }
 
 .grid-clientes {
@@ -44,4 +47,16 @@ span {
   display: block; /* Define a imagem como um elemento de bloco, removendo qualquer espaço extra abaixo dela. */
   width: 100%; /* Ajusta a largura da imagem para ocupar 100% da largura da coluna onde está. */
   height: auto; /* Mantém a proporção original da imagem ao ajustar a largura, evitando distorções. */
+}
+
+span.txt-destaque::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -13px; /* Ajuste para posicionar o quadrado no lugar desejado */
+  width: 60px; /* Largura do quadrado */
+  height: 60px; /* Altura do quadrado */
+  background-color: #D3A520; /* Cor do quadrado (amarelo) */
+  z-index: -1; /* Coloca o quadrado atrás do texto */
+  transition: transform 0.2s ease-in-out; /* Transição para o quadrado */
 }
