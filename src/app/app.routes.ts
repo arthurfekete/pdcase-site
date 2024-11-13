@@ -9,6 +9,7 @@ import { CoreBancarioComponent } from './pages/core-bancario/core-bancario.compo
 import { PoliticaDePrivacidadeComponent } from './pages/politica-de-privacidade/politica-de-privacidade.component';
 import { PortalCreditoComponent } from './pages/portal-credito/portal-credito.component';
 import { RelatorioIgualdadeSalarialComponent } from './pages/relatorio-igualdade-salarial/relatorio-igualdade-salarial.component';
+import { AgenciasFomentoComponent } from './pages/agencias-fomento/agencias-fomento.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -18,7 +19,8 @@ export const routes: Routes = [
     { path: 'career', component: CareerComponent, },
     { path: 'contact', component: ContactComponent, },
     { path: 'core-bancario', component: CoreBancarioComponent, },
-    {path: 'politica-de-privacidade', component: PoliticaDePrivacidadeComponent},
+    { path: 'politica-de-privacidade', component: PoliticaDePrivacidadeComponent},
     { path: 'portal-credito', component: PortalCreditoComponent, },
     {path: 'relatorio-igualdade-salarial', component: RelatorioIgualdadeSalarialComponent},
+    {path: 'agencias-fomento', component: AgenciasFomentoComponent},
 ];
