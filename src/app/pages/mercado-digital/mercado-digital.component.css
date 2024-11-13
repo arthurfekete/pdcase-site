@@ -2,6 +2,13 @@
     color: white;
 }
 
+p {
+    font: 16px / 1.625 "Raleway", sans-serif;
+    color: white;
+    line-height: 26px;
+    filter: contrast(12.83);
+}
+
 h1 {
     font-size: 48px;
     padding: 30px;
@@ -10,10 +17,13 @@ h1 {
     filter: contrast(12.83);
 }
 
-.coluna-texto {
-    max-width: 960px; /* Limita a largura do parágrafo */
+h3 {
+    font: 24px / 4 "Raleway", sans-serif;
+    color: #FFFFFFD9;
     text-align: left;
-    padding: 0 0px; /* Se desejar espaçamento interno */
+    font-weight: 600;
+    filter: contrast(12.83);
+    letter-spacing: -0.4px;
 }
 
 a{
@@ -26,24 +36,15 @@ a{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
-h3 {
-    font: 24px / 4 "Raleway", sans-serif;
-    color: #FFFFFFD9;
-    text-align: left;
-    font-weight: 600;
-    filter: contrast(12.83);
-    letter-spacing: -0.4px;
-}
 
-p {
-    font: 16px / 1.625 "Raleway", sans-serif;
-    color: white;
-    line-height: 26px;
-    filter: contrast(12.83);
+.coluna-texto {
+    max-width: 960px; /* Limita a largura do parágrafo */
+    text-align: left;
+    padding: 0 0px; /* Se desejar espaçamento interno */
 }
 
 .grid {
@@ -61,15 +62,6 @@ p {
     color: black;
 }
 
-.bloco2{
-    background-color: #F4bc1d;
-    width: 288px;
-    height: 100px;
-    padding: 30px 25px;
-    color: black;
-}
-
-a:hover .bloco2,
 a:hover .blocos{
     background-color: #a3c4bc;
     transition: background 0.3s;

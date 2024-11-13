@@ -24,7 +24,7 @@ footer {
 #footer-social-media {
     display: flex;
     gap: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 #footer-social-media .footer-link {
@@ -35,6 +35,7 @@ footer {
 img {
     width: 72px;
     margin-left: 40px;
+    padding-bottom: 10px;
 }
 
 .footer-list {
