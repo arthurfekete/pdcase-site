@@ -9,6 +9,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 10;
+  padding: 0px 300px;
 }
 
 nav {
@@ -32,15 +33,15 @@ nav {
 }
 
 .brand img {
-  margin-left: 200px;
+  
   width: 72px; /* Define a largura da imagem dentro da classe '.brand' como 40px. */
   margin-right: 0.4em; /* Adiciona um espaço à direita da imagem de 0.6 unidades 'em'. */
-  margin-left: 300px; 
+
 }
 
 .links {
   margin-top: -30px;
-  margin-right: 300px;
+  
 }
 
 .links li {
