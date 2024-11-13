@@ -2,33 +2,14 @@
     color: white;
 }
 
+/* Formatação das fontes */
+
 h1 {
     font-size: 48px;
     padding: 30px;
     margin: 120px 0px 0px;
     margin-left: 3.9em;
     filter: contrast(12.83);
-}
-
-.coluna-texto {
-    max-width: 970px; /* Limita a largura do parágrafo */
-    text-align: left;
-    margin: 0 auto 20px;
-    padding: 0 15px; /* Se desejar espaçamento interno */
-}
-
-a{
-    text-decoration: none;
-}
-
-.container {
-    height: auto;
-    background-color: #141B23;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 60px;
 }
 
 h3 {
@@ -47,9 +28,32 @@ p {
     filter: contrast(12.83);
 }
 
+/* Formatação do corpo */
+
+.container {
+    height: auto;
+    background-color: #141B23;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.coluna-texto {
+    max-width: 960px; /* Limita a largura do parágrafo */
+    text-align: left;
+    margin-bottom: -35px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
 .grid {
     display: grid;
-    margin-top: 100px;
+    margin-top: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
 }
