@@ -10,6 +10,8 @@ import { PoliticaDePrivacidadeComponent } from './pages/politica-de-privacidade/
 import { PortalCreditoComponent } from './pages/portal-credito/portal-credito.component';
 import { MercadoDigitalComponent } from './pages/mercado-digital/mercado-digital.component';
 import { ControladoriaComponent } from './pages/controladoria/controladoria.component';
+import { RelatorioIgualdadeSalarialComponent } from './pages/relatorio-igualdade-salarial/relatorio-igualdade-salarial.component';
+import { AgenciasFomentoComponent } from './pages/agencias-fomento/agencias-fomento.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -23,5 +25,6 @@ export const routes: Routes = [
     { path: 'portal-credito', component: PortalCreditoComponent, },
     { path: 'mercado-digital', component: MercadoDigitalComponent, },
     { path: 'controladoria', component: ControladoriaComponent, },
-
+    {path: 'relatorio-igualdade-salarial', component: RelatorioIgualdadeSalarialComponent},
+    {path: 'agencias-fomento', component: AgenciasFomentoComponent},
 ];
