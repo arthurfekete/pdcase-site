@@ -13,6 +13,9 @@ import { ControladoriaComponent } from './pages/controladoria/controladoria.comp
 import { RelatorioIgualdadeSalarialComponent } from './pages/relatorio-igualdade-salarial/relatorio-igualdade-salarial.component';
 import { AgenciasFomentoComponent } from './pages/agencias-fomento/agencias-fomento.component';
 import { InformesLegaisComponent } from './pages/informes-legais/informes-legais.component';
+import { FabricaSoftwareComponent } from './pages/fabrica-software/fabrica-software.component';
+import { ConsultoriaComponent } from './pages/consultoria/consultoria.component';
+import { OutsourcingComponent } from './pages/outsourcing/outsourcing.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -29,4 +32,7 @@ export const routes: Routes = [
     { path: 'relatorio-igualdade-salarial', component: RelatorioIgualdadeSalarialComponent,},
     { path: 'agencias-fomento', component: AgenciasFomentoComponent,},
     { path: 'informes-legais', component: InformesLegaisComponent,},
+    { path: 'fabrica-software', component: FabricaSoftwareComponent,},
+    { path: 'consultoria', component: ConsultoriaComponent,},
+    { path: 'outsourcing', component: OutsourcingComponent,},
 ];

@@ -1,0 +1,71 @@
+*{
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+    padding: 30px;
+    margin: 120px 0px 0px;
+    filter: contrast(12.83);
+    opacity: 0.85;
+}
+
+h3 {
+    font: 24px / 4 "Raleway", sans-serif;
+    color: #FFFFFFD9;
+    text-align: left;
+    font-weight: 600;
+    filter: contrast(12.83);
+    letter-spacing: -0.4px;
+}
+
+p {
+    font: 16px / 2 "Raleway", sans-serif;
+    color: white;
+    line-height: 26px;
+    filter: contrast(12.83);
+    opacity: 0.9;
+    margin-bottom: 7px;
+}
+
+.container{
+    height: auto;
+    background-color: #141B23;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.coluna-texto {
+    max-width: 960px; /* Limita a largura do parágrafo */
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.verde {
+    background-color: #a3c4bc;
+    width: 288px;
+    height: 72px;
+    max-width: 960px; /* Limita a largura do parágrafo */
+    margin-top: 45px;
+    padding: 28px 20px; 
+    color: black;
+    font-weight: 600;
+    white-space: nowrap; /* evita a quebra de linha */
+}
+
+.amarelo {
+    width: 288px;
+    height: 614px;
+    background-color: #f4bc1d;
+    padding: var(--margem);
+    line-height: 28px;
+    color: black;
+}
