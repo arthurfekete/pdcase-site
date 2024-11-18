@@ -27,6 +27,8 @@ import { BeneficiarioInssComponent } from './pages/beneficiario-inss/beneficiari
 import { DebitoDiretoComponent } from './pages/debito-direto/debito-direto.component';
 import { CestaDeTarifasComponent } from './pages/cesta-de-tarifas/cesta-de-tarifas.component';
 import { AgendamentoDebitoComponent } from './pages/agendamento-debito/agendamento-debito.component';
+import { PagamentoEmpresasComponent } from './pages/pagamento-empresas/pagamento-empresas.component';
+import { CobrancaBancariaComponent } from './pages/cobranca-bancaria/cobranca-bancaria.component';
 
 
 //Caminhos
@@ -52,5 +54,13 @@ export const routes: Routes = [
     { path: 'porte-cobol', component: PorteCobolComponent},
     { path: 'mps-br', component: MpsBrComponent},
     { path: 'arrecadacao', component: ArrecadacaoComponent},
+    { path: 'compensacao-eletronica', component: CompensacaoEletronicaComponent},
+    { path: 'febraban', component: FebrabanComponent},
+    { path: 'beneficiario-inss', component: BeneficiarioInssComponent},
+    { path: 'debito-direto', component: DebitoDiretoComponent},
+    { path: 'cesta-de-tarifas', component: CestaDeTarifasComponent},
+    { path: 'agendamento-debito', component: AgendamentoDebitoComponent},
+    { path: 'pagamento-empresas', component: PagamentoEmpresasComponent},
+    { path: 'cobranca-bancaria', component: CobrancaBancariaComponent},
     
 ];
