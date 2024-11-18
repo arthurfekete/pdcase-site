@@ -20,6 +20,14 @@ import { IntegracaoComponent } from './pages/integracao/integracao.component';
 import { SustentacaoDeSistemasComponent } from './pages/sustentacao-de-sistemas/sustentacao-de-sistemas.component';
 import { PorteCobolComponent } from './pages/porte-cobol/porte-cobol.component';
 import { MpsBrComponent } from './pages/mps-br/mps-br.component';
+import { ArrecadacaoComponent } from './pages/arrecadacao/arrecadacao.component';
+import { CompensacaoEletronicaComponent } from './pages/compensacao-eletronica/compensacao-eletronica.component';
+import { FebrabanComponent } from './pages/febraban/febraban.component';
+import { BeneficiarioInssComponent } from './pages/beneficiario-inss/beneficiario-inss.component';
+import { DebitoDiretoComponent } from './pages/debito-direto/debito-direto.component';
+import { CestaDeTarifasComponent } from './pages/cesta-de-tarifas/cesta-de-tarifas.component';
+import { AgendamentoDebitoComponent } from './pages/agendamento-debito/agendamento-debito.component';
+
 
 //Caminhos
 export const routes: Routes = [
@@ -43,4 +51,12 @@ export const routes: Routes = [
     { path: 'sustentacao-de-sistemas', component: SustentacaoDeSistemasComponent},
     { path: 'porte-cobol', component: PorteCobolComponent},
     { path: 'mps-br', component: MpsBrComponent},
+    { path: 'arrecadacao', component: ArrecadacaoComponent},
+    { path: 'compensacao-eletronica', component: CompensacaoEletronicaComponent},
+    { path: 'febraban', component: FebrabanComponent},
+    { path: 'beneficiario-inss', component: BeneficiarioInssComponent},
+    { path: 'debito-direto', component: DebitoDiretoComponent},
+    { path: 'cesta-de-tarifas', component: CestaDeTarifasComponent},
+    { path: 'agendamento-debito', component: AgendamentoDebitoComponent},
+    
 ];
