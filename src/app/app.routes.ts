@@ -20,10 +20,12 @@ import { IntegracaoComponent } from './pages/integracao/integracao.component';
 import { SustentacaoDeSistemasComponent } from './pages/sustentacao-de-sistemas/sustentacao-de-sistemas.component';
 import { PorteCobolComponent } from './pages/porte-cobol/porte-cobol.component';
 import { MpsBrComponent } from './pages/mps-br/mps-br.component';
+import { PagamentoEmpresasComponent } from './pages/pagamento-empresas/pagamento-empresas.component';
+import { CobrancaBancariaComponent } from './pages/cobranca-bancaria/cobranca-bancaria.component';
 
 //Caminhos
 export const routes: Routes = [
-    { path: '', component: MainComponentComponent, }, 
+    { path: '', component: MainComponentComponent, },
     { path: 'about', component: AboutComponent, },
     { path: 'services', component: ServicesComponent, },
     { path: 'career', component: CareerComponent, },
@@ -33,14 +35,16 @@ export const routes: Routes = [
     { path: 'portal-credito', component: PortalCreditoComponent, },
     { path: 'mercado-digital', component: MercadoDigitalComponent, },
     { path: 'controladoria', component: ControladoriaComponent, },
-    { path: 'relatorio-igualdade-salarial', component: RelatorioIgualdadeSalarialComponent,},
-    { path: 'agencias-fomento', component: AgenciasFomentoComponent,},
-    { path: 'informes-legais', component: InformesLegaisComponent,},
-    { path: 'fabrica-software', component: FabricaSoftwareComponent,},
-    { path: 'consultoria', component: ConsultoriaComponent,},
-    { path: 'outsourcing', component: OutsourcingComponent,},
-    { path: 'integracao', component: IntegracaoComponent},
-    { path: 'sustentacao-de-sistemas', component: SustentacaoDeSistemasComponent},
-    { path: 'porte-cobol', component: PorteCobolComponent},
-    { path: 'mps-br', component: MpsBrComponent},
+    { path: 'relatorio-igualdade-salarial', component: RelatorioIgualdadeSalarialComponent, },
+    { path: 'agencias-fomento', component: AgenciasFomentoComponent, },
+    { path: 'informes-legais', component: InformesLegaisComponent, },
+    { path: 'fabrica-software', component: FabricaSoftwareComponent, },
+    { path: 'consultoria', component: ConsultoriaComponent, },
+    { path: 'outsourcing', component: OutsourcingComponent, },
+    { path: 'integracao', component: IntegracaoComponent, },
+    { path: 'sustentacao-de-sistemas', component: SustentacaoDeSistemasComponent, },
+    { path: 'porte-cobol', component: PorteCobolComponent, },
+    { path: 'mps-br', component: MpsBrComponent, },
+    { path: 'pagamento-empresas', component: PagamentoEmpresasComponent, },
+    { path: 'cobranca-bancaria', component: CobrancaBancariaComponent, },
 ];
