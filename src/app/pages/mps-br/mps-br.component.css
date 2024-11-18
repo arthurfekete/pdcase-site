@@ -1,0 +1,43 @@
+* {
+    color: white;
+  }
+  
+  h1 {
+    font-size: 48px;
+    padding: 30px;
+    margin: 120px 0px 0px;
+  }
+  
+  section {
+    background-color: #141b23;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 55px;
+  }
+  
+  .container {
+    max-width: 950px;
+    padding-top: 60px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+
+  p {
+    line-height: 1.6em;
+    padding-bottom: 1.5em;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: normal;
+    padding-bottom: 1.3em;
+  }
+
+  .linha {
+    display: flex;
+    gap: 30px;
+  }
