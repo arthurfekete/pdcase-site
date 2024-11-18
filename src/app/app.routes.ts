@@ -16,6 +16,10 @@ import { InformesLegaisComponent } from './pages/informes-legais/informes-legais
 import { FabricaSoftwareComponent } from './pages/fabrica-software/fabrica-software.component';
 import { ConsultoriaComponent } from './pages/consultoria/consultoria.component';
 import { OutsourcingComponent } from './pages/outsourcing/outsourcing.component';
+import { IntegracaoComponent } from './pages/integracao/integracao.component';
+import { SustentacaoDeSistemasComponent } from './pages/sustentacao-de-sistemas/sustentacao-de-sistemas.component';
+import { PorteCobolComponent } from './pages/porte-cobol/porte-cobol.component';
+import { MpsBrComponent } from './pages/mps-br/mps-br.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -35,4 +39,8 @@ export const routes: Routes = [
     { path: 'fabrica-software', component: FabricaSoftwareComponent,},
     { path: 'consultoria', component: ConsultoriaComponent,},
     { path: 'outsourcing', component: OutsourcingComponent,},
+    { path: 'integracao', component: IntegracaoComponent},
+    { path: 'sustentacao-de-sistemas', component: SustentacaoDeSistemasComponent},
+    { path: 'porte-cobol', component: PorteCobolComponent},
+    { path: 'mps-br', component: MpsBrComponent},
 ];
