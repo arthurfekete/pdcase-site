@@ -52,11 +52,5 @@ export const routes: Routes = [
     { path: 'porte-cobol', component: PorteCobolComponent},
     { path: 'mps-br', component: MpsBrComponent},
     { path: 'arrecadacao', component: ArrecadacaoComponent},
-    { path: 'compensacao-eletronica', component: CompensacaoEletronicaComponent},
-    { path: 'febraban', component: FebrabanComponent},
-    { path: 'beneficiario-inss', component: BeneficiarioInssComponent},
-    { path: 'debito-direto', component: DebitoDiretoComponent},
-    { path: 'cesta-de-tarifas', component: CestaDeTarifasComponent},
-    { path: 'agendamento-debito', component: AgendamentoDebitoComponent},
     
 ];
