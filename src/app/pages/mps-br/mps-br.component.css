@@ -16,13 +16,13 @@
     align-items: center;
     flex-direction: column;
     height: auto;
-    padding-bottom: 55px;
+    padding-top: 60px;
+    padding-bottom: 20px;
   }
   
   .container {
     max-width: 950px;
-    padding-top: 60px;
-    padding-bottom: 5px;
+    padding-bottom: 40px;
     text-align: left;
   }
 
@@ -39,5 +39,44 @@
 
   .linha {
     display: flex;
-    gap: 30px;
+    gap: 49px;
   }
+
+  .coluna {
+    flex: 1;
+  }
+
+ .p-coluna {
+  margin-bottom: 0.3em;
+ }
+
+ ul {
+  padding: 0px 0px 1em 24px;
+}
+
+li {
+  padding-bottom: 10px;
+  line-height: 30px;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: #EBB620;
+}
+
+a::after {
+  content: "";
+  display: inline-block;
+  background-image: url('/seta2.svg');
+  background-size: contain;
+  width: 8px;
+  height: 8px;
+  margin-top: 0.3em;
+  margin-left: 0.8em;
+  vertical-align: text-top;
+}
+
+a:hover::after {
+  background-image: url('/seta2branca.svg');
+}
