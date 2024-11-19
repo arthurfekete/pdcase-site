@@ -15,6 +15,7 @@ h3 {
     font-weight: 600;
     filter: contrast(12.83);
     letter-spacing: -0.4px;
+    padding-top: 30px;
 }
 
 
@@ -32,12 +33,17 @@ p {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .coluna-texto {
     max-width: 456px; 
+    text-align: left;
+}
+
+.column-texto{
+    max-width: 960px; /* Limita a largura do parágrafo */
     text-align: left;
 }
 

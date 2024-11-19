@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FebrabanComponent } from './febraban.component';
+import { InterFebrabanComponent } from './inter-febraban.component';
 
-describe('FebrabanComponent', () => {
-  let component: FebrabanComponent;
-  let fixture: ComponentFixture<FebrabanComponent>;
+describe('InterFebrabanComponent', () => {
+  let component: InterFebrabanComponent;
+  let fixture: ComponentFixture<InterFebrabanComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FebrabanComponent]
+      imports: [InterFebrabanComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FebrabanComponent);
+    fixture = TestBed.createComponent(InterFebrabanComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
