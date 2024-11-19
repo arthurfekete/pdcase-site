@@ -36,6 +36,8 @@ h3 {
 
 p {
   line-height: 27px;
+  filter: contrast(12.83);
+  opacity: 0.9;
 }
 
 .container-lista {
@@ -93,7 +95,7 @@ a.bloco:hover .amarelo {
 }
 
 h4 {
-    color: black;
-    font-weight: normal;
-    margin: 0;
+  color: black;
+  font-weight: normal;
+  margin: 0;
 }
