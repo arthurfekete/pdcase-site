@@ -32,7 +32,10 @@ import { InterFebrabanComponent } from './pages/inter-febraban/inter-febraban.co
 import { EstruturadoParceladoComponent } from './pages/estruturado-parcelado/estruturado-parcelado.component';
 import { CreditoDiretoAoConsumidorComponent } from './pages/credito-direto-ao-consumidor/credito-direto-ao-consumidor.component';
 import { AntecipacaoDeRecebiveisComponent } from './pages/antecipacao-de-recebiveis/antecipacao-de-recebiveis.component';
-
+import { RotativoComponent } from './pages/rotativo/rotativo.component';
+import { CreditoDesenvolvimentoComponent } from './pages/credito-desenvolvimento/credito-desenvolvimento.component';
+import { ConsignacaoComponent } from './pages/consignacao/consignacao.component';
+import { MicroCreditoComponent } from './pages/micro-credito/micro-credito.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -68,4 +71,11 @@ export const routes: Routes = [
     { path: 'estruturado-parcelado', component: EstruturadoParceladoComponent},
     { path: 'credito-direto-ao-consumidor', component: CreditoDiretoAoConsumidorComponent},
     { path: 'antecipacao-de-recebiveis', component: AntecipacaoDeRecebiveisComponent},
-];
+    { path: 'agendamento-debito', component: AgendamentoDebitoComponent, },
+    { path: 'pagamento-empresas', component: PagamentoEmpresasComponent, },
+    { path: 'cobranca-bancaria', component: CobrancaBancariaComponent, },
+    { path: 'rotativo', component: RotativoComponent, },
+    { path: 'micro-credito', component: MicroCreditoComponent, },
+    { path: 'consignacao', component: ConsignacaoComponent, },
+    { path: 'credito-desenvolvimento', component: CreditoDesenvolvimentoComponent, },
+    ];
