@@ -29,11 +29,13 @@ import { AgendamentoDebitoComponent } from './pages/agendamento-debito/agendamen
 import { PagamentoEmpresasComponent } from './pages/pagamento-empresas/pagamento-empresas.component';
 import { CobrancaBancariaComponent } from './pages/cobranca-bancaria/cobranca-bancaria.component';
 import { InterFebrabanComponent } from './pages/inter-febraban/inter-febraban.component';
+import { EstruturadoParceladoComponent } from './pages/estruturado-parcelado/estruturado-parcelado.component';
+import { CreditoDiretoAoConsumidorComponent } from './pages/credito-direto-ao-consumidor/credito-direto-ao-consumidor.component';
+import { AntecipacaoDeRecebiveisComponent } from './pages/antecipacao-de-recebiveis/antecipacao-de-recebiveis.component';
 import { RotativoComponent } from './pages/rotativo/rotativo.component';
 import { CreditoDesenvolvimentoComponent } from './pages/credito-desenvolvimento/credito-desenvolvimento.component';
 import { ConsignacaoComponent } from './pages/consignacao/consignacao.component';
 import { MicroCreditoComponent } from './pages/micro-credito/micro-credito.component';
-
 
 //Caminhos
 export const routes: Routes = [
@@ -63,6 +65,12 @@ export const routes: Routes = [
     { path: 'beneficiario-inss', component: BeneficiarioInssComponent},
     { path: 'debito-direto', component: DebitoDiretoComponent},
     { path: 'cesta-de-tarifas', component: CestaDeTarifasComponent},
+    { path: 'agendamento-debito', component: AgendamentoDebitoComponent},
+    { path: 'pagamento-empresas', component: PagamentoEmpresasComponent},
+    { path: 'cobranca-bancaria', component: CobrancaBancariaComponent},
+    { path: 'estruturado-parcelado', component: EstruturadoParceladoComponent},
+    { path: 'credito-direto-ao-consumidor', component: CreditoDiretoAoConsumidorComponent},
+    { path: 'antecipacao-de-recebiveis', component: AntecipacaoDeRecebiveisComponent},
     { path: 'agendamento-debito', component: AgendamentoDebitoComponent, },
     { path: 'pagamento-empresas', component: PagamentoEmpresasComponent, },
     { path: 'cobranca-bancaria', component: CobrancaBancariaComponent, },
@@ -70,5 +78,4 @@ export const routes: Routes = [
     { path: 'micro-credito', component: MicroCreditoComponent, },
     { path: 'consignacao', component: ConsignacaoComponent, },
     { path: 'credito-desenvolvimento', component: CreditoDesenvolvimentoComponent, },
-    
-];
+    ];

@@ -36,6 +36,7 @@ section {
 
 p {
   line-height: 28px;
+  opacity: 0.85;
 }
 
 .coluna-selos {
@@ -65,20 +66,19 @@ img {
 }
 
 .bloco {
-    padding-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 a.bloco {
-    text-decoration: none;
-    display: block;
-    color: inherit;    
+  text-decoration: none;
+  display: block;
+  color: inherit;
 }
 
 a.bloco:hover .verde,
 a.bloco:hover .amarelo {
-    background-color: var(--cor-terciaria);
+  background-color: var(--cor-terciaria);
 }
-
 
 .verde {
   width: 288px;
@@ -94,14 +94,15 @@ a.bloco:hover .amarelo {
   padding: 25px;
 }
 
-.verde, .amarelo {
+.verde,
+.amarelo {
   transition: background-color 0.3s ease;
 }
 
 h4 {
-    color: black;
-    font-weight: normal;
-    margin: 0;
+  color: black;
+  font-weight: normal;
+  margin: 0;
 }
 
 .produtos-financeiros {
