@@ -51,6 +51,7 @@
   h2 {
     font-size: 30px;
     margin-bottom: 24px;
+    filter: contrast(12.83);
   }
 
   h3 {
