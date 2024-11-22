@@ -36,6 +36,9 @@ import { RotativoComponent } from './pages/rotativo/rotativo.component';
 import { CreditoDesenvolvimentoComponent } from './pages/credito-desenvolvimento/credito-desenvolvimento.component';
 import { ConsignacaoComponent } from './pages/consignacao/consignacao.component';
 import { MicroCreditoComponent } from './pages/micro-credito/micro-credito.component';
+import { FundoGarantidorComponent } from './pages/fundo-garantidor/fundo-garantidor.component';
+import { CessaoCreditoComponent } from './pages/cessao-credito/cessao-credito.component';
+import { GestaoFundosComponent } from './pages/gestao-fundos/gestao-fundos.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -78,4 +81,7 @@ export const routes: Routes = [
     { path: 'micro-credito', component: MicroCreditoComponent, },
     { path: 'consignacao', component: ConsignacaoComponent, },
     { path: 'credito-desenvolvimento', component: CreditoDesenvolvimentoComponent, },
+    { path: 'fundo-garantidor', component: FundoGarantidorComponent, },
+    { path: 'cessao-credito', component: CessaoCreditoComponent, },
+    { path: 'gestao-fundos', component: GestaoFundosComponent, },
     ];
