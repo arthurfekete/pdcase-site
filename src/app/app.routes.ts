@@ -40,6 +40,9 @@ import { GestaoDeCreditoComponent } from './pages/gestao-de-credito/gestao-de-cr
 import { CreditoWebComponent } from './pages/credito-web/credito-web.component';
 import { GarantiasDeCreditoComponent } from './pages/garantias-de-credito/garantias-de-credito.component';
 import { GerencialInformativosCarteiraComponent } from './pages/gerencial-informativos-carteira/gerencial-informativos-carteira.component';
+import { FundoGarantidorComponent } from './pages/fundo-garantidor/fundo-garantidor.component';
+import { CessaoCreditoComponent } from './pages/cessao-credito/cessao-credito.component';
+import { GestaoFundosComponent } from './pages/gestao-fundos/gestao-fundos.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -86,4 +89,7 @@ export const routes: Routes = [
     { path: 'credito-web', component: CreditoWebComponent},
     { path: 'garantias-de-credito', component: GarantiasDeCreditoComponent},
     { path: 'gerencial-informativos-carteira', component: GerencialInformativosCarteiraComponent},
+    { path: 'fundo-garantidor', component: FundoGarantidorComponent, },
+    { path: 'cessao-credito', component: CessaoCreditoComponent, },
+    { path: 'gestao-fundos', component: GestaoFundosComponent, },
     ];
