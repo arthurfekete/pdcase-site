@@ -3,6 +3,7 @@
 }
 
 /* Formatação das fontes */
+
 h1 {
     font-size: 48px;
     padding: 30px;
@@ -14,21 +15,23 @@ h3 {
     color: #FFFFFFD9;
     text-align: left;
     font-weight: 600;
-    filter: contrast(12.83);
+    filter: contrast(12);
     letter-spacing: -0.4px;
-    margin-top: 10px;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    line-height: 40px;
 }
-
 
 p {
     font: 16px / 1.625 "Raleway", sans-serif;
     color: white;
     line-height: 26px;
     opacity: 0.85;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 /* Formatação do corpo */
+
 
 .container {
     height: auto;
@@ -38,26 +41,20 @@ p {
     align-items: center;
     flex-direction: column;
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
+}
+
+.column-text {
+    max-width: 960px; /* Limita a largura do parágrafo */
+    text-align: left;
 }
 
 .coluna-texto {
-    max-width: 456px; 
-    text-align: left;
-    padding-top: 20px;
-}
-
-.column-text{
-    max-width: 960px; /* Limita a largura do parágrafo */
+    max-width: 456px;
     text-align: left;
 }
 
 .linha {
     display: flex;
     gap: 50px;
-}
-
-a:hover{
-    color: #f1bb25; 
-    transition: ease-in-out 0.1s;
 }

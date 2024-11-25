@@ -39,13 +39,12 @@ import { MicroCreditoComponent } from './pages/micro-credito/micro-credito.compo
 import { GestaoDeCreditoComponent } from './pages/gestao-de-credito/gestao-de-credito.component';
 import { CreditoWebComponent } from './pages/credito-web/credito-web.component';
 import { GarantiasDeCreditoComponent } from './pages/garantias-de-credito/garantias-de-credito.component';
-import { GerencialInformativosCarteiraComponent } from './pages/gerencial-informativos-carteira/gerencial-informativos-carteira.component';
 import { FundoGarantidorComponent } from './pages/fundo-garantidor/fundo-garantidor.component';
 import { CessaoCreditoComponent } from './pages/cessao-credito/cessao-credito.component';
 import { GestaoFundosComponent } from './pages/gestao-fundos/gestao-fundos.component';
+import { InfoCarteiraComponent } from './pages/info-carteira/info-carteira.component';
 import { RedeDeComprasComponent } from './pages/rede-de-compras/rede-de-compras.component';
 import { RecuperacaoDeCreditoComponent } from './pages/recuperacao-de-credito/recuperacao-de-credito.component';
-
 
 //Caminhos
 export const routes: Routes = [
@@ -91,10 +90,10 @@ export const routes: Routes = [
     { path: 'gestao-de-credito', component: GestaoDeCreditoComponent},
     { path: 'credito-web', component: CreditoWebComponent},
     { path: 'garantias-de-credito', component: GarantiasDeCreditoComponent},
-    { path: 'gerencial-informativos-carteira', component: GerencialInformativosCarteiraComponent},
     { path: 'fundo-garantidor', component: FundoGarantidorComponent, },
     { path: 'cessao-credito', component: CessaoCreditoComponent, },
     { path: 'gestao-fundos', component: GestaoFundosComponent, },
+    { path: 'info-carteira', component: InfoCarteiraComponent, },
     { path: 'rede-de-compras', component: RedeDeComprasComponent, },
     { path: 'recuperacao-de-credito', component: RecuperacaoDeCreditoComponent, },
     ];
