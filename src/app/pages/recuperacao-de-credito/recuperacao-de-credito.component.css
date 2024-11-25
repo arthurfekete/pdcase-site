@@ -1,0 +1,103 @@
+*{
+    color: white;
+}
+
+/* Formatação das fontes */
+
+h1 {
+    font-size: 48px;
+    padding: 30px;
+    margin: 120px 0px 0px;
+}
+
+h3 {
+    font: 24.5px / 3.3 "Raleway", sans-serif;
+    color: #FFFFFFD9;
+    text-align: left;
+    font-weight: 600;
+    filter: contrast(12);
+    letter-spacing: -0.4px;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    line-height: 40px;
+}
+
+
+p {
+    font: 16px / 1.625 "Raleway", sans-serif;
+    color: white;
+    line-height: 26px;
+    opacity: 0.85;
+    padding-bottom: 6px;
+}
+
+/* Formatação do corpo */
+
+.container {
+    height: auto;
+    background-color: #141B23;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.coluna-texto {
+    max-width: 456px; 
+    text-align: left;
+}
+
+.column-text{
+    max-width: 960px; /* Limita a largura do parágrafo */
+    text-align: left;
+}
+
+.linha {
+    display: flex;
+    gap: 50px;
+}
+
+.verde {
+    background-color: #a3c4bc;
+    width: 204px;
+    height: 72px;
+    padding: 22px 25px; 
+    color: black;
+}
+
+.amarelo {
+    width: 204px;
+    height: 380px;
+    background-color: #f4bc1d;
+    padding: var(--margem);
+    line-height: 28px;
+    color: black;
+
+}
+
+.verde2 {
+    background-color: #a3c4bc;
+    width: 204px;
+    height: 98px;
+    padding: 22px 25px; 
+    color: black;
+
+}
+
+.amarelo2 {
+    width: 204px;
+    height: 355px;
+    background-color: #f4bc1d;
+    padding: var(--margem);
+    line-height: 28px;
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding-top: 60px;
+}

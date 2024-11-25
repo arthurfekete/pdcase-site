@@ -43,6 +43,9 @@ import { GerencialInformativosCarteiraComponent } from './pages/gerencial-inform
 import { FundoGarantidorComponent } from './pages/fundo-garantidor/fundo-garantidor.component';
 import { CessaoCreditoComponent } from './pages/cessao-credito/cessao-credito.component';
 import { GestaoFundosComponent } from './pages/gestao-fundos/gestao-fundos.component';
+import { RedeDeComprasComponent } from './pages/rede-de-compras/rede-de-compras.component';
+import { RecuperacaoDeCreditoComponent } from './pages/recuperacao-de-credito/recuperacao-de-credito.component';
+
 
 //Caminhos
 export const routes: Routes = [
@@ -92,4 +95,6 @@ export const routes: Routes = [
     { path: 'fundo-garantidor', component: FundoGarantidorComponent, },
     { path: 'cessao-credito', component: CessaoCreditoComponent, },
     { path: 'gestao-fundos', component: GestaoFundosComponent, },
+    { path: 'rede-de-compras', component: RedeDeComprasComponent, },
+    { path: 'recuperacao-de-credito', component: RecuperacaoDeCreditoComponent, },
     ];
