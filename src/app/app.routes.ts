@@ -45,6 +45,8 @@ import { GestaoFundosComponent } from './pages/gestao-fundos/gestao-fundos.compo
 import { InfoCarteiraComponent } from './pages/info-carteira/info-carteira.component';
 import { RedeDeComprasComponent } from './pages/rede-de-compras/rede-de-compras.component';
 import { RecuperacaoDeCreditoComponent } from './pages/recuperacao-de-credito/recuperacao-de-credito.component';
+import { ContratosEmPrejuizosComponent } from './pages/contratos-em-prejuizos/contratos-em-prejuizos.component';
+import { AnaliseEAtendimentoComponent } from './pages/analise-e-atendimento/analise-e-atendimento.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -96,4 +98,6 @@ export const routes: Routes = [
     { path: 'info-carteira', component: InfoCarteiraComponent, },
     { path: 'rede-de-compras', component: RedeDeComprasComponent, },
     { path: 'recuperacao-de-credito', component: RecuperacaoDeCreditoComponent, },
+    { path: 'contratos-em-prejuizos', component: ContratosEmPrejuizosComponent, },
+    { path: 'analise-e-atendimento', component: AnaliseEAtendimentoComponent, },
     ];
