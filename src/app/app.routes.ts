@@ -36,6 +36,8 @@ import { RotativoComponent } from './pages/rotativo/rotativo.component';
 import { CreditoDesenvolvimentoComponent } from './pages/credito-desenvolvimento/credito-desenvolvimento.component';
 import { ConsignacaoComponent } from './pages/consignacao/consignacao.component';
 import { MicroCreditoComponent } from './pages/micro-credito/micro-credito.component';
+import { RedeDeComprasComponent } from './pages/rede-de-compras/rede-de-compras.component';
+import { RecuperacaoDeCreditoComponent } from './pages/recuperacao-de-credito/recuperacao-de-credito.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -78,4 +80,6 @@ export const routes: Routes = [
     { path: 'micro-credito', component: MicroCreditoComponent, },
     { path: 'consignacao', component: ConsignacaoComponent, },
     { path: 'credito-desenvolvimento', component: CreditoDesenvolvimentoComponent, },
+    { path: 'rede-de-compras', component: RedeDeComprasComponent, },
+    { path: 'recuperacao-de-credito', component: RecuperacaoDeCreditoComponent, },
     ];
