@@ -39,6 +39,7 @@ import { MicroCreditoComponent } from './pages/micro-credito/micro-credito.compo
 import { FundoGarantidorComponent } from './pages/fundo-garantidor/fundo-garantidor.component';
 import { CessaoCreditoComponent } from './pages/cessao-credito/cessao-credito.component';
 import { GestaoFundosComponent } from './pages/gestao-fundos/gestao-fundos.component';
+import { InfoCarteiraComponent } from './pages/info-carteira/info-carteira.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -84,4 +85,5 @@ export const routes: Routes = [
     { path: 'fundo-garantidor', component: FundoGarantidorComponent, },
     { path: 'cessao-credito', component: CessaoCreditoComponent, },
     { path: 'gestao-fundos', component: GestaoFundosComponent, },
+    { path: 'info-carteira', component: InfoCarteiraComponent, },
     ];
