@@ -38,6 +38,8 @@ import { ConsignacaoComponent } from './pages/consignacao/consignacao.component'
 import { MicroCreditoComponent } from './pages/micro-credito/micro-credito.component';
 import { RedeDeComprasComponent } from './pages/rede-de-compras/rede-de-compras.component';
 import { RecuperacaoDeCreditoComponent } from './pages/recuperacao-de-credito/recuperacao-de-credito.component';
+import { ContratosEmPrejuizosComponent } from './pages/contratos-em-prejuizos/contratos-em-prejuizos.component';
+import { AnaliseEAtendimentoComponent } from './pages/analise-e-atendimento/analise-e-atendimento.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -82,4 +84,6 @@ export const routes: Routes = [
     { path: 'credito-desenvolvimento', component: CreditoDesenvolvimentoComponent, },
     { path: 'rede-de-compras', component: RedeDeComprasComponent, },
     { path: 'recuperacao-de-credito', component: RecuperacaoDeCreditoComponent, },
+    { path: 'contratos-em-prejuizos', component: ContratosEmPrejuizosComponent, },
+    { path: 'analise-e-atendimento', component: AnaliseEAtendimentoComponent, },
     ];
