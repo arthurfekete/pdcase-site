@@ -17,7 +17,8 @@ section {
 .container {
   max-width: 1008px;
   width: 100%;
-  padding-bottom: 20px;
+  margin-bottom: 60px;
+
 }
 
 /* Formatação das fontes */
@@ -32,8 +33,6 @@ h3 {
   font: 24.5px / 3.3 "Raleway", sans-serif;
   color: #ffffffd9;
   text-align: left;
-  font-weight: 600;
-  filter: contrast(12);
   letter-spacing: -0.4px;
   padding-bottom: 20px;
   line-height: 40px;
