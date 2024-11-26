@@ -19,6 +19,9 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 90px;
+    padding-left: 100px;
+    padding-right: 30px;
 }
 
 #footer-social-media {
@@ -41,10 +44,10 @@ img {
 .footer-list {
     display: flex;
     flex-direction: column;
-    gap: 0.75em;
     list-style: none;
     unicode-bidi: isolate;
     line-height: 1.5em;
+    row-gap: 15px;
 }
 
 .footer-list .footer-link {
