@@ -51,20 +51,28 @@ import { CadastroPessoasComponent } from './pages/cadastro-pessoas/cadastro-pess
 import { GestaoTributariaComponent } from './pages/gestao-tributaria/gestao-tributaria.component';
 import { CobrancaDeCreditoComponent } from './pages/cobranca-de-credito/cobranca-de-credito.component';
 import { GestaoContabilComponent } from './pages/gestao-contabil/gestao-contabil.component';
+import { AvaliacaoDeRiscosComponent } from './pages/avaliacao-de-riscos/avaliacao-de-riscos.component';
+import { CentralDeRiscoComponent } from './pages/central-de-risco/central-de-risco.component';
 
 //Caminhos
 export const routes: Routes = [
     { path: '', component: MainComponentComponent, }, 
+
+    //Páginas secúndarias
     { path: 'about', component: AboutComponent, },
     { path: 'services', component: ServicesComponent, },
     { path: 'career', component: CareerComponent, },
     { path: 'contact', component: ContactComponent, },
-    { path: 'core-bancario', component: CoreBancarioComponent, },
+
+    //Páginas rodapé
     { path: 'politica-de-privacidade', component: PoliticaDePrivacidadeComponent, },
+    { path: 'relatorio-igualdade-salarial', component: RelatorioIgualdadeSalarialComponent,},
+
+    //Páginas serviços
+    { path: 'core-bancario', component: CoreBancarioComponent, },
     { path: 'portal-credito', component: PortalCreditoComponent, },
     { path: 'mercado-digital', component: MercadoDigitalComponent, },
     { path: 'controladoria', component: ControladoriaComponent, },
-    { path: 'relatorio-igualdade-salarial', component: RelatorioIgualdadeSalarialComponent,},
     { path: 'agencias-fomento', component: AgenciasFomentoComponent,},
     { path: 'informes-legais', component: InformesLegaisComponent,},
     { path: 'fabrica-software', component: FabricaSoftwareComponent,},
@@ -73,6 +81,8 @@ export const routes: Routes = [
     { path: 'integracao', component: IntegracaoComponent},
     { path: 'sustentacao-de-sistemas', component: SustentacaoDeSistemasComponent},
     { path: 'porte-cobol', component: PorteCobolComponent},
+
+    //Páginas core bancário
     { path: 'mps-br', component: MpsBrComponent},
     { path: 'arrecadacao', component: ArrecadacaoComponent},
     { path: 'compensacao-eletronica', component: CompensacaoEletronicaComponent},
@@ -83,29 +93,35 @@ export const routes: Routes = [
     { path: 'agendamento-debito', component: AgendamentoDebitoComponent},
     { path: 'pagamento-empresas', component: PagamentoEmpresasComponent},
     { path: 'cobranca-bancaria', component: CobrancaBancariaComponent},
-    { path: 'estruturado-parcelado', component: EstruturadoParceladoComponent},
-    { path: 'credito-direto-ao-consumidor', component: CreditoDiretoAoConsumidorComponent},
-    { path: 'antecipacao-de-recebiveis', component: AntecipacaoDeRecebiveisComponent},
     { path: 'agendamento-debito', component: AgendamentoDebitoComponent, },
     { path: 'pagamento-empresas', component: PagamentoEmpresasComponent, },
     { path: 'cobranca-bancaria', component: CobrancaBancariaComponent, },
+
+    //Portal de crédito
     { path: 'rotativo', component: RotativoComponent, },
+    { path: 'estruturado-parcelado', component: EstruturadoParceladoComponent},
     { path: 'micro-credito', component: MicroCreditoComponent, },
     { path: 'consignacao', component: ConsignacaoComponent, },
+    { path: 'credito-direto-ao-consumidor', component: CreditoDiretoAoConsumidorComponent},
     { path: 'credito-desenvolvimento', component: CreditoDesenvolvimentoComponent, },
+    { path: 'antecipacao-de-recebiveis', component: AntecipacaoDeRecebiveisComponent},
     { path: 'gestao-de-credito', component: GestaoDeCreditoComponent},
-    { path: 'credito-web', component: CreditoWebComponent},
-    { path: 'garantias-de-credito', component: GarantiasDeCreditoComponent},
+    { path: 'rede-de-compras', component: RedeDeComprasComponent, },
     { path: 'fundo-garantidor', component: FundoGarantidorComponent, },
+    { path: 'recuperacao-de-credito', component: RecuperacaoDeCreditoComponent, },
     { path: 'cessao-credito', component: CessaoCreditoComponent, },
     { path: 'gestao-fundos', component: GestaoFundosComponent, },
+    { path: 'credito-web', component: CreditoWebComponent},
+    { path: 'garantias-de-credito', component: GarantiasDeCreditoComponent},
     { path: 'info-carteira', component: InfoCarteiraComponent, },
-    { path: 'rede-de-compras', component: RedeDeComprasComponent, },
-    { path: 'recuperacao-de-credito', component: RecuperacaoDeCreditoComponent, },
     { path: 'contratos-em-prejuizos', component: ContratosEmPrejuizosComponent, },
-    { path: 'analise-e-atendimento', component: AnaliseEAtendimentoComponent, },
+
+    //Agências de fomento
     { path: 'cadastro-pessoas', component: CadastroPessoasComponent, },
-    { path: 'gestao-tributaria', component: GestaoTributariaComponent, },
     { path: 'cobranca-de-credito', component: CobrancaDeCreditoComponent, },
+    { path: 'analise-e-atendimento', component: AnaliseEAtendimentoComponent, },
     { path: 'gestao-contabil', component: GestaoContabilComponent, },
+    { path: 'gestao-tributaria', component: GestaoTributariaComponent, },
+    { path: 'avaliacao-de-riscos', component: AvaliacaoDeRiscosComponent, },
+    { path: 'central-de-risco', component: CentralDeRiscoComponent, },
     ];
