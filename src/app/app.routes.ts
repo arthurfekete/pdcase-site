@@ -49,6 +49,8 @@ import { ContratosEmPrejuizosComponent } from './pages/contratos-em-prejuizos/co
 import { AnaliseEAtendimentoComponent } from './pages/analise-e-atendimento/analise-e-atendimento.component';
 import { CadastroPessoasComponent } from './pages/cadastro-pessoas/cadastro-pessoas.component';
 import { GestaoTributariaComponent } from './pages/gestao-tributaria/gestao-tributaria.component';
+import { CobrancaDeCreditoComponent } from './pages/cobranca-de-credito/cobranca-de-credito.component';
+import { GestaoContabilComponent } from './pages/gestao-contabil/gestao-contabil.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -104,4 +106,6 @@ export const routes: Routes = [
     { path: 'analise-e-atendimento', component: AnaliseEAtendimentoComponent, },
     { path: 'cadastro-pessoas', component: CadastroPessoasComponent, },
     { path: 'gestao-tributaria', component: GestaoTributariaComponent, },
+    { path: 'cobranca-de-credito', component: CobrancaDeCreditoComponent, },
+    { path: 'gestao-contabil', component: GestaoContabilComponent, },
     ];
