@@ -41,6 +41,21 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font: 24.5px / 3.3 "Raleway", sans-serif;
+  color: #FFFFFFD9;
+  text-align: left;
+  font-weight: 600;
+  filter: contrast(12);
+  letter-spacing: -0.4px;
+  padding-bottom: 20px;
+  line-height: 40px;
+}
+
+p {
+  opacity: 0.85;
+}
+
 
 /* cyrillic-ext */
 @font-face {
