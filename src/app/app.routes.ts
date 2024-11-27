@@ -57,6 +57,10 @@ import { SpedComponent } from './pages/sped/sped.component';
 import { GerenciadorFinanceiroComponent } from './pages/gerenciador-financeiro/gerenciador-financeiro.component';
 import { MobileComponent } from './pages/mobile/mobile.component';
 import { MensagensSmsComponent } from './pages/mensagens-sms/mensagens-sms.component';
+import { TesourariaComponent } from './pages/tesouraria/tesouraria.component';
+import { ClienteSfnComponent } from './pages/cliente-sfn/cliente-sfn.component';
+import { LavagemDeDinheiroComponent } from './pages/lavagem-de-dinheiro/lavagem-de-dinheiro.component';
+import { CtaComponent } from './pages/cta/cta.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -136,5 +140,10 @@ export const routes: Routes = [
     { path: 'mensagens-sms', component: MensagensSmsComponent, },
     
     //Controladoria
-    { path: 'controladoria', component: ControladoriaComponent, },
+    { path: 'tesouraria', component: TesourariaComponent, },
+
+    //Informes Legais
+    { path: 'clientes-sfn', component: ClienteSfnComponent, },
+    { path: 'lavagem-de-dinheiro', component: LavagemDeDinheiroComponent, },
+    { path: 'cta', component: CtaComponent, },
     ];
