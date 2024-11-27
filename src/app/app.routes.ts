@@ -64,6 +64,11 @@ import { Cadoc3050Component } from './pages/cadoc-3050/cadoc-3050.component';
 import { CadastroPositivoComponent } from './pages/cadastro-positivo/cadastro-positivo.component';
 import { EFinanceiraComponent } from './pages/e-financeira/e-financeira.component';
 import { CentralDeRiscoBacenComponent } from './pages/central-de-risco-bacen/central-de-risco-bacen.component';
+import { TesourariaComponent } from './pages/tesouraria/tesouraria.component';
+import { ClienteSfnComponent } from './pages/cliente-sfn/cliente-sfn.component';
+import { LavagemDeDinheiroComponent } from './pages/lavagem-de-dinheiro/lavagem-de-dinheiro.component';
+import { CtaComponent } from './pages/cta/cta.component';
+
 
 //Caminhos
 export const routes: Routes = [
@@ -143,7 +148,7 @@ export const routes: Routes = [
     { path: 'mensagens-sms', component: MensagensSmsComponent, },
     
     //Controladoria
-    { path: 'controladoria', component: ControladoriaComponent, },
+    { path: 'tesouraria', component: TesourariaComponent, },
     { path: 'controle-de-ativo', component: ControleDeAtivoComponent, },
 
     //Informes Legais
@@ -153,4 +158,8 @@ export const routes: Routes = [
     { path: 'cadastro-positivo', component: CadastroPositivoComponent, },
     { path: 'e-financeira', component: EFinanceiraComponent, },
     { path: 'central-de-risco-bacen', component: CentralDeRiscoBacenComponent, },
+    { path: 'clientes-sfn', component: ClienteSfnComponent, },
+    { path: 'lavagem-de-dinheiro', component: LavagemDeDinheiroComponent, },
+    { path: 'cta', component: CtaComponent, },
+
     ];
