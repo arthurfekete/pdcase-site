@@ -53,6 +53,8 @@ import { CobrancaDeCreditoComponent } from './pages/cobranca-de-credito/cobranca
 import { GestaoContabilComponent } from './pages/gestao-contabil/gestao-contabil.component';
 import { AvaliacaoDeRiscosComponent } from './pages/avaliacao-de-riscos/avaliacao-de-riscos.component';
 import { CentralDeRiscoComponent } from './pages/central-de-risco/central-de-risco.component';
+import { SpedComponent } from './pages/sped/sped.component';
+import { GerenciadorFinanceiroComponent } from './pages/gerenciador-financeiro/gerenciador-financeiro.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -124,4 +126,8 @@ export const routes: Routes = [
     { path: 'gestao-tributaria', component: GestaoTributariaComponent, },
     { path: 'avaliacao-de-riscos', component: AvaliacaoDeRiscosComponent, },
     { path: 'central-de-risco', component: CentralDeRiscoComponent, },
+    { path: 'sped', component: SpedComponent},
+
+    //Mercado digital
+    { path: 'gerenciador-financeiro', component: GerenciadorFinanceiroComponent},
     ];
