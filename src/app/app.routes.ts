@@ -57,6 +57,13 @@ import { SpedComponent } from './pages/sped/sped.component';
 import { GerenciadorFinanceiroComponent } from './pages/gerenciador-financeiro/gerenciador-financeiro.component';
 import { MobileComponent } from './pages/mobile/mobile.component';
 import { MensagensSmsComponent } from './pages/mensagens-sms/mensagens-sms.component';
+import { ControleDeAtivoComponent } from './pages/controle-de-ativo/controle-de-ativo.component';
+import { RequisicoesJudiciaisComponent } from './pages/requisicoes-judiciais/requisicoes-judiciais.component';
+import { Cadoc3040Component } from './pages/cadoc-3040/cadoc-3040.component';
+import { Cadoc3050Component } from './pages/cadoc-3050/cadoc-3050.component';
+import { CadastroPositivoComponent } from './pages/cadastro-positivo/cadastro-positivo.component';
+import { EFinanceiraComponent } from './pages/e-financeira/e-financeira.component';
+import { CentralDeRiscoBacenComponent } from './pages/central-de-risco-bacen/central-de-risco-bacen.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -137,4 +144,13 @@ export const routes: Routes = [
     
     //Controladoria
     { path: 'controladoria', component: ControladoriaComponent, },
+    { path: 'controle-de-ativo', component: ControleDeAtivoComponent, },
+
+    //Informes Legais
+    { path: 'requisicoes-judiciais', component: RequisicoesJudiciaisComponent, },
+    { path: 'cadoc-3040', component: Cadoc3040Component, },
+    { path: 'cadoc-3050', component: Cadoc3050Component, },
+    { path: 'cadastro-positivo', component: CadastroPositivoComponent, },
+    { path: 'e-financeira', component: EFinanceiraComponent, },
+    { path: 'central-de-risco-bacen', component: CentralDeRiscoBacenComponent, },
     ];
