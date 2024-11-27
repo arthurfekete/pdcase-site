@@ -55,6 +55,8 @@ import { AvaliacaoDeRiscosComponent } from './pages/avaliacao-de-riscos/avaliaca
 import { CentralDeRiscoComponent } from './pages/central-de-risco/central-de-risco.component';
 import { SpedComponent } from './pages/sped/sped.component';
 import { GerenciadorFinanceiroComponent } from './pages/gerenciador-financeiro/gerenciador-financeiro.component';
+import { MobileComponent } from './pages/mobile/mobile.component';
+import { MensagensSmsComponent } from './pages/mensagens-sms/mensagens-sms.component';
 
 //Caminhos
 export const routes: Routes = [
@@ -129,5 +131,10 @@ export const routes: Routes = [
     { path: 'sped', component: SpedComponent},
 
     //Mercado digital
-    { path: 'gerenciador-financeiro', component: GerenciadorFinanceiroComponent},
+    { path: 'gerenciador-financeiro', component: GerenciadorFinanceiroComponent, },
+    { path: 'mobile', component: MobileComponent, },
+    { path: 'mensagens-sms', component: MensagensSmsComponent, },
+    
+    //Controladoria
+    { path: 'controladoria', component: ControladoriaComponent, },
     ];
