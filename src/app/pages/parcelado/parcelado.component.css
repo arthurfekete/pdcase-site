@@ -1,25 +1,36 @@
-
 * {
     color: white;
-  }
-  
-  h1 {
+}
+
+/* Formatação das fontes */
+
+h1 {
     font-size: 48px;
     padding: 30px;
     margin: 120px 0px 0px;
-  }
-  
-  h3 {
-    font: 24.5px / 3.3 "Raleway", sans-serif;
-    color: #ffffffd9;
+}
+
+h2 {
+    font-size: 30px;
+    color: #FFFFFFD9;
     text-align: left;
     font-weight: 400;
     filter: contrast(12);
     letter-spacing: -0.4px;
-    padding-top: 55px;
+    padding-top: 50px;
+}
+
+h3 {
+    font: 24.5px / 3.3 "Raleway", sans-serif;
+    color: #FFFFFFD9;
+    text-align: left;
+    font-weight: 400;
+    filter: contrast(12);
+    letter-spacing: -0.4px;
+    padding-top: 20px;
     padding-bottom: 20px;
     line-height: 40px;
-  }
+}
 
 p {
     font: 16px / 1.625 "Raleway", sans-serif;
@@ -27,9 +38,12 @@ p {
     line-height: 26px;
     opacity: 0.85;
     padding-bottom: 5px;
+    max-width: 456px;
+    width: 100%;
 }
 
 /* Formatação do corpo */
+
 
 .container {
     height: auto;
@@ -38,14 +52,13 @@ p {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 10px;
     padding-bottom: 60px;
 }
 
 .column-text {
     max-width: 960px; /* Limita a largura do parágrafo */
     text-align: left;
-    margin-bottom: 30px;
 }
 
 .coluna-texto {
@@ -56,18 +69,4 @@ p {
 .linha {
     display: flex;
     gap: 50px;
-}
-
-/* Formatação do link */
-
-span {
-    color: #f3bc1d;
-}
-
-a {
-    color: white;
-}
-
-a:hover {
-    color: #f3bc1d;
 }

@@ -1,25 +1,24 @@
+/* Formatação das fontes */
 
-* {
-    color: white;
-  }
-  
-  h1 {
+h1 {
     font-size: 48px;
     padding: 30px;
     margin: 120px 0px 0px;
-  }
-  
-  h3 {
+}
+
+h3 {
     font: 24.5px / 3.3 "Raleway", sans-serif;
-    color: #ffffffd9;
+    color: #FFFFFFD9;
     text-align: left;
-    font-weight: 400;
+    font-weight: 425;
     filter: contrast(12);
     letter-spacing: -0.4px;
     padding-top: 55px;
     padding-bottom: 20px;
     line-height: 40px;
-  }
+}
+
+
 
 p {
     font: 16px / 1.625 "Raleway", sans-serif;
@@ -39,7 +38,7 @@ p {
     align-items: center;
     flex-direction: column;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .column-text {
@@ -58,16 +57,27 @@ p {
     gap: 50px;
 }
 
-/* Formatação do link */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
 
-span {
-    color: #f3bc1d;
+.blocos {
+    background-color: #f4bc1d;
+    color: black;
+    height: 74px ;
+    width: 288px ;
+    padding: 25px;
 }
 
 a {
-    color: white;
+    text-decoration: none;
 }
 
-a:hover {
-    color: #f3bc1d;
+a:hover .bloco2,
+a:hover .blocos
+{
+    background-color: #a3c4bc;
+    transition: background 0.3s ease;
 }
