@@ -12,9 +12,10 @@ h3 {
     font: 24.5px / 3.3 "Raleway", sans-serif;
     color: #FFFFFFD9;
     text-align: left;
-    font-weight: 600;
+    font-weight: 400;
     filter: contrast(12.83);
     letter-spacing: -0.4px;
+    padding-bottom: 0px;
 }
 
 
@@ -33,7 +34,7 @@ p {
     align-items: center;
     flex-direction: column;
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 75px;
 }
 
 .coluna-texto {
