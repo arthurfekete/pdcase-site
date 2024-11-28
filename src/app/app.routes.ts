@@ -74,6 +74,11 @@ import { ParceladoComponent } from './pages/parcelado/parcelado.component';
 import { SimulacaoDeCreditoComponent } from './pages/simulacao-de-credito/simulacao-de-credito.component';
 import { LiberacaoDeCreditoComponent } from './pages/liberacao-de-credito/liberacao-de-credito.component';
 import { NucleoGerenciadorComponent } from './pages/nucleo-gerenciador/nucleo-gerenciador.component';
+import { PdBankComponent } from './pages/pd-bank/pd-bank.component';
+import { CaptacoesMercadosComponent } from './pages/captacoes-mercados/captacoes-mercados.component';
+import { PoupancaComponent } from './pages/poupanca/poupanca.component';
+import { DepositoAPrazoComponent } from './pages/deposito-a-prazo/deposito-a-prazo.component';
+import { DepositoJudicialComponent } from './pages/deposito-judicial/deposito-judicial.component';
 
 
 //Caminhos
@@ -173,4 +178,13 @@ export const routes: Routes = [
     { path: 'simulacao-de-credito', component: SimulacaoDeCreditoComponent},
     { path: 'liberacao-de-credito', component: LiberacaoDeCreditoComponent},
     { path: 'nucleo-gerenciador', component: NucleoGerenciadorComponent},
+
+    //Pd Bank
+    { path: 'pd-bank', component: PdBankComponent, },
+    { path: 'captacoes-mercados', component: CaptacoesMercadosComponent, },
+
+    //Captações de mercado
+    { path: 'poupanca', component: PoupancaComponent, },
+    { path: 'deposito-a-prazo', component: DepositoAPrazoComponent, },
+    { path: 'deposito-judicial', component: DepositoJudicialComponent, },
     ];
