@@ -68,6 +68,11 @@ import { TesourariaComponent } from './pages/tesouraria/tesouraria.component';
 import { ClienteSfnComponent } from './pages/cliente-sfn/cliente-sfn.component';
 import { LavagemDeDinheiroComponent } from './pages/lavagem-de-dinheiro/lavagem-de-dinheiro.component';
 import { CtaComponent } from './pages/cta/cta.component';
+import { PdBankComponent } from './pages/pd-bank/pd-bank.component';
+import { CaptacoesMercadosComponent } from './pages/captacoes-mercados/captacoes-mercados.component';
+import { PoupancaComponent } from './pages/poupanca/poupanca.component';
+import { DepositoAPrazoComponent } from './pages/deposito-a-prazo/deposito-a-prazo.component';
+import { DepositoJudicialComponent } from './pages/deposito-judicial/deposito-judicial.component';
 
 
 //Caminhos
@@ -162,4 +167,12 @@ export const routes: Routes = [
     { path: 'lavagem-de-dinheiro', component: LavagemDeDinheiroComponent, },
     { path: 'cta', component: CtaComponent, },
 
+    //Pd Bank
+    { path: 'pd-bank', component: PdBankComponent, },
+    { path: 'captacoes-mercados', component: CaptacoesMercadosComponent, },
+
+    //Captações de mercado
+    { path: 'poupanca', component: PoupancaComponent, },
+    { path: 'deposito-a-prazo', component: DepositoAPrazoComponent, },
+    { path: 'deposito-judicial', component: DepositoJudicialComponent, },
     ];
