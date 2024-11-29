@@ -79,6 +79,8 @@ import { CaptacoesMercadosComponent } from './pages/captacoes-mercados/captacoes
 import { PoupancaComponent } from './pages/poupanca/poupanca.component';
 import { DepositoAPrazoComponent } from './pages/deposito-a-prazo/deposito-a-prazo.component';
 import { DepositoJudicialComponent } from './pages/deposito-judicial/deposito-judicial.component';
+import { LinhasDeCreditoComponent } from './pages/linhas-de-credito/linhas-de-credito.component';
+import { CarreirasComponent } from './pages/carreiras/carreiras.component';
 
 
 //Caminhos
@@ -90,6 +92,7 @@ export const routes: Routes = [
     { path: 'services', component: ServicesComponent, },
     { path: 'career', component: CareerComponent, },
     { path: 'contact', component: ContactComponent, },
+    { path: 'carreiras', component: CarreirasComponent, },
 
     //Páginas rodapé
     { path: 'politica-de-privacidade', component: PoliticaDePrivacidadeComponent, },
@@ -187,4 +190,7 @@ export const routes: Routes = [
     { path: 'poupanca', component: PoupancaComponent, },
     { path: 'deposito-a-prazo', component: DepositoAPrazoComponent, },
     { path: 'deposito-judicial', component: DepositoJudicialComponent, },
+
+    //Portal de Crédito 
+    { path: 'linhas-de-credito', component: LinhasDeCreditoComponent, },
     ];
