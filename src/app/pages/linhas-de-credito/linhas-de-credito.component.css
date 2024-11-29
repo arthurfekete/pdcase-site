@@ -16,7 +16,7 @@ h3 {
     text-align: left;
     font-weight: 600;
     filter: contrast(12);
-    letter-spacing: -1.1px;
+    letter-spacing: -0.4px;
     padding-top: 55px;
     padding-bottom: 20px;
     line-height: 40px;
@@ -58,28 +58,3 @@ p {
     display: flex;
     gap: 50px;
 }
-
-li {
-    padding-bottom: 10px;
-    line-height: 27px;
-  }
-ul {
-    padding: 0px 0px 0px 24px;
-    margin: 0px 0px 15px;
-  }
-
-  ol {
-    padding: 0px 0px 0px 24px;
-    margin: 0px 0px 15px;
-  }
-
-  @media screen and (max-width: 1000px) { 
-    .linha {
-        flex-direction: column;
-    }
-    
-    .class {
-        align-items: left;
-    }
-
-  }
