@@ -87,7 +87,7 @@ a:hover {
 
 .grid {
     display: grid;
-    margin-top: 60px;
+    margin-top: 0px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
 }
