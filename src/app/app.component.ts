@@ -1,8 +1,7 @@
 //Imports
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
+import { RouterOutlet } from '@angular/router';
 
 //Componentes
 import { HeaderComponent } from "./components/header/header.component";
@@ -22,17 +21,47 @@ import { AboutComponent } from './pages/about/about.component';
 })
 
 export class AppComponent {
-title = 'pdcase-site';
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const viewportHeight = window.innerHeight; // Altura visível da tela
+    
+    const nav = document.getElementById('nav');
+    const logo = document.getElementById('logo') as HTMLImageElement;
 
-  isHomePage: boolean = false;
+    const session4 = document.getElementById('session4');
 
-  constructor(private router: Router) {}
-
-  ngOnInit(): void {
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe(() => {
-      this.isHomePage = this.router.url === '/'; // Verifique se está na página principal
-    });
+    if (nav) {
+      const links = nav.querySelectorAll('a');
+      if (scrollTop > viewportHeight) {
+        nav.style.display = 'flex';
+        nav.style.justifyContent = 'space-between';
+        nav.style.padding = '2em 5em';
+        links.forEach(link => {
+          (link as HTMLElement).style.color = 'black'; // Define a cor dos links (ex.: vermelho)
+        });
+        if (logo) {
+          logo.src = '/pd-preto.svg';
+        }
+        if(session4 &&  scrollTop >= session4.offsetTop) {
+          links.forEach(link => {
+            (link as HTMLElement).style.color = 'var(--cor-fonte)'; 
+          });
+          if (logo) {
+          logo.src = '/logo.svg';
+          }
+        }
+      } else {
+        nav.style.display = 'flex';
+        nav.style.justifyContent = 'space-between';
+        nav.style.padding = '2em 5em';
+        links.forEach(link => {
+          (link as HTMLElement).style.color = 'var(--cor-fonte)'; 
+        });
+        if (logo) {
+          logo.src = '/logo.svg';
+        }
+      }
+    }
   }
 }
