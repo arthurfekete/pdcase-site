@@ -4,10 +4,8 @@
 
 .container {
     display: flex;
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     text-align: center;
     background: url(/logo-bg2.svg) 20% center / auto 110%, url(/logo-bg2.svg) 0 center / auto 160% fixed, radial-gradient(ellipse at left top, var(--cor-primaria), #000);
     height: 100vh;
@@ -84,4 +82,3 @@ span.txt-destaque::before {
     color: white;  
     transition: transform 0.3s ease-in-out; 
 }
-

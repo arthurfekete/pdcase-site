@@ -16,18 +16,18 @@ header {
 
 nav {
   display: flex;
-  /* Define o elemento 'nav' como um contêiner flexível para layout. */
   justify-content: space-between;
-  /* Alinha os itens dentro do 'nav' com o máximo de espaço possível entre eles. */
   padding: 2em 5em;
-  /* Adiciona 1 unidade de espaço interno ao redor do conteúdo do 'nav'. */
 }
+
+
+/* Estilizagem da brand */
 
 .brand,
 .links {
-  display: flex; /* Define que tanto o contêiner '.brand' quanto '.links' usam layout flexível. */
-  justify-content: center; /* Alinha os itens dentro dos contêineres ao centro horizontalmente. */
-  align-items: center; /* Alinha verticalmente os itens dentro dos contêineres ao centro. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .brand {
@@ -35,20 +35,20 @@ nav {
 }
 
 .brand img {
-  
-  width: 72px; /* Define a largura da imagem dentro da classe '.brand' como 40px. */
-  margin-right: 0.4em; /* Adiciona um espaço à direita da imagem de 0.6 unidades 'em'. */
-
+  width: 72px;
+  margin-right: 0.4em;
 }
+
+/* Estilizagem dos links */
 
 .links {
   margin-top: -30px;
-  
+
 }
 
 .links li {
-  margin-right: 0.3em; /* Adiciona uma margem de 1em à direita de cada item 'li' dentro de '.links'. */
-  list-style: none; /* Remove o marcador de lista padrão dos itens 'li'. */
+  margin-right: 0.3em;
+  list-style: none;
 }
 
 .links a {
@@ -62,20 +62,24 @@ nav {
 }
 
 /* Estilos para o efeito de sublinhado */
+
 .links a::after {
   content: "";
   position: absolute;
-  left: 0; /* Começa a partir do meio */
-  bottom: -5px; /* Posiciona a barra abaixo do texto */
-  width: 0; /* Inicialmente invisível */
-  height: 2px; /* Espessura da barra */
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
   background-color: var(--cor-fonte);
-  transition: width 0.18s ease, left 0.3s ease; /* Animações suaves */
+  transition: width 0.18s ease, left 0.3s ease;
 }
 
 .links a:hover::after {
   width: 100%;
-  /* Expande para cobrir o texto */
   left: 0;
-  /* Move para a esquerda para cobrir todo o link */
+}
+
+.mobile-menu,
+.mobile-menu-icon {
+  display: none;
 }
