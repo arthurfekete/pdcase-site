@@ -10,6 +10,8 @@ header {
   width: 100%;
   z-index: 10;
   padding: 0px 296px;
+  top: 0;
+  transition: 0.5s;
 }
 
 nav {
@@ -56,7 +58,7 @@ nav {
   position: relative;
   text-decoration: none;
   font-size: 16px;
-  transition: transform 0.3s ease;
+  transition: color 1s ease;
 }
 
 /* Estilos para o efeito de sublinhado */
