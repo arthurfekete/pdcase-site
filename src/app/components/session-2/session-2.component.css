@@ -54,14 +54,12 @@
 .container a:hover h2,
 .container a:hover h3 {
     color: black;
-    /* Muda a cor do texto para preto ao passar o mouse */
     transition: color 0.4s ease-in-out;
 }
 
 
 .container a:hover .ico {
     transform: translateX(10px);
-    /* Anima a seta para a direita */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -77,22 +75,15 @@ span::before {
     position: absolute;
     top: -18px;
     left: -23px;
-    /* Ajuste para posicionar o quadrado no lugar desejado */
     width: 60px;
-    /* Largura do quadrado */
     height: 60px;
-    /* Altura do quadrado */
     background-color: #a3c4bc;
-    /* Cor do quadrado (amarelo) */
     z-index: -1;
-    /* Coloca o quadrado atrás do texto */
     transition: transform 0.2s ease-in-out;
-    /* Transição para o quadrado */
 }
 
 .container a:hover span::before {
     transform: translateX(-12px);
-    /* Anima o quadrado para a esquerda */
     transition: transform 0.2s ease-in-out;
 }
 
@@ -100,7 +91,10 @@ span::before {
 
     .container {
         height: auto;
-        padding: 40px 16px;
+        padding-right: 16px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 28px;
     }
 
     .container h2 {
@@ -134,12 +128,12 @@ span::before {
         content: "";
         position: absolute;
         top: -13px;
-        left: -20px; /* Ajuste para posicionar o quadrado no lugar desejado */
-        width: 40px; /* Largura do quadrado */
-        height: 40px; /* Altura do quadrado */
-        background-color: #a3c4bc; /* Cor do quadrado (amarelo) */
-        z-index: -1; /* Coloca o quadrado atrás do texto */
-        transition: transform 0.2s ease-in-out; /* Transição para o quadrado */
+        left: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: #a3c4bc;
+        z-index: -1;
+        transition: transform 0.2s ease-in-out;
     }
 
     .selo {
@@ -157,22 +151,21 @@ span::before {
         width: 48px;
         height: 24px;
         display: flex;
+        margin-left: -10px;
         margin-top: 1em;
-        transition: .2s ease-in-out;
+        transition: .3s ease-in-out;
     }
 
     .container a:hover span,
     .container a:hover h2,
     .container a:hover h3 {
         color: black;
-        /* Muda a cor do texto para preto ao passar o mouse */
-        transition: color 0.4s ease-in-out;
+        transition: color 0.5s ease-in-out;
     }
 
 
     .container a:hover .ico {
         transform: translateX(10px);
-        /* Anima a seta para a direita */
         transition: transform 0.3s ease-in-out;
     }
 }
