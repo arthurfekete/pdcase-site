@@ -80,11 +80,21 @@ import { DepositoAPrazoComponent } from './pages/deposito-a-prazo/deposito-a-pra
 import { DepositoJudicialComponent } from './pages/deposito-judicial/deposito-judicial.component';
 import { LinhasDeCreditoComponent } from './pages/linhas-de-credito/linhas-de-credito.component';
 import { CarreirasComponent } from './pages/carreiras/carreiras.component';
+import { Session1Component } from './components/session-1/session-1.component';
+import { Session2Component } from './components/session-2/session-2.component';
+import { Session3Component } from './components/session-3/session-3.component';
+import { Session4Component } from './components/session-4/session-4.component';
 
 
 //Caminhos
 export const routes: Routes = [
     { path: '', component: MainComponentComponent, }, 
+
+    //sessoes
+    { path: 'sessao1', component: Session1Component },
+    { path: 'sessao2', component: Session2Component },
+    { path: 'sessao3', component: Session3Component },
+    { path: 'sessao4', component: Session4Component },
 
     //Páginas secúndarias
     { path: 'about', component: AboutComponent, },

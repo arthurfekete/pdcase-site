@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { ScrollService } from '../../scroll.service';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -9,5 +9,9 @@ import { Component } from '@angular/core';
 })
 
 export class HeaderComponent {
+  constructor(private scrollService: ScrollService) {}
 
+  scrollTo(sessionId: string): void {
+    this.scrollService.scrollTo(sessionId);
+  }
 }
