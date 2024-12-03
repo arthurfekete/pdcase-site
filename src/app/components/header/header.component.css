@@ -20,7 +20,6 @@ nav {
   padding: 2em 5em;
 }
 
-
 /* Estilizagem da brand */
 
 .brand,
@@ -43,7 +42,6 @@ nav {
 
 .links {
   margin-top: -30px;
-
 }
 
 .links li {
@@ -82,4 +80,64 @@ nav {
 .mobile-menu,
 .mobile-menu-icon {
   display: none;
+}
+
+#barra {
+
+  /* Define a posição do elemento como absoluta, permitindo que ele seja posicionado em relação ao seu elemento pai ou ao corpo da página */
+  position: absolute;
+
+  /* Define a margem superior de 96px e margens laterais e inferior em 0. Isso posiciona a barra a 96px abaixo do topo do seu pai */
+  margin: 5.5em 0 0 0;
+
+  /* Define a largura da barra como 72px */
+  width: 72px;
+
+  /* Define a altura da barra como 12px */
+  height: 12px;
+
+  /* Usa flexbox para distribuir os itens filhos ao longo da barra, permitindo um layout flexível */
+  display: flex;
+
+  /* Aplica uma sombra interna de 1px ao redor da barra, com uma cor preta em 20% de opacidade. Isso cria um efeito de borda */
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
+
+  /* Define o índice z como -1, o que coloca a barra atrás de outros elementos com um índice z maior */
+  z-index: -1;
+
+  /* Define uma transição suave para todos os estilos, que levará 0,6 segundos e terá um efeito de easing 'ease-in-out' */
+  transition: all 0.6s ease-in-out;
+
+  filter: invert(1);
+}
+
+#barra a {
+  /* Faz com que cada link dentro da barra ocupe uma parte igual da largura total disponível, se espalhando igualmente */
+  flex: 1;
+}
+
+#barra a:hover {
+  transition: all 0.6s ease-in-out;
+  /* Quando o mouse passa sobre o link, a cor de fundo muda para um tom preto transparente com opacidade de 20% */
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#quadrado1 {
+  transition: all 0.6s ease-in-out;
+  box-shadow: 0 0 0 1px #000 inset;
+}
+
+#quadrado2 {
+  transition: all 0.6s ease-in-out;
+  box-shadow: none;
+}
+
+#quadrado3 {
+  transition: all 0.6s ease-in-out;
+  box-shadow: none;
+}
+
+#quadrado4 {
+  transition: all 0.6s ease-in-out;
+  box-shadow: none;
 }
