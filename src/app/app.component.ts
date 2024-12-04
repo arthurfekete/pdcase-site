@@ -31,8 +31,10 @@ export class AppComponent {
     const viewportHeight = window.innerHeight;  // Altura visível da tela
 
     const nav = document.getElementById('nav');
-    const logo = document.getElementById('logo') as HTMLImageElement;
+    const logoWhite = document.getElementById('logo-white') as HTMLImageElement;
+    const logoBlack = document.getElementById('logo-black') as HTMLImageElement;
 
+    const sessao1 = document.getElementById('sessao1');
     const sessao2 = document.getElementById('sessao2');
     const sessao3 = document.getElementById('sessao3');
     const sessao4 = document.getElementById('sessao4');
@@ -54,9 +56,10 @@ export class AppComponent {
           (link as HTMLElement).style.color =
               'black';  // Define a cor dos links (ex.: vermelho)
         });
-        if (logo) {
-          logo.src = '/pd-preto.svg';
-        }
+        logoWhite?.classList.remove('active');
+        logoWhite?.classList.add('logo-exit1');
+        logoBlack?.classList.remove('logo-exit');
+        logoBlack?.classList.add('active');
         if (sessao2 && scrollTop >= sessao2.offsetTop) {
           barra!.style.filter = 'none';
           quadrado1!.style.boxShadow = 'none';
@@ -75,9 +78,10 @@ export class AppComponent {
           links.forEach(link => {
             (link as HTMLElement).style.color = 'var(--cor-fonte)';
           });
-          if (logo) {
-            logo.src = '/logo.svg';
-          }
+          logoBlack?.classList.remove('active');
+          logoBlack?.classList.add('logo-exit');
+          logoWhite?.classList.remove('logo-exit');
+          logoWhite?.classList.add('active');
           barra!.style.filter = 'invert(1)';
           quadrado1!.style.boxShadow = 'none';
           quadrado2!.style.boxShadow = 'none';
@@ -85,20 +89,23 @@ export class AppComponent {
           quadrado4!.style.boxShadow = '0 0 0 1px #000 inset';
         }
       } else {
-        nav.style.display = 'flex';
-        nav.style.justifyContent = 'space-between';
-        nav.style.padding = '2em 5em';
-        links.forEach(link => {
-          (link as HTMLElement).style.color = 'var(--cor-fonte)';
-        });
-        if (logo) {
-          logo.src = '/logo.svg';
+        if (sessao1 && scrollTop >= sessao1.offsetTop) {
+          nav.style.display = 'flex';
+          nav.style.justifyContent = 'space-between';
+          nav.style.padding = '2em 5em';
+          links.forEach(link => {
+            (link as HTMLElement).style.color = 'var(--cor-fonte)';
+          });
+          logoBlack?.classList.remove('active');
+          logoBlack?.classList.add('logo-exit');
+          logoWhite?.classList.remove('logo-exit');
+          logoWhite?.classList.add('active');
+          barra!.style.filter = 'invert(1)';
+          quadrado1!.style.boxShadow = '0 0 0 1px #000 inset';
+          quadrado2!.style.boxShadow = 'none';
+          quadrado3!.style.boxShadow = 'none';
+          quadrado4!.style.boxShadow = 'none';
         }
-        barra!.style.filter = 'invert(1)';
-        quadrado1!.style.boxShadow = '0 0 0 1px #000 inset';
-        quadrado2!.style.boxShadow = 'none';
-        quadrado3!.style.boxShadow = 'none';
-        quadrado4!.style.boxShadow = 'none';
       }
     }
   }
