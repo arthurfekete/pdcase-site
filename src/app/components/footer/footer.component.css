@@ -79,3 +79,45 @@ footer h3 {
 #copyright {
     margin-top: 1em;
 }
+
+@media screen and (max-width: 999px) {
+
+    #footer-contents {
+        flex-direction: column; 
+        padding: 2em;
+    }
+
+    .footer-list {
+        margin-bottom: 2rem; 
+        margin-right: 0; 
+    }
+
+    #footer-contacts {
+        padding: 2rem 0;
+        align-items: center;
+        padding-left: 0; 
+    }
+
+    #footer-social-media {
+        margin-top: 1rem;
+        justify-content: center;
+        gap: 1.5rem; 
+    }
+
+    img {
+        margin-left: 2.5rem; /* Centraliza a logo */
+        margin-bottom: 0rem; /* Espaçamento com o texto abaixo */
+    }
+
+    footer h3 {
+        text-align: left; 
+    }
+
+    #copyright {
+        margin-bottom: 1em;
+    }
+
+    .footer-link {
+        text-align: center; /* Centraliza os links */
+    }
+}
