@@ -58,3 +58,65 @@ p {
     display: flex;
     gap: 50px;
 }
+
+
+@media screen and (max-width: 999px) {
+    /* Class */
+   
+    .class {
+      height: 20.5vh;
+    }
+   
+    /* Container */
+   
+    .container {
+      padding-bottom: 0px;
+    }
+   
+    /* Títulos */
+   
+    h1 {
+      align-items: left;
+    }
+   
+    h3 {
+      font-size: 21px;
+      line-height: 33px;
+      letter-spacing: -0.7px;
+      padding-top: 35px;
+    }
+   
+    .h33 {
+      padding-top: 20px;
+    }
+   
+    /* Column Text */
+   
+    .column-text {
+      padding: 16px;
+      margin-top: -45px;
+      padding-bottom: -110px;
+    }
+   
+    .titulo-column-text {
+      font-size: 21px;
+      line-height: 33px;
+      letter-spacing: -0.7px;
+      padding-top: 60px;
+      padding-bottom: 15px;
+    }
+   
+    /* Coluna Texto e Linha */
+   
+    .coluna-texto {
+      padding: 16px;
+      margin-top: -45px;
+      padding-bottom: 20px;
+      text-align: left;
+    }
+   
+    .linha {
+      flex-direction: column;
+      gap: 0px;
+    }
+  }
