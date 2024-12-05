@@ -110,6 +110,7 @@ a:hover .amarelo-2 {
 
 @media screen and (max-width: 999px) {
 
+    /* Formatação dos grid e class */
     .grid {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -119,6 +120,7 @@ a:hover .amarelo-2 {
         height: 20.5vh;
     }
 
+    /* Formatação das fontes */
     h3 {
         font: 20px / 4 "Raleway", sans-serif;
         color: white;
@@ -129,9 +131,12 @@ a:hover .amarelo-2 {
 
     .amarelo-2 p {
         color: black;
+        font-weight: 500;
         padding-top: 10px;
         padding-bottom: 0px;
     }
+
+    /* Formatação do texto */
 
     .coluna-texto {
         padding: 16px;
@@ -139,33 +144,35 @@ a:hover .amarelo-2 {
         line-height: 10px;
     }
 
+    /* Formatação dos blocos */
+
     .blocos {
-        width: 358px;
-        height: auto;
+        width: 95vw;
+        height: 58px;
         padding: 16px;
         line-height: 27px;
     }
 
     .amarelo {
-        width: 358px;
+        width: 95vw;
         height: auto;
         padding: var(--margem);
     }
 
     .verde {
-        width: 358px;
+        width: 95vw;
         height: 48px;
         padding: 10px 0px 0px 20px;
     }
 
     .amarelo-2 {
-        width: 358px;
+        width: 95vw;
         height: auto;
-        padding: 10px 20px 20px 20px;
+        padding: 10px 5px 20px 20px;
     }
 
     .verde-2 {
-        width: 358px;
+        width: 95vw;
         height: 48px;
         padding: 10px 0px 0px 20px;
     }
