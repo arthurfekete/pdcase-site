@@ -292,12 +292,9 @@ body {
 
 .class {
   display: flex;
-  background: url(/logo-bg2.svg) 20% center / auto 110%,
-    url(/logo-bg2.svg) 0 center / auto 160% fixed,
-    radial-gradient(ellipse at left top, var(--cor-primaria), #000);
+  background: url(/logo-bg2.svg) 20% center / auto 110%, url(/logo-bg2.svg) 0 center / auto 160% fixed, radial-gradient(ellipse at left top, var(--cor-primaria), #000);
   max-height: 300px;
   height: 100vh;
   color: white;
-  padding: 25px 422px;
-
+  width: 100vw;
 }
