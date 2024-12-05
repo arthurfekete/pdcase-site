@@ -18,6 +18,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 2em 5em;
+  margin-top: 2em;
 }
 
 /* Estilizagem da brand */
@@ -89,8 +90,8 @@ nav {
   /* Define a posição do elemento como absoluta, permitindo que ele seja posicionado em relação ao seu elemento pai ou ao corpo da página */
   position: absolute;
 
-  /* Define a margem superior de 96px e margens laterais e inferior em 0. Isso posiciona a barra a 96px abaixo do topo do seu pai */
-  margin: 5.5em 0 0 0;
+  /* Define a margem superior de 5.5em e margens laterais e inferior em 0. Isso posiciona a barra a 5.5em abaixo do topo do seu pai */
+  margin: 4em 0 0 0;
 
   /* Define a largura da barra como 72px */
   width: 72px;
