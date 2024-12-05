@@ -1,5 +1,5 @@
 #clientes {
-  background-color: #141B23;
+  background-color: #141b23;
 }
 
 .container-decor {
@@ -12,10 +12,9 @@
 }
 
 .titulo {
-    width: 50%;
-    text-align: left;
+  width: 50%;
+  text-align: left;
 }
-
 
 h2.maior,
 span {
@@ -56,7 +55,57 @@ span.txt-destaque::before {
   left: -13px; /* Ajuste para posicionar o quadrado no lugar desejado */
   width: 60px; /* Largura do quadrado */
   height: 60px; /* Altura do quadrado */
-  background-color: #D3A520; /* Cor do quadrado (amarelo) */
+  background-color: #d3a520; /* Cor do quadrado (amarelo) */
   z-index: -1; /* Coloca o quadrado atrás do texto */
   transition: transform 0.2s ease-in-out; /* Transição para o quadrado */
+}
+
+@media screen and (max-width: 999px) {
+  .container-decor {
+    height: auto; /* Permite que o conteúdo ocupe o espaço necessário */
+    padding: 40px 16px;
+  }
+
+  .titulo {
+    width: 95vw; /* Faz o título ocupar toda a largura */
+    text-align: left; /* Centraliza o texto */
+  }
+
+  h2.maior {
+    font-size: 27px; /* Reduz o tamanho da fonte */
+    margin-left: 0; /* Remove a margem esquerda */
+  }
+
+  h2.maior,
+  span {
+    color: #fff;
+  }
+
+  span {
+    font-size: 27px;
+  }
+
+  .grid-clientes {
+    grid-template-columns: repeat(4, 1fr); /* Duas colunas no grid */
+    gap: 15px 30px; /* Diminui o espaçamento entre os elementos */
+    max-width: 100%; /* Remove a largura máxima para ocupar todo o espaço */
+    margin-top: 32px;
+  }
+
+  .grid-clientes img {
+    width: 71.5px;
+    height: 71.5px; /* Reduz o tamanho das imagens */
+    margin: 0 auto; /* Centraliza as imagens */
+  }
+
+  span.txt-destaque {
+    margin-left: 0;
+  }
+
+  span.txt-destaque::before {
+    width: 40px; /* Reduz o tamanho do quadrado amarelo */
+    height: 40px;
+    top: -10px;
+    left: -10px;
+  }
 }

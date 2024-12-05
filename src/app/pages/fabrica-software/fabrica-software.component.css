@@ -48,3 +48,19 @@ p {
     margin-bottom: -35px;
 
 }
+
+@media screen and (max-width: 999px) {
+    .coluna-texto {
+        max-width: 90%;
+    }
+ 
+    h3 {
+        font: 20px / 1.6 "Raleway", sans-serif;
+        color: #FFFFFFD9;
+        text-align: left;
+        font-weight: 600;
+        filter: contrast(12.83);
+        letter-spacing: -0.4px;
+        margin-top: 60px;
+    }
+}
