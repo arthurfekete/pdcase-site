@@ -1,4 +1,4 @@
-*{
+* {
     color: white;
 }
 
@@ -43,7 +43,8 @@ p {
 }
 
 .coluna-texto {
-    max-width: 960px; /* Limita a largura do parágrafo */
+    max-width: 960px;
+    /* Limita a largura do parágrafo */
     text-align: left;
     margin-bottom: -35px;
 
@@ -53,7 +54,7 @@ p {
     .coluna-texto {
         max-width: 90%;
     }
- 
+
     h3 {
         font: 20px / 1.6 "Raleway", sans-serif;
         color: #FFFFFFD9;
