@@ -20,7 +20,8 @@ p {
 }
 
 .coluna-texto {
-    max-width: 970px; /* Limita a largura do parágrafo */
+    max-width: 970px;
+    /* Limita a largura do parágrafo */
     text-align: left;
     margin-bottom: -35px;
 }
@@ -58,8 +59,8 @@ h3 {
     background-color: #a3c4bc;
     width: 288px;
     height: 72px;
-    padding: 22px 25px; 
-    
+    padding: 22px 25px;
+
 }
 
 .amarelo {
@@ -68,6 +69,10 @@ h3 {
     background-color: #f4bc1d;
     padding: var(--margem);
     line-height: 28px;
+}
+
+.amarelo-2 p {
+    color: black;
 }
 
 .selos {
@@ -92,7 +97,7 @@ h3 {
     line-height: 28px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -103,4 +108,77 @@ a:hover .amarelo-2 {
     transition: background 0.3s;
 }
 
+@media screen and (max-width: 999px) {
 
+    /* Formatação dos grid e class */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .class {
+        height: 20.5vh;
+    }
+
+    /* Formatação das fontes */
+    h3 {
+        font: 20px / 4 "Raleway", sans-serif;
+        color: white;
+        text-align: left;
+        font-weight: 600;
+        filter: contrast(3);
+    }
+
+    .amarelo-2 p {
+        color: black;
+        font-weight: 500;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    /* Formatação do texto */
+
+    .coluna-texto {
+        padding: 16px;
+        margin-top: -45px;
+        line-height: 10px;
+    }
+
+    /* Formatação dos blocos */
+
+    .blocos {
+        width: 95vw;
+        height: 58px;
+        padding: 16px;
+        line-height: 27px;
+    }
+
+    .amarelo {
+        width: 95vw;
+        height: auto;
+        padding: var(--margem);
+    }
+
+    .verde {
+        width: 95vw;
+        height: 48px;
+        padding: 10px 0px 0px 20px;
+    }
+
+    .amarelo-2 {
+        width: 95vw;
+        height: auto;
+        padding: 10px 5px 20px 20px;
+    }
+
+    .verde-2 {
+        width: 95vw;
+        height: 48px;
+        padding: 10px 0px 0px 20px;
+    }
+
+    .selos img {
+        width: 48px;
+        height: 48px;
+    }
+}
