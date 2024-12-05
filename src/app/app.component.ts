@@ -1,6 +1,6 @@
 // Imports
 import {CommonModule} from '@angular/common';
-import {Component, HostListener} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 
 import {FooterComponent} from './components/footer/footer.component';
@@ -31,6 +31,7 @@ export class AppComponent {
     const viewportHeight = window.innerHeight;  // Altura visível da tela
 
     const nav = document.getElementById('nav');
+    const logo = document.getElementsByClassName('logo') as HTMLCollectionOf<HTMLElement>;
     const logoWhite = document.getElementById('logo-white') as HTMLImageElement;
     const logoBlack = document.getElementById('logo-black') as HTMLImageElement;
 
@@ -47,6 +48,9 @@ export class AppComponent {
     const quadrado4 = document.getElementById('quadrado4');
 
     if (nav) {
+      for (let i = 0; i < logo.length; i++) {
+        logo[i].style.transition = 'opacity 0s ease, transform 0.2s ease'; 
+      }
       const links = nav.querySelectorAll('a');
       if (scrollTop > viewportHeight) {
         nav.style.display = 'flex';
@@ -106,6 +110,35 @@ export class AppComponent {
           quadrado3!.style.boxShadow = 'none';
           quadrado4!.style.boxShadow = 'none';
         }
+      }
+    }
+  }
+
+  ngOnInit() {
+    this.updateLogoBasedOnScroll();
+  }
+
+  private updateLogoBasedOnScroll() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const viewportHeight = window.innerHeight;
+    const logo = document.getElementsByClassName('logo') as HTMLCollectionOf<HTMLElement>;
+
+    const nav = document.getElementById('nav');
+    const logoWhite = document.getElementById('logo-white') as HTMLImageElement;
+    const logoBlack = document.getElementById('logo-black') as HTMLImageElement;
+
+    if (nav) {
+      for (let i = 0; i < logo.length; i++) {
+        logo[i].style.transition = 'none'; // Remove a transição inicialmente
+      }
+      if (scrollTop > viewportHeight) {
+        logo[0].style.transition = 'none';
+        logo[0].style.transform = 'none'
+        logoWhite?.classList.remove('active');
+        logoBlack?.classList.add('active');
+      } else {
+        logoBlack?.classList.remove('active');
+        logoWhite?.classList.add('active');
       }
     }
   }
