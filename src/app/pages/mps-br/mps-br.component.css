@@ -80,3 +80,40 @@ a::after {
 a:hover::after {
   background-image: url('/seta2branca.svg');
 }
+
+  @media screen and (max-width: 999px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .class {
+      height: 136px;
+    }
+
+    section {
+      padding: 40px 16px;
+    }
+
+    h1 {
+      width: 95vh;
+      padding: 0;
+      font-size: 32px;
+      margin: 80px 0.5em -24px;
+    }
+ 
+    h3 {
+        font: 20px / 1.6 "Raleway", sans-serif;
+        color: #FFFFFFD9;
+        text-align: left;
+        font-weight: 600;
+        filter: contrast(12.83);
+        letter-spacing: -0.4px;
+        margin-top: 60px;
+    }
+
+    p {
+      width: 95vw;
+    }
+}
+
+
