@@ -32,6 +32,8 @@ section {
 
 .coluna-texto {
   flex: 4.5;
+  width: 70%;
+  /* Largura base (fora da media query) */
 }
 
 p {
@@ -115,4 +117,77 @@ h4 {
 h2 {
   font-size: 30px;
   margin-left: 4.3em;
+}
+
+@media screen and (max-width: 999px) {
+
+  /* Formatação dos selos e texto */
+
+  .linha {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    gap: 20px; /* Espaço entre texto e selos */
+  }
+
+  .coluna-texto {
+    width: 100%; 
+    padding: 0px 16px;
+  }
+
+  .coluna-texto p {
+    line-height: 25px;
+  }
+
+  .coluna-selos {
+    width: 95%; 
+    display: flex;
+    justify-content: flex-end; 
+  }
+
+  .selos {
+    justify-content: flex-end; 
+    gap: 10px; 
+  }
+  
+  .selos img{
+    width: 48px;
+    height: 48px;
+  }
+
+  /* Formatação do grid */
+
+  .container-blocos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: calc(var(--margem)* 2);
+  }
+
+  .amarelo, 
+  .verde {
+    width: 95vw;
+    height: 56px;
+  }
+
+  .amarelo{
+    padding: 20px;
+  }
+
+  .verde{
+    padding: 15px 0px 0px 20px;
+  }
+
+  .amarelo h4{
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-left: 0px;
+  }
+
+  .produtos-financeiros {
+    text-align: left;
+    width: 95%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
 }
