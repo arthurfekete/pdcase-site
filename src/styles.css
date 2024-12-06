@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 html {
@@ -296,6 +296,12 @@ body {
   max-height: 300px;
   height: 100vh;
   color: white;
-  width: 100vw;
+
 }
 
+@media screen and (max-width: 999px) {
+  .class {
+    max-height: 180px;
+    height: 28vh;
+  }
+}
