@@ -302,6 +302,6 @@ body {
 @media screen and (max-width: 999px) {
   .class {
     max-height: 180px;
-    height: 28vh;
+    height: 20vh;
   }
 }

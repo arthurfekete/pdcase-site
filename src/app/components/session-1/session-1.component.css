@@ -82,3 +82,49 @@ span.txt-destaque::before {
     color: white;  
     transition: transform 0.3s ease-in-out; 
 }
+
+
+@media screen and (max-width: 999px) {
+   
+   
+    .container h1 {
+        font: 36px / 1.625 "Vollkorn", sans-serif;
+        color: white;
+        float: left;
+        text-align: left;
+        line-height: 0.9;
+        margin-bottom: 1rem;
+        
+    }
+
+
+    span.txt-destaque {
+        position: relative;
+        background-color: #243650;
+        font: 36px / 1.625 "Vollkorn", sans-serif;
+        padding: 0 8px;
+        color: rgba(255, 255, 255, 0.856);
+        z-index: 1; /* Coloca o quadrado atrás do texto */
+    }
+
+    .container h2 {
+        font: 20px / 1.625 "Raleway", sans-serif;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.856);
+        text-align: left;
+        margin: 0;
+        margin-bottom: 0;
+        line-height: 3;
+    }
+
+    .ico {
+        width: 24px;
+    }
+
+    span.txt-destaque::before {
+        top: -10px;
+        left: -10px;
+        height: 40px;
+        width: 40px;
+    }
+}
