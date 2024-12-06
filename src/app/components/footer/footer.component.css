@@ -84,7 +84,7 @@ footer h3 {
 
     #footer-contents {
         flex-direction: column; 
-        padding: 2em;
+        padding: 1.5em;
     }
 
     .footer-list {
