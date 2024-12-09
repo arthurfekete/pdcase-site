@@ -1,32 +1,14 @@
-*{
+* {
     color: white;
 }
+
+/* Formatação das fontes */
 
 h1 {
     font-size: 48px;
     padding: 30px;
     margin: 120px 0px 0px;
     filter: contrast(12.83);
-}
-
-.coluna-texto {
-    max-width: 960px; /* Limita a largura do parágrafo */
-    text-align: left;
-    padding: 0 0px; /* Se desejar espaçamento interno */
-}
-
-a{
-    text-decoration: none;
-}
-
-.container {
-    height: auto;
-    background-color: #141B23;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 60px;
 }
 
 h3 {
@@ -45,6 +27,29 @@ p {
     filter: contrast(12.83);
 }
 
+/* Formatação do corpo */
+
+.coluna-texto {
+    max-width: 960px;
+    text-align: left;
+}
+
+.container {
+    height: auto;
+    background-color: #141B23;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Formatação do Grid */
+
 .grid {
     display: grid;
     margin-top: 60px;
@@ -52,7 +57,7 @@ p {
     gap: 50px;
 }
 
-.blocos{
+.blocos {
     background-color: #F4bc1d;
     width: 288px;
     height: 74px;
@@ -60,7 +65,7 @@ p {
     color: black;
 }
 
-.bloco2{
+.bloco2 {
     background-color: #F4bc1d;
     width: 288px;
     height: 100px;
@@ -69,7 +74,55 @@ p {
 }
 
 a:hover .bloco2,
-a:hover .blocos{
+a:hover .blocos {
     background-color: #a3c4bc;
     transition: background 0.3s;
+}
+
+@media screen and (max-width: 999px) {
+
+    .class{
+        height: 20vh;
+    }
+
+    /* Formatação das fontes */
+
+    h1 {
+        font-size: 32px;
+        padding: 10px 0px 0px 20px;
+        margin: 70px 0px 0px;
+        filter: contrast(12.83);
+    }
+
+    h3 {
+        font: 22px / 1.6 "Raleway", sans-serif;
+        color: #FFFFFFD9;
+        text-align: left;
+        font-weight: 600;
+        filter: contrast(12.83);
+        letter-spacing: -0.4px;
+    }
+
+    /* Formatação do Grid */
+
+    .grid {
+        display: grid;
+        margin-top: 40px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .blocos,
+    .bloco2 {
+        width: 96vw;
+        height: 58px;
+        padding: 20px 0px 0px 17px;
+    }
+
+    /* Formatação do corpo */
+
+    .coluna-texto {
+        max-width: 93%;
+        text-align: left;
+    }
 }

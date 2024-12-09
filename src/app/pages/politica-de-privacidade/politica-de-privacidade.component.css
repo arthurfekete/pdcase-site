@@ -41,7 +41,7 @@ p {
 h3 {
   font-size: 24px;
   font-weight: normal;
-  padding-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .texto-centralizado {
@@ -64,4 +64,53 @@ ul {
 li {
   padding-bottom: 10px;
   line-height: 30px;
+}
+
+@media screen and (max-width: 999px) {
+  section {
+    padding: 40px 0;
+  }
+
+  .container {
+    max-width: 93%;
+    padding: 0 0 40px 0;
+  }
+
+  .container:last-child {
+    padding-bottom: 0%;
+  }
+
+  .class {
+    height: 136px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0 20px;
+    margin-top: 80px;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  h3 {
+    padding: 0;
+    margin-bottom: 16px;
+    font-size: 1.3em;
+  }
+
+  .texto-centralizado {
+    padding: 16px;
+  }
+
+  .container-lista {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
 }

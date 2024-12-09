@@ -153,25 +153,28 @@ nav {
   left: 0;
   width: 72px;
   opacity: 0;
-  transform: translateY(50px); /* Começa fora da tela */
+  transform: translateY(50px);
+  /* Começa fora da tela */
   transition: opacity 0s ease, transform 0.2s ease;
 }
 
 .logo.active {
   opacity: 1;
-  transform: translateY(0); /* Volta para sua posição original */
+  transform: translateY(0);
+  /* Volta para sua posição original */
 }
 
 .logo-exit1 {
   opacity: 0;
-  transform: translateY(-50px); /* Sai para cima */
+  transform: translateY(-50px);
+  /* Sai para cima */
 }
 
 .logo-exit2 {
   opacity: 0;
-  transform: translateY(50px); /* Sai para cima */
+  transform: translateY(50px);
+  /* Sai para cima */
 }
-
 
 @media screen and (max-width: 999px) {
   a {
