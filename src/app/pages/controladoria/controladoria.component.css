@@ -65,9 +65,70 @@ a{
     color: black;
 }
 
-/*Hover dos blocos */
+/* Hover dos blocos */
 
 a:hover .blocos{
     background-color: #a3c4bc;
     transition: background 0.3s;
+}
+
+@media screen and (max-width: 999px) {
+
+    .class{
+        height: 20vh;
+    }
+
+    /* Formatação do texto */
+
+    h1 {
+        font-size: 32px;
+        padding: 10px 0px -10px 20px;
+        margin: 70px 0px 0px;
+        filter: contrast(12.83);
+    }
+
+    h3 {
+        font: 20px / 1.5 "Raleway", sans-serif;
+        color: #FFFFFFD9;
+        text-align: left;
+        font-weight: 600;
+        filter: contrast(12.83);
+        letter-spacing: -0.4px;
+        margin-top: 40px;
+    }
+
+    p {
+        font: 16px / 1.625 "Raleway", sans-serif;
+        color: white;
+        line-height: 26px;
+        filter: contrast(12.83);
+    }
+
+    /* Formatação dos grid e class */
+
+    .grid {
+        display: grid;
+        margin-top: 0px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .blocos {
+        width: 96vw;
+        height: 58px;
+        padding: 20px 0px 0px 17px;
+    }
+
+    /* Formatação do container */
+    
+    .container {
+        padding-top: 15px;
+    }
+
+    /* Formatação do corpo */
+
+    .coluna-texto {
+        max-width: 95%;
+        text-align: left;
+    }
 }
