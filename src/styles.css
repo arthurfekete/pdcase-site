@@ -297,12 +297,12 @@ body {
   height: 100vh;
   color: white;
   padding: 26px 0px 0px 422px;
-
 }
 
 @media screen and (max-width: 999px) {
   .class {
     max-height: 180px;
     height: 20vh;
+    padding: 0px;
   }
 }

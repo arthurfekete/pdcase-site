@@ -17,6 +17,7 @@ h1 {
   padding: 30px;
   margin: 120px 0px 0px;
   filter: contrast(12.83);
+  flex-shrink: 0; 
 }
 
 h3 {
