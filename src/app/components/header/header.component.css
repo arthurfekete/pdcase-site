@@ -86,7 +86,6 @@ nav {
 }
 
 #barra {
-
   /* Define a posição do elemento como absoluta, permitindo que ele seja posicionado em relação ao seu elemento pai ou ao corpo da página */
   position: absolute;
 
@@ -106,7 +105,7 @@ nav {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
 
   /* Define o índice z como -1, o que coloca a barra atrás de outros elementos com um índice z maior */
-  z-index: -1;
+  z-index: 1;
 
   /* Define uma transição suave para todos os estilos, que levará 0,6 segundos e terá um efeito de easing 'ease-in-out' */
   transition: all 0.6s ease-in-out;
