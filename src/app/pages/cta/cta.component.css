@@ -18,9 +18,26 @@
   }
   
   .container {
-    max-width: 1008px;
-    padding-bottom: 20px;
-  }
+    height: auto;
+    background-color: #141B23;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.column-text {
+    max-width: 960px; /* Limita a largura do parágrafo */
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.coluna-texto {
+    max-width: 456px;
+    text-align: left;
+}
   
   h1 {
     font-size: 48px;
@@ -87,7 +104,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 50px;
-    max-width: 960px;
+    max-width: 1000px;
 }
 
 
@@ -145,7 +162,39 @@
   * {
       margin: 0;
   }
-  
+
+  /* Formatação do grid e dos blocos*/
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.amarelo{
+    width: 93vw;
+    height: auto;
+    padding: var(--margem);
+}
+
+.verde{
+    width: 93vw;
+    height: 56px;
+    padding: 18px 0px 0px 20px;
+}
+
+.amarelo1{
+  width: 93vw;
+  height: auto;
+  padding: var(--margem);
+}
+
+.verde1{
+  width: 93vw;
+  height: 56px;
+  padding: 18px 0px 0px 20px;
+}
+
+
   
   /* Class */
  
@@ -183,8 +232,9 @@
   .column-text {
     padding: 16px;
     margin-top: -40px;
-    padding-bottom: -110px;
+    padding-bottom: -100px;
     width: 100%;
+    margin-bottom: 0px;
   }
  
   .titulo-column-text {
@@ -217,4 +267,14 @@
       padding-left: 0;
       text-align: left;
     }
+    .h31 {
+      padding-top: 10px;
+      align-items: left;
+    }
+ 
+    
 }
+
+
+
+
