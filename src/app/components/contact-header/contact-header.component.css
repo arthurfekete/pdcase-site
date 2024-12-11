@@ -1,0 +1,121 @@
+* {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding: 0px 296px;
+    top: 0;
+    transition: 0.5s;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 5em;
+  }
+  
+  /* Estilizagem da brand */
+  
+  .brand,
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .brand {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brand img {
+    width: 72px;
+    margin-right: 0.4em;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  /* Estilizagem dos links */
+  
+  .links {
+    margin-top: -30px;
+  }
+  
+  .links li {
+    margin-right: 0.3em;
+    list-style: none;
+  }
+  
+  .outros-links {
+    border-radius: 24px;
+    padding: 11px 0px;
+    margin: 0px 22px;
+    color: var(--cor-fonte);
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 1s ease;
+  }
+  
+  /* Estilos para o efeito de sublinhado */
+  
+  .outros-links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ABAFB4;
+    transition: width 0.18s ease, left 0.3s ease;
+  }
+  
+  .outros-links:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .sobre-link {
+    border-radius: 24px;
+    padding: 11px 0px;
+    margin: 0px 22px;
+    color: var(--cor-fonte);
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+  }
+  
+  /* Estilos para o sublinhado visível permanentemente no link "Sobre" */
+  .sobre-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%; /* O sublinhado fica visível o tempo todo */
+    height: 2px; /* Define a altura do sublinhado */
+    background-color: var(--cor-fonte); /* Cor do sublinhado */
+  }
+  
+  .mobile-menu,
+  .mobile-menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 999px) {
+    a {
+      display: none;
+    }
+  
+    .logo {
+      margin: 0px 0px 0px 20px;
+      height: 80px;
+    }
+  }
+  
