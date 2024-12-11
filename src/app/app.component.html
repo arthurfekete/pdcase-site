@@ -1,4 +1,23 @@
 <app-header *ngIf="isMainPage"></app-header>
-<app-other-header *ngIf="!isMainPage"></app-other-header>
+
+<app-about-header 
+  *ngIf="isAboutPage">
+</app-about-header>
+
+<app-services-header 
+  *ngIf="isServicesPage">
+</app-services-header>
+
+<app-carreiras-header 
+  *ngIf="isCarreirasPage">
+</app-carreiras-header>
+
+<app-contact-header 
+  *ngIf="isContactPage">
+</app-contact-header>
+
+<app-other-header 
+  *ngIf="!isMainPage && !(isAboutPage || isServicesPage || isCarreirasPage || isContactPage)">
+</app-other-header>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

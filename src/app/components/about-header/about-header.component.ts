@@ -1,13 +1,13 @@
 import { Component, HostListener, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-other-header',
+  selector: 'app-about-header',
   standalone: true,
   imports: [],
-  templateUrl: './other-header.component.html',
-  styleUrl: './other-header.component.css'
+  templateUrl: './about-header.component.html',
+  styleUrl: './about-header.component.css'
 })
-export class OtherHeaderComponent {
+export class AboutHeaderComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
