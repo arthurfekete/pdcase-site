@@ -76,6 +76,20 @@ li {
     padding: 0 0 40px 0;
   }
 
+  .container-lista {
+    max-width: 93%;
+    padding: 0 0 40px 0;
+  }
+
+  li {
+    line-height: 25px;
+    width: 85vw;
+  }
+
+  .last {
+    padding-bottom: 40px;
+  }
+
   .container:last-child {
     padding-bottom: 0%;
   }
