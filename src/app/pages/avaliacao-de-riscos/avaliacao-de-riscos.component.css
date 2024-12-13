@@ -40,24 +40,72 @@ p {
 }
 
 .column-text {
-    max-width: 960px; /* Limita a largura do parágrafo */
+    max-width: 960px;
+    /* Limita a largura do parágrafo */
     text-align: left;
 }
 
 /* Formatação dos blocos */
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 50px;
     padding-top: 50px;
 }
 
-.bloco{
+.bloco {
     background-color: #F4Bc1d;
     color: black;
     width: 153px;
     height: 72px;
     padding: 25px;
     font-weight: 600;
+}
+
+@media screen and (max-width: 999px) {
+
+    /* Formatação dos grid e class */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .class {
+        height: 20.5vh;
+    }
+
+    /* Formatação das fontes */
+    h1 {
+        font-size: 32px;
+        margin: 70px 0px 0px;
+        filter: contrast(12.83);
+    }
+
+    h3 {
+        font: 20px / 4 "Raleway", sans-serif;
+        color: white;
+        text-align: left;
+        font-weight: 600;
+        filter: contrast(3);
+    }
+
+    /* Formatação do texto */
+
+    .column-text {
+        padding: 16px;
+        margin-top: -45px;
+        line-height: 10px;
+        width: 95vw;
+    }
+
+    /* Formatação dos blocos */
+
+    .bloco {
+        width: 92vw;
+        height: 58px;
+        padding: 16px;
+        line-height: 27px;
+    }
+    
 }
