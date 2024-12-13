@@ -10,13 +10,11 @@ p{
     opacity: 0.9;
 }
 
-h1{
+h1 {
     font-size: 48px;
+    padding: 30px;
     margin: 120px 0px 0px;
     filter: contrast(12.83);
-    transform: translateX(24vw); /* Move 50px para a direita */
-    padding-top: 55px;
-
 }
 
 h3{
