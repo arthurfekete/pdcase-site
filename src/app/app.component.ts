@@ -3,10 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { HostListener } from '@angular/core';
 
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { OtherHeaderComponent } from './components/other-header/other-header.component';
+import { MobileHeaderComponent } from './components/mobile-header/mobile-header.component';
 import { AboutHeaderComponent } from './components/about-header/about-header.component';
 import { ServicesHeaderComponent } from './components/services-header/services-header.component';
 import { CarreirasHeaderComponent } from './components/carreiras-header/carreiras-header.component';
@@ -35,6 +37,7 @@ import { AboutComponent } from './pages/about/about.component';
     ServicesHeaderComponent,
     CarreirasHeaderComponent,
     ContactHeaderComponent,
+    MobileHeaderComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
@@ -47,6 +50,7 @@ export class AppComponent implements OnInit {
   isServicesPage = false;
   isCarreirasPage = false;
   isContactPage = false;
+  isMobilePage = false;
 
   constructor(private router: Router) {}
 
@@ -64,5 +68,18 @@ export class AppComponent implements OnInit {
         this.isCarreirasPage = currentUrl === '/carreiras';
         this.isContactPage = currentUrl === '/contact';
       });
+
+      this.checkIfMobile();
   }
+
+  @HostListener('window:resize', [])
+  onResize(): void {
+    this.checkIfMobile();
+  }
+
+  private checkIfMobile(): void {
+    this.isMobilePage = window.innerWidth < 999;
+  }
+
+  
 }

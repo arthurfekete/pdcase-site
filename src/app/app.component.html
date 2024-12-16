@@ -1,23 +1,28 @@
-<app-header *ngIf="isMainPage"></app-header>
+<!-- Exibe o cabeçalho principal para a página inicial -->
+<app-header *ngIf="isMainPage && !isMobilePage"></app-header>
 
-<app-about-header 
-  *ngIf="isAboutPage">
-</app-about-header>
+<!-- Exibe o cabeçalho de "Sobre Nós" -->
+<app-about-header *ngIf="isAboutPage && !isMobilePage"></app-about-header>
 
-<app-services-header 
-  *ngIf="isServicesPage">
-</app-services-header>
+<!-- Exibe o cabeçalho de "Serviços" -->
+<app-services-header *ngIf="isServicesPage && !isMobilePage"></app-services-header>
 
-<app-carreiras-header 
-  *ngIf="isCarreirasPage">
-</app-carreiras-header>
+<!-- Exibe o cabeçalho de "Carreiras" -->
+<app-carreiras-header *ngIf="isCarreirasPage && !isMobilePage"></app-carreiras-header>
 
-<app-contact-header 
-  *ngIf="isContactPage">
-</app-contact-header>
+<!-- Exibe o cabeçalho de "Contato" -->
+<app-contact-header *ngIf="isContactPage && !isMobilePage"></app-contact-header>
 
-<app-other-header 
-  *ngIf="!isMainPage && !(isAboutPage || isServicesPage || isCarreirasPage || isContactPage)">
+<!-- Exibe o cabeçalho alternativo caso não seja nenhuma das páginas específicas -->
+<app-other-header
+  *ngIf="!isMainPage && !isMobilePage && !(isAboutPage || isServicesPage || isCarreirasPage || isContactPage)">
 </app-other-header>
+
+<!-- Exemplo de componente de cabeçalho ou menu específico para dispositivos móveis -->
+<app-mobile-header *ngIf="isMobilePage"></app-mobile-header>
+
+<!-- Área principal do conteúdo -->
 <router-outlet></router-outlet>
+
+<!-- Rodapé -->
 <app-footer></app-footer>
