@@ -39,3 +39,46 @@
   .amarelo {
     color: #f3bc1d;
   }
+
+  @media screen and (max-width: 999px) {
+    section {
+      padding: 40px 20px 0;
+    }
+  
+    .container {
+      max-width: 96vw;
+      padding: 0 0 25px 0;
+      margin: 0;
+    }
+  
+    .class {
+      height: 176px;
+    }
+  
+    h1 {
+      font-size: 2em;
+      margin: 0 16px;
+      margin-top: 80px;
+      padding: 0;
+      line-height: 40px;
+    }
+  
+    p {
+      padding: 0;
+      margin-bottom: 16px;
+      line-height: 30px;
+    }
+  
+    h2 {
+      padding: 0;
+      margin-bottom: 16px;
+      font-size: 22px;
+      line-height: 30px;
+      max-width: 90vw;
+    }
+
+    object {
+      width: 100%;
+      height: 800px;
+    }
+  }

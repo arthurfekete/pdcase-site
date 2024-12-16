@@ -1,0 +1,73 @@
+* {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding: 0px 296px;
+    top: 0;
+    transition: 0.5s;
+  }
+  
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 5em;
+  }
+  
+  /* Estilizagem da brand */
+  
+  .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .brand {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brand img {
+    width: 72px;
+    margin-right: 0.4em;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  } 
+  
+  .mobile-nav .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mobile-nav .menu li {
+    margin: 1rem 0;
+  }
+  
+  .mobile-nav .menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .menu.open {
+    display: block;
+  }
+ 
+  

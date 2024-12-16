@@ -18,7 +18,6 @@ section {
   max-width: 1008px;
   width: 100%;
   margin-bottom: 60px;
-
 }
 
 /* Formatação das fontes */
@@ -44,6 +43,7 @@ p {
   line-height: 26px;
   opacity: 0.85;
   padding-bottom: 5px;
+  margin-bottom: 24px;
 }
 
 .linha {
@@ -53,6 +53,16 @@ p {
   width: 100%;
   max-height: 556px;
   height: 100%;
+}
+
+.linha-last {
+  display: flex;
+  gap: 48px;
+  max-width: 960px;
+  width: 100%;
+  max-height: 556px;
+  height: 100%;
+  margin-top: 30px;
 }
 
 .coluna {
@@ -76,6 +86,8 @@ p {
   padding: 5px 20px;
   opacity: 1;
   line-height: 23px;
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 a {
@@ -87,8 +99,91 @@ a {
 }
 
 a:hover {
-    background-color: #21324A;
-    transition: color 0.3s ease;
+  background-color: #21324a;
+  transition: color 0.3s ease;
 }
 
+@media screen and (max-width: 999px) {
+  section {
+    padding: 40px 0 0;
+  }
 
+  .container {
+    max-width: 96vw;
+    padding: 0 0 25px 0;
+    margin: 0;
+  }
+
+  .class {
+    height: 136px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0 16px;
+    margin-top: 80px;
+    padding: 0;
+    line-height: 40px;
+  }
+
+  p {
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    padding: 0;
+    margin-bottom: 16px;
+    font-size: 1.3em;
+    line-height: 35px;
+  }
+
+  .linha {
+    gap: 0px;
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .linha-last {
+    gap: 0px;
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .bloco {
+    width: 93vw;
+    height: auto;
+    padding: 0;
+  }
+
+  #sem-padding {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 92vw;
+  }
+}
+
+@media screen and (max-width: 518px) {
+  .class {
+    height: 176px;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .class {
+    height: 216px;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .class {
+    height: 216px;
+    max-height: 100%;
+  }
+}

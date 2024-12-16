@@ -1,0 +1,14 @@
+<header id="header">
+  <nav id="mobile-nav" class="mobile-nav">
+    <a href="/" class="brand">
+      <img src="/logo-deitada.svg" alt="Logo Mobile" />
+    </a>
+    <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+    <ul *ngIf="menuOpen" class="menu">
+      <li><a href="/about">Sobre</a></li>
+      <li><a href="/services">Serviços</a></li>
+      <li><a href="/carreiras">Carreiras</a></li>
+      <li><a href="/contact">Contato</a></li>
+    </ul>
+  </nav>
+</header>
