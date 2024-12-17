@@ -78,13 +78,13 @@ p {
         gap: 10px;
     }
 
-    .amarelo{
+    .amarelo {
         width: 93vw;
         height: auto;
         padding: var(--margem);
     }
 
-    .verde{
+    .verde {
         width: 93vw;
         height: 56px;
         padding: 18px 0px 0px 20px;
@@ -107,7 +107,7 @@ p {
         padding-top: 10px;
     }
 
-    h1{
+    h1 {
         padding: 55px 0px 0px 5vw;
     }
 }
