@@ -117,15 +117,18 @@ a:hover .amarelo-2 {
     }
 
     .class {
-        height: 20.5vh;
-    }
+        height: 136px;
+      }
+    
+      
 
     /* Formatação das fontes */
     h1 {
-        font-size: 32px;
-        margin: 70px 0px 0px;
-        filter: contrast(12.83);
-    }
+        font-size: 2em;
+        margin: 0 20px;
+        margin-top: 80px;
+        padding: 0;
+      }
 
     h3 {
         font: 20px / 4 "Raleway", sans-serif;
