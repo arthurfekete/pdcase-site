@@ -1,89 +1,145 @@
 /* Formatação das fontes */
 
 * {
-    color: white;
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+  padding: 30px;
+  margin: 120px 0px 0px;
+}
+
+h3 {
+  font: 24.5px / 3.3 "Raleway", sans-serif;
+  color: #FFFFFFD9;
+  text-align: left;
+  font-weight: 600;
+  filter: contrast(12);
+  letter-spacing: -0.4px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  line-height: 40px;
+}
+
+p {
+  font: 16px / 1.625 "Raleway", sans-serif;
+  color: white;
+  line-height: 26px;
+  opacity: 0.85;
+  padding-bottom: 5px;
+}
+
+/* Formatação do corpo */
+
+.container {
+  height: auto;
+  background-color: #141b23;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.column-text {
+  max-width: 960px;
+  text-align: left;
+}
+
+ul {
+  padding: 0px 0px 0px 24px;
+  margin: 0px 0px 0px;
+}
+
+li {
+  padding-bottom: 10px;
+  line-height: 30px;
+  opacity: 0.85;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.blocos {
+  background-color: #f4bc1d;
+  color: black;
+  height: 74px;
+  width: 288px;
+  padding: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover .bloco2,
+a:hover .blocos {
+  background-color: #a3c4bc;
+  transition: background 0.3s ease;
+}
+
+@media screen and (max-width: 999px) {
+
+  .class {
+    height: 20vh;
   }
-  
+
+  /* Formatação do texto */
+
   h1 {
-    font-size: 48px;
-    padding: 30px;
-    margin: 120px 0px 0px;
+    font-size: 32px;
+    padding: 10px 0px -10px 10px;
+    margin: 70px 0px 0px;
+    filter: contrast(12.83);
   }
-  
+
   h3 {
-    font: 24.5px / 3.3 "Raleway", sans-serif;
-    color: #ffffffd9;
+    font: 20px / 1.5 "Raleway", sans-serif;
+    color: #FFFFFFD9;
     text-align: left;
-    font-weight: 400;
-    filter: contrast(12);
+    font-weight: 600;
+    filter: contrast(12.83);
     letter-spacing: -0.4px;
-    padding-top: 55px;
-    padding-bottom: 20px;
-    line-height: 40px;
+    margin-top: 0px;
+    padding-top: 24px;
   }
-  
-  .first {
-    padding-top: 0px;
-  }
-  
+
   p {
     font: 16px / 1.625 "Raleway", sans-serif;
     color: white;
     line-height: 26px;
-    opacity: 0.85;
-    padding-bottom: 5px;
+    filter: contrast(12.83);
   }
-  
-  /* Formatação do corpo */
-  
+
+  /* Formatação do container */
+
   .container {
-    height: auto;
-    background-color: #141b23;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  
+
+  /* Formatação do corpo */
+
   .column-text {
-    max-width: 960px; /* Limita a largura do parágrafo */
+    max-width: 92vw;
     text-align: left;
   }
-  
-  ul {
-    padding: 0px 0px 0px 24px;
-    margin: 0px 0px 0px;
-  }
-  
-  li {
-    padding-bottom: 10px;
-    line-height: 30px;
-    opacity: 0.85;
-  }
+
+  /* Formatação do grid */
 
   .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
-}
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 
-.blocos {
-    background-color: #f4bc1d;
-    color: black;
-    height: 74px ;
-    width: 288px ;
-    padding: 25px;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover .bloco2,
-a:hover .blocos
-{
-    background-color: #a3c4bc;
-    transition: background 0.3s ease;
+  .blocos {
+    width: 92vw;
+    height: 58px;
+    padding: 20px 0px 0px 17px;
+  }
 }
