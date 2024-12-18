@@ -1,73 +1,184 @@
 * {
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /* Define a posição fixa do elemento, fazendo com que ele permaneça no mesmo lugar
+       mesmo quando a página for rolada. */
+  position: fixed;
   
-  header {
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    padding: 0px 296px;
-    top: 0;
-    transition: 0.5s;
-  }
-  
-  .mobile-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 2em 5em;
-  }
-  
-  /* Estilizagem da brand */
-  
-  .brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .brand {
-    margin-top: -10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .brand img {
-    width: 72px;
-    margin-right: 0.4em;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  } 
-  
-  .mobile-nav .menu {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .mobile-nav .menu li {
-    margin: 1rem 0;
-  }
-  
-  .mobile-nav .menu a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .menu-toggle {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .menu {
-    display: none;
-  }
-  
-  .menu.open {
-    display: block;
-  }
- 
-  
+
+  /* Coloca o elemento no topo da página (0 pixels de distância do topo). */
+  top: 0;
+
+  /* Define a posição do elemento na extremidade esquerda da página (0 pixels). */
+  left: 0;
+
+  /* Define a posição do elemento na extremidade direita da página (0 pixels). */
+  right: 0;
+
+  padding-bottom: 10px;
+
+
+  /* Define o z-index para 30, garantindo que o elemento apareça acima de outros 
+       elementos com um z-index menor. */
+  z-index: 30;
+
+  /* Remove qualquer margem externa do elemento. */
+  margin: 0;
+
+  /* Define o comportamento padrão do elemento como um bloco (block-level). 
+       Isso faz com que o elemento ocupe toda a largura disponível. */
+  display: block;
+
+  transition: all .6s ease-in-out;
+}
+
+#mobile-nav {
+  padding: 20px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1152px;
+  box-sizing: border-box;
+  margin: auto;
+  position: relative;
+  transition: all .3s ease-in-out;
+}
+
+/* Estilizagem da brand */
+
+.brand {
+  margin: 0;
+  display: block;
+}
+
+.brand img {
+  width: 154px;
+  height: 36px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  margin: -4px -20px;
+  display: block;
+}
+
+.nav {
+  width: 60px;
+  height: 40px;
+  overflow: hidden;
+  text-align: right;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 20px 12px;
+  filter: none !important;
+  left: auto;
+  transition: all 0.6s ease-in-out;
+  margin: 0;
+  display: block;
+}
+
+.icone-menu {
+  height: 60px;
+  padding: 0;
+  width: 60px;
+  margin: -20px -18px 6px;
+  opacity: 1 !important;
+  display: inline-block;
+  vertical-align: bottom;
+  border-radius: 10px;
+}
+
+.icone-menu:before {
+  background: none;
+  content: "";
+  float: right;
+  width: 24px;
+  border: solid #fff;
+  border-width: 2px 0;
+  height: 12px;
+  margin: 22px 16px 24px 0;
+  transition: all 0.12s ease-in-out;
+}
+
+.icone-menu:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  border-top: 2px solid #fff;
+  top: 29px;
+  right: 16px;
+  transition: all 0.12s ease-in-out;
+}
+
+.nav a {
+  border-radius: 24px;
+  float: none;
+  display: block;
+  clear: both;
+  position: relative;
+  text-align: left;
+}
+
+#menuSobre {
+  padding: 11px 24px;
+}
+
+#menuServiços {
+  padding: 11px 24px;
+}
+
+#menuCarreiras {
+  padding: 11px 24px;
+}
+
+#menuContatos {
+  padding: 11px 24px;
+}
+
+/* Barra lateral */
+.menu-links {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Oculta inicialmente */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+  transition: right 0.4s ease-in-out;
+}
+
+.menu-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.menu-ativo .menu-links {
+  right: 0; /* Mostra o menu ao adicionar a classe */
+}
+
+.icone-menu::before {
+  top: 0;
+}
+
+.icone-menu::after {
+  bottom: 0;
+}
+
+.icone-menu.icone-fechar::before {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.icone-menu.icone-fechar::after {
+  transform: rotate(-45deg);
+  bottom: 50%;
+}
+
