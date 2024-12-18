@@ -43,43 +43,62 @@ import { AboutComponent } from './pages/about/about.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  // Título do site
   title = 'pdcase-site';
 
-  isMainPage = false;
-  isAboutPage = false;
-  isServicesPage = false;
-  isCarreirasPage = false;
-  isContactPage = false;
-  isMobilePage = false;
+  // Variáveis booleanas para indicar qual página está ativa
+  isMainPage = false;     // Indica se está na página principal
+  isAboutPage = false;    // Indica se está na página "Sobre"
+  isServicesPage = false; // Indica se está na página "Serviços"
+  isCarreirasPage = false; // Indica se está na página "Carreiras"
+  isContactPage = false;  // Indica se está na página "Contato"
+  isMobilePage = false;   // Indica se o site está sendo visualizado em uma tela mobile
 
+  // Injeção de dependência do serviço Router para monitorar navegação
   constructor(private router: Router) {}
 
+  /**
+   * Método chamado automaticamente ao inicializar o componente.
+   * Configura a detecção de mudança na navegação e verifica se é tela mobile.
+   */
   ngOnInit(): void {
-    // Detecta mudanças na navegação para alterar os cabeçalhos
+    // Escuta os eventos de navegação do Router
     this.router.events
-      .pipe(filter((event) => event instanceof NavigationEnd))
+      .pipe(
+        // Filtra apenas os eventos de finalização de navegação
+        filter((event) => event instanceof NavigationEnd)
+      )
       .subscribe(() => {
+        // Obtém a URL atual
         const currentUrl = this.router.url;
 
-        // Atualiza as variáveis booleanas conforme a página
-        this.isMainPage = currentUrl === '/';
-        this.isAboutPage = currentUrl === '/about';
-        this.isServicesPage = currentUrl === '/services';
-        this.isCarreirasPage = currentUrl === '/carreiras';
-        this.isContactPage = currentUrl === '/contact';
+        // Define as variáveis booleanas com base na URL atual
+        this.isMainPage = currentUrl === '/'; // Página principal
+        this.isAboutPage = currentUrl === '/about'; // Página "Sobre"
+        this.isServicesPage = currentUrl === '/services'; // Página "Serviços"
+        this.isCarreirasPage = currentUrl === '/carreiras'; // Página "Carreiras"
+        this.isContactPage = currentUrl === '/contact'; // Página "Contato"
       });
 
-      this.checkIfMobile();
+    // Verifica se a tela atual é mobile
+    this.checkIfMobile();
   }
 
+  /**
+   * Evento que monitora o redimensionamento da janela do navegador.
+   * Chama a função para verificar se é uma tela mobile.
+   */
   @HostListener('window:resize', [])
   onResize(): void {
     this.checkIfMobile();
   }
 
+  /**
+   * Função privada que atualiza a variável `isMobilePage`
+   * com base na largura atual da janela.
+   */
   private checkIfMobile(): void {
+    // Define que é mobile se a largura da janela for menor que 999px
     this.isMobilePage = window.innerWidth < 999;
   }
-
-  
 }

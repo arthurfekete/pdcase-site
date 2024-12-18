@@ -19,7 +19,7 @@
 </app-other-header>
 
 <!-- Exemplo de componente de cabeçalho ou menu específico para dispositivos móveis -->
-<app-mobile-header *ngIf="isMobilePage"></app-mobile-header>
+<app-mobile-header *ngIf="isMobilePage" [isMainPage]="isMainPage"></app-mobile-header>
 
 <!-- Área principal do conteúdo -->
 <router-outlet></router-outlet>

@@ -1,14 +1,19 @@
 <header id="header">
-  <nav id="mobile-nav" class="mobile-nav">
+  <nav id="mobile-nav">
     <a href="/" class="brand">
       <img src="/logo-deitada.svg" alt="Logo Mobile" />
     </a>
-    <button class="menu-toggle" (click)="toggleMenu()">☰</button>
-    <ul *ngIf="menuOpen" class="menu">
-      <li><a href="/about">Sobre</a></li>
-      <li><a href="/services">Serviços</a></li>
-      <li><a href="/carreiras">Carreiras</a></li>
-      <li><a href="/contact">Contato</a></li>
-    </ul>
+    <div class="nav">
+      <!-- Ícone do menu hambúrguer -->
+      <a href="#" class="icone-menu" title="Menu"></a>
+      
+      <!-- Links do menu lateral -->
+      <div class="menu-links">
+        <a href="/about" id="menuSobre">Sobre</a>
+        <a href="/services" id="menuServiços">Serviços</a>
+        <a href="/carreiras" id="menuCarreiras">Carreiras</a>
+        <a href="/contact" id="menuContato">Contato</a>
+      </div>
+    </div>
   </nav>
 </header>
