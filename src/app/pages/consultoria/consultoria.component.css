@@ -71,6 +71,85 @@ p {
 
 @media screen and (max-width: 999px) {
 
+    * {
+        margin: 0;
+    }
+   
+   
+    /* Class */
+   
+    .class {
+      height: 136px;
+    }
+   
+    /* Container */
+   
+    .container {
+        padding-bottom: 20px;
+      }
+   
+    /* Títulos */
+   
+    h1 {
+      font-size: 2em;
+      margin: 0 20px;
+      margin-top: 80px;
+      padding: 0;
+    }
+   
+    h3 {
+      font-size: 20px;
+      line-height: 33px;
+      letter-spacing: -0.5px;
+      padding-top: 12px;
+    }
+   
+    .h33 {
+      padding-top: 20px;
+      font-size: 20px;
+    }
+   
+    /* Column Text */
+   
+    .column-text {
+      padding: 16px;
+      margin-top: -40px;
+      padding-bottom: -110px;
+      width: 100%;
+    }
+   
+    .titulo-column-text {
+      font-size: 21px;
+      line-height: 33px;
+      letter-spacing: -0.7px;
+      padding-top: 60px;
+      padding-bottom: 15px;
+    }
+   
+    /* Coluna Texto e Linha */
+   
+    .coluna-texto {
+      padding: 16px;
+      margin-top: -45px;
+      padding-bottom: 20px;
+      text-align: left;
+      height: 100%;
+      max-width: 1000px;
+    }
+   
+    .linha {
+      flex-direction: column;
+      gap: 0px;
+      width: 100%;
+    }
+ 
+    p {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+      }
+  
+
     /* Formatação do grid e dos blocos*/
 
     .grid {
@@ -78,36 +157,16 @@ p {
         gap: 10px;
     }
 
-    .amarelo {
+    .amarelo{
         width: 93vw;
         height: auto;
         padding: var(--margem);
     }
 
-    .verde {
+    .verde{
         width: 93vw;
         height: 56px;
         padding: 18px 0px 0px 20px;
     }
 
-    /* Formatação das fontes */
-
-    .coluna-texto {
-        max-width: 92%;
-        text-align: left;
-    }
-
-    h3 {
-        font: 22px / 1.2 "Raleway", sans-serif;
-        color: #FFFFFFD9;
-        text-align: left;
-        font-weight: 600;
-        filter: contrast(12.83);
-        letter-spacing: -0.4px;
-        padding-top: 10px;
-    }
-
-    h1 {
-        padding: 55px 0px 0px 5vw;
-    }
 }

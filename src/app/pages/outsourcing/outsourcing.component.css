@@ -42,13 +42,37 @@ h3{
     padding-top: 20px;
 }
 
-@media screen and (max-width: 999px) {
-    .coluna-texto {
-        max-width: 92%;
-        text-align: left;
-    }
 
-    h3 {
+
+@media screen and (max-width: 999px) {
+    * {
+        margin: 0;
+    }
+   
+   
+    /* Class */
+   
+    .class {
+      height: 136px;
+    }
+    
+    /* Container */
+   
+    .container {
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+   
+    /* Títulos */
+   
+    h1 {
+      font-size: 2em;
+      margin: 0 20px;
+      margin-top: 80px;
+      padding: 0;
+    }
+   
+      h3 {
         font: 22px / 0.7 "Raleway", sans-serif;
         color: #FFFFFFD9;
         text-align: left;
@@ -57,4 +81,45 @@ h3{
         letter-spacing: -0.4px;
         padding-top: 10px;
     }
-}
+   
+    .h33 {
+      padding-top: 20px;
+      font-size: 20px;
+    }
+   
+    /* Column Text */
+   
+    .column-text {
+      padding: 16px;
+      margin-top: -40px;
+      padding-bottom: -110px;
+      width: 100%;
+    }
+   
+    .titulo-column-text {
+      font-size: 21px;
+      line-height: 33px;
+      letter-spacing: -0.7px;
+      padding-top: 60px;
+      padding-bottom: 15px;
+    }
+   
+    /* Coluna Texto e Linha */
+   
+    .coluna-texto {
+        max-width: 92%;
+        text-align: left;
+    }
+   
+    .linha {
+      flex-direction: column;
+      gap: 0px;
+      width: 100%;
+    }
+ 
+    p {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+      }
+  }

@@ -64,40 +64,81 @@ p {
 }
 
 @media screen and (max-width: 999px) {
-
-    /* Formatação dos grid e class */
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    * {
+        margin: 0;
     }
-
+   
+   
+    /* Class */
+   
     .class {
-        height: 20.5vh;
-    }
-
-    /* Formatação das fontes */
+       height: 20vh;
+      }
+   
+    /* Container */
+   
+    .container {
+        padding-bottom: 20px;
+      }
+   
+    /* Títulos */
+   
     h1 {
+        margin: 48px -14px -30px;
         font-size: 32px;
-        margin: 70px 0px 0px;
-        filter: contrast(12.83);
-    }
-
+      }
+   
     h3 {
-        font: 20px / 4 "Raleway", sans-serif;
-        color: white;
-        text-align: left;
-        font-weight: 600;
-        filter: contrast(3);
+      font-size: 20px;
+      line-height: 33px;
+      letter-spacing: -0.5px;
+      padding-top: 48px;
     }
-
-    /* Formatação do texto */
-
+   
+    .h33 {
+      padding-top: 20px;
+      font-size: 20px;
+    }
+   
+    /* Column Text */
+   
     .column-text {
-        padding: 16px;
-        margin-top: -45px;
-        line-height: 10px;
-        width: 95vw;
+      padding: 16px;
+      margin-top: -40px;
+      padding-bottom: -110px;
+      width: 100%;
     }
+   
+    .titulo-column-text {
+      font-size: 21px;
+      line-height: 33px;
+      letter-spacing: -0.7px;
+      padding-top: 60px;
+      padding-bottom: 15px;
+    }
+   
+    /* Coluna Texto e Linha */
+   
+    .coluna-texto {
+      padding: 16px;
+      margin-top: -45px;
+      padding-bottom: 20px;
+      text-align: left;
+      height: 100%;
+      max-width: 1000px;
+    }
+   
+    .linha {
+      flex-direction: column;
+      gap: 0px;
+      width: 100%;
+    }
+ 
+    p {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+      }
 
     /* Formatação dos blocos */
 
@@ -106,6 +147,13 @@ p {
         height: 58px;
         padding: 16px;
         line-height: 27px;
+    }
+
+    /* Formatação dos grid */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0px;
     }
     
 }
