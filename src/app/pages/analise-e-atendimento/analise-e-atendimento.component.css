@@ -73,8 +73,8 @@ a:hover {
     /* Class */
    
     .class {
-       height: 20vh;
-      }
+      height: 136px;
+    }
    
     /* Container */
    
@@ -85,9 +85,11 @@ a:hover {
     /* Títulos */
    
     h1 {
-        margin: 48px -14px -30px;
-        font-size: 32px;
-      }
+      font-size: 2em;
+      margin: 0 20px;
+      margin-top: 80px;
+      padding: 0;
+    }
    
     h3 {
       font-size: 20px;
