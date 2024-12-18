@@ -63,16 +63,17 @@ p {
 @media screen and (max-width: 999px) {
 
     .class {
-        height: 20vh;
+        height: 136px;
     }
 
     /* Formatação do texto */
 
     h1 {
-        font-size: 32px;
-        padding: 10px 0px -10px 10px;
-        margin: 70px 0px 0px;
-        filter: contrast(12.83);
+        font-size: 2em;
+        margin: 0 16px;
+        margin-top: 80px;
+        padding: 0;
+        line-height: 40px;
     }
 
     h3 {
@@ -106,12 +107,12 @@ p {
     }
 
     .coluna-texto {
-        max-width: 92vw;
+        max-width: 96vw;
         text-align: left;
     }
 
     .column-text {
-        max-width: 92vw;
+        max-width: 96vw;
         text-align: left;
     }
 }
