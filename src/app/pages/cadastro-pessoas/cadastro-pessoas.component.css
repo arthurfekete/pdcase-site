@@ -80,36 +80,86 @@ p {
 }
 
 @media screen and (max-width: 999px) {
-
+    * {
+        margin: 0;
+    }
+   
+   
+    /* Class */
+   
     .class {
-        height: 20vh;
-    }
-
-    /* Formatação do texto */
-
+       height: 20vh;
+      }
+   
+    /* Container */
+   
+    .container {
+        padding-bottom: 20px;
+      }
+   
+    /* Títulos */
+   
     h1 {
+        margin: 48px -14px -30px;
         font-size: 32px;
-        padding: 10px 0px -10px 20px;
-        margin: 70px 0px 0px;
-        filter: contrast(12.83);
-    }
-
+      }
+   
     h3 {
-        font: 20px / 1 "Raleway", sans-serif;
-        color: #FFFFFFD9;
-        text-align: left;
-        font-weight: 600;
-        filter: contrast(12.83);
-        letter-spacing: -0.4px;
-        margin-top: 0px;
+      font-size: 20px;
+      line-height: 33px;
+      letter-spacing: -0.5px;
+      padding-top: 48px;
+    }
+   
+    .h33 {
+      padding-top: 20px;
+      font-size: 20px;
     }
 
-    p {
-        font: 16px / 1.625 "Raleway", sans-serif;
-        color: white;
-        line-height: 26px;
-        filter: contrast(12.83);
+    .h3b {
+        padding: 0px;
     }
+   
+    /* Column Text */
+   
+    .column-text {
+      padding: 16px;
+      margin-top: -40px;
+      padding-bottom: -110px;
+      width: 100%;
+    }
+   
+    .titulo-column-text {
+      font-size: 21px;
+      line-height: 33px;
+      letter-spacing: -0.7px;
+      padding-top: 60px;
+      padding-bottom: 15px;
+    }
+   
+    /* Coluna Texto e Linha */
+   
+    .coluna-texto {
+      padding: 16px;
+      margin-top: -45px;
+      padding-bottom: 20px;
+      text-align: left;
+      height: 100%;
+      max-width: 1000px;
+    }
+   
+    .linha {
+      flex-direction: column;
+      gap: 0px;
+      width: 100%;
+    }
+ 
+    p {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+      }
+
 
     /* Formatação dos grid e class */
 
@@ -130,16 +180,4 @@ p {
         padding: 16px 0px 0px 20px;
     }
 
-    /* Formatação do container */
-
-    .container {
-        padding-top: 0px;
-    }
-
-    /* Formatação do corpo */
-
-    .coluna-texto {
-        max-width: 95%;
-        text-align: left;
-    }
 }

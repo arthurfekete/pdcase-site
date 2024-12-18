@@ -74,18 +74,18 @@ a:hover .blocos{
 
 @media screen and (max-width: 999px) {
 
-    .class{
-        height: 20vh;
-    }
+    .class {
+        height: 136px;
+      }
 
     /* Formatação do texto */
 
     h1 {
-        font-size: 32px;
-        padding: 10px 0px -10px 20px;
-        margin: 70px 0px 0px;
-        filter: contrast(12.83);
-    }
+        font-size: 2em;
+        margin: 0 20px;
+        margin-top: 80px;
+        padding: 0;
+      }
 
     h3 {
         font: 20px / 1.5 "Raleway", sans-serif;
@@ -94,7 +94,7 @@ a:hover .blocos{
         font-weight: 600;
         filter: contrast(12.83);
         letter-spacing: -0.4px;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     p {

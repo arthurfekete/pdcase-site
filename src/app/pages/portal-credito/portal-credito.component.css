@@ -83,36 +83,84 @@ a:hover .blocos {
 /* Formatação do Mobile */
 
 @media screen and (max-width: 999px) {
-
-    .class{
-        height: 20vh;
+    * {
+        margin: 0;
     }
-
-    /* Formatação do texto */
-
+   
+   
+    /* Class */
+   
+    .class {
+      height: 136px;
+    }
+   
+    /* Container */
+   
+    .container {
+        padding-bottom: 20px;
+      }
+   
+    /* Títulos */
+   
     h1 {
-        font-size: 32px;
-        padding: 10px 0px -10px 20px;
-        margin: 70px 0px 0px;
-        filter: contrast(12.83);
+      font-size: 2em;
+      margin: 0 20px;
+      margin-top: 80px;
+      padding: 0;
     }
-
+   
     h3 {
-        font: 20px / 1.5 "Raleway", sans-serif;
-        color: #FFFFFFD9;
-        text-align: left;
-        font-weight: 600;
-        filter: contrast(12.83);
-        letter-spacing: -0.4px;
-        margin-top: 40px;
+      font-size: 20px;
+      line-height: 33px;
+      letter-spacing: -0.5px;
+      padding-top: 24px;
     }
-
+   
+    .h33 {
+      padding-top: 20px;
+      font-size: 20px;
+    }
+   
+    /* Column Text */
+   
+    .column-text {
+      padding: 16px;
+      margin-top: -40px;
+      padding-bottom: -110px;
+      width: 100%;
+    }
+   
+    .titulo-column-text {
+      font-size: 21px;
+      line-height: 33px;
+      letter-spacing: -0.7px;
+      padding-top: 60px;
+      padding-bottom: 15px;
+    }
+   
+    /* Coluna Texto e Linha */
+   
+    .coluna-texto {
+      padding: 16px;
+      margin-top: -45px;
+      padding-bottom: 20px;
+      text-align: left;
+      height: 100%;
+      max-width: 1000px;
+    }
+   
+    .linha {
+      flex-direction: column;
+      gap: 0px;
+      width: 100%;
+    }
+ 
     p {
-        font: 16px / 1.625 "Raleway", sans-serif;
-        color: white;
-        line-height: 26px;
-        filter: contrast(12.83);
-    }
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+      }
+  
 
     /* Formatação dos grid e class */
     .grid {
@@ -128,10 +176,4 @@ a:hover .blocos {
         height: 58px;
         padding: 20px 0px 0px 17px;
     }
-
-    /* Formatação do container */
-    .container {
-        padding-top: 0px;
-    }
-
 }
