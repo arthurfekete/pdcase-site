@@ -3,22 +3,23 @@
     <a href="/" class="brand">
       <img src="/logo-deitada.svg" alt="Logo Mobile" />
     </a>
-    <div class="nav-mob">
-      <!-- Ícone do menu hambúrguer -->
-      <a href="#" class="icone-menu" title="Menu" id="menu-toggle"></a>
-    </div>
+    <button (click)="animar()" [class.ativar]="ativado" id="btn-menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
   </div>
+  <aside class="sidebar" (click)="animar()" [class.ativar]="ativado">
+    <nav>
+      <div><a href="/about" id="sobre">Sobre</a></div>
+      <div><a href="/services">Serviços</a></div>
+      <div><a href="/carreiras">Carreiras</a></div>
+      <div><a href="/contact">Contato</a></div>
+    </nav>
+  </aside>
 </header>
 
-<!-- Links do menu lateral -->
-<div class="menu-links">
-  <div>
-    <a href="/about" id="menuSobre">Sobre</a>
-    <a href="/services" id="menuServiços">Serviços</a>
-    <a href="/carreiras" id="menuCarreiras">Carreiras</a>
-    <a href="/contact" id="menuContato">Contato</a>
-  </div>
-</div>
+
 
 
 

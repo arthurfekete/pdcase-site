@@ -11,6 +11,13 @@ import {AppComponent} from '../../app.component';
   styleUrl: './mobile-header.component.css'
 })
 export class MobileHeaderComponent {
+
+  ativado: boolean = false;
+
+  animar(): void {
+    this.ativado = !this.ativado; // para abrir e fechar o menu hamburguer
+  }
+
   @Input()
   isMainPage: boolean =
       false;  // Recebe a variável isMainPage do componente pai
