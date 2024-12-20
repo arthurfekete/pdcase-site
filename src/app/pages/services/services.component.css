@@ -126,7 +126,7 @@ h2 {
     height: 136px;
   }
 
-h1 {
+  h1 {
     font-size: 2em;
     margin: 0 20px;
     margin-top: 80px;
@@ -136,12 +136,14 @@ h1 {
   /* Formatação dos selos e texto */
 
   .linha {
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    gap: 20px; /* Espaço entre texto e selos */
+    flex-direction: column;
+    /* Empilha os elementos verticalmente */
+    gap: 20px;
+    /* Espaço entre texto e selos */
   }
 
   .coluna-texto {
-    width: 100%; 
+    width: 100%;
     padding: 0px 16px;
   }
 
@@ -150,17 +152,17 @@ h1 {
   }
 
   .coluna-selos {
-    width: 95%; 
+    width: 95%;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
   }
 
   .selos {
-    justify-content: flex-end; 
-    gap: 10px; 
+    justify-content: flex-end;
+    gap: 10px;
   }
-  
-  .selos img{
+
+  .selos img {
     width: 48px;
     height: 48px;
   }
@@ -173,21 +175,21 @@ h1 {
     gap: calc(var(--margem)* 2);
   }
 
-  .amarelo, 
+  .amarelo,
   .verde {
     width: 95vw;
     height: 56px;
   }
 
-  .amarelo{
+  .amarelo {
     padding: 20px;
   }
 
-  .verde{
+  .verde {
     padding: 15px 0px 0px 20px;
   }
 
-  .amarelo h4{
+  .amarelo h4 {
     font-weight: 500;
   }
 
@@ -204,5 +206,5 @@ h1 {
   }
 
 
-  
+
 }
