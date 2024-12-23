@@ -9,6 +9,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { OtherHeaderComponent } from './components/other-header/other-header.component';
 import { MobileHeaderComponent } from './components/mobile-header/mobile-header.component';
+import { MobileAboutHeaderComponent } from './components/mobile-about-header/mobile-about-header.component';
+import { MobileServicesHeaderComponent } from './components/mobile-services-header/mobile-services-header.component';
+import { MobileCarreirasHeaderComponent } from './components/mobile-carreiras-header/mobile-carreiras-header.component';
+import { MobileContactHeaderComponent } from './components/mobile-contact-header/mobile-contact-header.component';
 import { AboutHeaderComponent } from './components/about-header/about-header.component';
 import { ServicesHeaderComponent } from './components/services-header/services-header.component';
 import { CarreirasHeaderComponent } from './components/carreiras-header/carreiras-header.component';
@@ -38,6 +42,10 @@ import { AboutComponent } from './pages/about/about.component';
     CarreirasHeaderComponent,
     ContactHeaderComponent,
     MobileHeaderComponent,
+    MobileAboutHeaderComponent,
+    MobileServicesHeaderComponent,
+    MobileCarreirasHeaderComponent,
+    MobileContactHeaderComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
