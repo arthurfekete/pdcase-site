@@ -81,17 +81,18 @@ a {
 @media screen and (max-width: 999px) {
 
   .class {
-    height: 27vh;
-  }
+    height: 136px;
+}
 
   /* Formatação do texto */
 
   h1 {
-    font-size: 32px;
-    padding: 10px 0px -10px 20px;
-    margin: 70px 0px 0px;
-    filter: contrast(12.83);
-  }
+    font-size: 2em;
+    margin: 0 16px;
+    margin-top: 80px;
+    padding: 0;
+    line-height: 40px;
+}
 
   h3 {
     font: 20px / 1.5 "Raleway", sans-serif;

@@ -61,16 +61,16 @@ a:hover {
   }
 
   .class {
-    height: 176px;
-  }
+    height: 136px;
+}
 
-  h1 {
-    font-size: 2em;
-    margin: 0 20px;
-    margin-top: 80px;
-    padding: 0;
-    line-height: 40px;
-  }
+h1 {
+  font-size: 2em;
+  margin: 0 16px;
+  margin-top: 80px;
+  padding: 0;
+  line-height: 40px;
+}
 
   p {
     padding: 0;
