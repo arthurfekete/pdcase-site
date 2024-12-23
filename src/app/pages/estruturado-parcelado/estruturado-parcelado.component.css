@@ -22,6 +22,15 @@ h3 {
   line-height: 40px;
 }
 
+h2 {
+  font-size: calc(var(--margem) + 6px);
+  line-height: 1.25;
+  text-align: left;
+}
+
+
+
+
 p {
   font: 16px / 1.625 "Raleway", sans-serif;
   color: white;
@@ -60,7 +69,6 @@ p {
 }
 
 
-
   @media screen and (max-width: 999px) {
     * {
         margin: 0;
@@ -70,8 +78,8 @@ p {
     /* Class */
    
     .class {
-       height: 20vh;
-      }
+      height: 136px;
+  }
    
     /* Container */
    
@@ -83,9 +91,12 @@ p {
     /* Títulos */
    
     h1 {
-        margin: 48px -14px -30px;
-        font-size: 32px;
-      }
+      font-size: 2em;
+      margin: 0 16px;
+      margin-top: 80px;
+      padding: 0;
+      line-height: 40px;
+  }
    
     h3 {
       font-size: 20px;
