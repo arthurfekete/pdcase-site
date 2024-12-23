@@ -69,24 +69,27 @@ p {
   /* Class */
  
   .class {
-     height: 27vh;
-    }
+    height: 136px;
+}
  
   /* Container */
  
   .container {
     padding-bottom: 20px;
     margin-top: -45px;
-    padding-top: 69.5px;
+    padding-top: 50px;
    
   }
  
   /* Títulos */
  
   h1 {
-      margin: 48px -14px -30px;
-      font-size: 33px;
-    }
+    font-size: 2em;
+    margin: 0 16px;
+    margin-top: 80px;
+    padding: 0;
+    line-height: 40px;
+}
  
   h3 {
     font-size: 21px;

@@ -66,7 +66,7 @@ button.ativar .linha:nth-child(1) {
 }
 
 button.ativar .linha:nth-child(3) {
-  transform: translateY(-5px) rotate(45deg);
+  transform: translateY(-6px) rotate(45deg);
 }
 
 button.ativar .linha:nth-child(2) {
@@ -115,7 +115,7 @@ a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: -9px;
   width: 0;
   height: 2px;
   background-color: #abafb4;
@@ -126,6 +126,10 @@ a::after {
 a:hover::after {
   width: 100%;
   left: 0;
+}
+
+.brand:hover::after {
+  width: 0;
 }
 
 #sobre {
