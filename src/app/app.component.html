@@ -21,6 +21,12 @@
 <!-- Exemplo de componente de cabeçalho ou menu específico para dispositivos móveis -->
 <app-mobile-header *ngIf="isMobilePage" [isMainPage]="isMainPage"></app-mobile-header>
 
+<!-- Exibe o cabeçalho para dispositivos móveis -->
+<app-mobile-about-header *ngIf="isAboutPage && isMobilePage"></app-mobile-about-header>
+<app-mobile-services-header *ngIf="isServicesPage && isMobilePage"></app-mobile-services-header>
+<app-mobile-carreiras-header *ngIf="isCarreirasPage && isMobilePage"></app-mobile-carreiras-header>
+<app-mobile-contact-header *ngIf="isContactPage && isMobilePage"></app-mobile-contact-header>
+
 <!-- Área principal do conteúdo -->
 <router-outlet></router-outlet>
 

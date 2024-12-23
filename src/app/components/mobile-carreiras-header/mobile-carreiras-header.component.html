@@ -1,0 +1,27 @@
+<header id="header">
+    <div id="container">
+      <a href="/" class="brand">
+        <img src="/logo-deitada.svg" alt="Logo Mobile" />
+      </a>
+      <button (click)="animar()" [class.ativar]="ativado" id="btn-menu">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+      </button>
+    </div>
+    <aside class="sidebar" (click)="animar()" [class.ativar]="ativado">
+      <nav>
+        <div><a href="/about" id="sobre">Sobre</a></div>
+        <div><a href="/services">Serviços</a></div>
+        <div><a href="/carreiras" class="sobre-link">Carreiras</a></div>
+        <div><a href="/contact">Contato</a></div>
+      </nav>
+    </aside>
+  </header>
+  
+  
+  
+  
+  
+  
+  
