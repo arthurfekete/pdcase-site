@@ -69,7 +69,6 @@ import { LavagemDeDinheiroComponent } from './pages/lavagem-de-dinheiro/lavagem-
 import { CtaComponent } from './pages/cta/cta.component';
 import { OutraPortalCreditoComponent } from './pages/outra-portal-credito/outra-portal-credito.component';
 import { AutorizacaoDeInformacoesComponent } from './pages/autorizacao-de-informacoes/autorizacao-de-informacoes.component';
-import { ParceladoComponent } from './pages/parcelado/parcelado.component';
 import { SimulacaoDeCreditoComponent } from './pages/simulacao-de-credito/simulacao-de-credito.component';
 import { LiberacaoDeCreditoComponent } from './pages/liberacao-de-credito/liberacao-de-credito.component';
 import { NucleoGerenciadorComponent } from './pages/nucleo-gerenciador/nucleo-gerenciador.component';
@@ -185,7 +184,6 @@ export const routes: Routes = [
     { path: 'cta', component: CtaComponent, },
     { path: 'outra-portal-credito', component: OutraPortalCreditoComponent},
     { path: 'autorizacao-de-informacoes', component: AutorizacaoDeInformacoesComponent},
-    { path: 'parcelado', component: ParceladoComponent},
     { path: 'simulacao-de-credito', component: SimulacaoDeCreditoComponent},
     { path: 'liberacao-de-credito', component: LiberacaoDeCreditoComponent},
     { path: 'nucleo-gerenciador', component: NucleoGerenciadorComponent},
