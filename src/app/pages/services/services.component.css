@@ -187,7 +187,7 @@ h2 {
   .container-blocos {
     display: grid;
     grid-template-columns: 1fr;
-    gap: calc(var(--margem)* 2);
+    gap: 20px;
   }
 
   .amarelo,
