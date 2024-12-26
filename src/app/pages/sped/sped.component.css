@@ -4,10 +4,24 @@
   color: white;
 }
 
+.class {
+  display: flex;
+  justify-content: center;
+  padding: 60px 24px;
+  margin: auto;
+  max-width: 100vw;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+}
+
 h1 {
+  width: 960px;
+  height: 60px;
   font-size: 48px;
-  padding: 30px;
   margin: 120px 0px 0px;
+  filter: contrast(12.83);
+  display: block;
 }
 
 h3 {
@@ -121,6 +135,7 @@ span {
   
     .class {
       height: 27vh;
+      padding: 60px 18px;
     }
   
     /* Container */
@@ -133,8 +148,9 @@ span {
     /* Títulos */
   
     h1 {
-      margin: 48px -14px -30px;
-      font-size: 33px;
+      margin: 0;
+      font-size: 32px;
+      margin-top: 30px;
     }
   
     h3 {

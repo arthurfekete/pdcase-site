@@ -3,11 +3,24 @@
 }
 
 /* Formatação das fontes */
+.class {
+  display: flex;
+  justify-content: center;
+  padding: 60px 24px;
+  margin: auto;
+  max-width: 100vw;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+}
+
 h1 {
-    font-size: 48px;
-    padding: 30px;
-    margin: 120px 0px 0px;
-    font-weight: 400;
+  width: 960px;
+  height: 60px;
+  font-size: 48px;
+  margin: 120px 0px 0px;
+  filter: contrast(12.83);
+  display: block;
 }
 
 h3 {
@@ -58,6 +71,17 @@ p {
     gap: 50px;
 }
 
+.class {
+  display: flex;
+  justify-content: center;
+  padding: 60px 24px;
+  margin: auto;
+  max-width: 100vw;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+}
+
 
 
 @media screen and (max-width: 999px) {
@@ -65,12 +89,17 @@ p {
       margin: 0;
   }
   
+
+  .column-text p {
+    padding-top: 40px;
+  }
   
   /* Class */
  
   .class {
     height: 136px;
-}
+    padding: 60px 18px;
+  }
  
   /* Container */
  
@@ -85,8 +114,8 @@ p {
  
   h1 {
     font-size: 2em;
-    margin: 0 16px;
-    margin-top: 80px;
+    margin: 0;
+    margin-top: 50px;
     padding: 0;
     line-height: 40px;
 }
