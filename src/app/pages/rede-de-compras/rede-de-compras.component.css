@@ -4,10 +4,24 @@
 
 /* Formatação das fontes */
 
+.class {
+  display: flex;
+  justify-content: center;
+  padding: 60px 24px;
+  margin: auto;
+  max-width: 100vw;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+}
+
 h1 {
+  width: 960px;
+  height: 60px;
   font-size: 48px;
-  padding: 30px;
   margin: 120px 0px 0px;
+  filter: contrast(12.83);
+  display: block;
 }
 
 h3 {
@@ -44,7 +58,7 @@ p {
 }
 
 .coluna-texto {
-  max-width: 980px;
+  max-width: 960px;
   text-align: left;
 }
 
@@ -60,53 +74,53 @@ ul {
 
 @media screen and (max-width: 999px) {
   * {
-      margin: 0;
+    margin: 0;
   }
-  
-  
+
+
   /* Class */
- 
+
   .class {
     height: 136px;
-}
- 
+  }
+
   /* Container */
- 
+
   .container {
-      padding-bottom: 20px;
-    }
- 
+    padding-bottom: 20px;
+  }
+
   /* Títulos */
- 
+
   h1 {
     font-size: 2em;
-    margin: 0 16px;
+    margin: 0px;
     margin-top: 80px;
     padding: 0;
     line-height: 40px;
-}
- 
+  }
+
   h3 {
     font-size: 20px;
     line-height: 33px;
     letter-spacing: -0.5px;
     padding-top: 12px;
   }
- 
+
   .h33 {
     padding-top: 20px;
     font-size: 20px;
   }
- 
+
   /* Column Text */
- 
+
   .column-text {
     padding: 16px;
     margin-top: -40px;
     padding-bottom: -110px;
     width: 100%;
   }
- 
+
   .titulo-column-text {
     font-size: 21px;
     line-height: 33px;
@@ -114,9 +128,9 @@ ul {
     padding-top: 60px;
     padding-bottom: 15px;
   }
- 
+
   /* Coluna Texto e Linha */
- 
+
   .coluna-texto {
     padding: 16px;
     margin-top: -45px;
@@ -125,7 +139,7 @@ ul {
     height: 100%;
     max-width: 1000px;
   }
- 
+
   .linha {
     flex-direction: column;
     gap: 0px;
@@ -133,8 +147,8 @@ ul {
   }
 
   p {
-      margin-left: 0;
-      padding-left: 0;
-      text-align: left;
-    }
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+  }
 }

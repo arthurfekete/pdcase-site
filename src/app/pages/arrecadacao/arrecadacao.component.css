@@ -76,6 +76,7 @@ p {
   .class {
     height: 136px;
     padding: 60px 18px;
+    height: auto;
   }
 
   /* Container */
@@ -84,13 +85,13 @@ p {
     padding-bottom: 20px;
     margin-top: -45px;
     padding-top: 25px;
-
   }
 
   /* Títulos */
 
   h1 {
-    margin: 48px -14px -30px;
+    margin: 0;
+    margin-top: 30px;
     font-size: 33px;
   }
 
