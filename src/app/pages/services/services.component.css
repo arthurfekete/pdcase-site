@@ -182,6 +182,10 @@ h2 {
     height: 48px;
   }
 
+  .coluna-bloco {
+    gap: 20px;
+  }
+  
   /* Formatação do grid */
 
   .container-blocos {
