@@ -3,9 +3,23 @@
 }
 
 h1 {
+  width: 960px;
+  height: 60px;
   font-size: 48px;
-  padding: 30px;
   margin: 120px 0px 0px;
+  filter: contrast(12.83);
+  display: block;
+}
+
+.class {
+  display: flex;
+  justify-content: center;
+  padding: 60px 24px;
+  margin: auto;
+  max-width: 100vw;
+  width: 100%;
+  height: 300px;
+  align-items: center;
 }
 
 section {
@@ -124,11 +138,12 @@ h2 {
 
   .class {
     height: 136px;
+    padding: 60px 18px;
   }
 
   h1 {
     font-size: 2em;
-    margin: 0 20px;
+    margin: 0;
     margin-top: 80px;
     padding: 0;
   }

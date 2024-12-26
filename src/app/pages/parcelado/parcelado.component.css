@@ -11,13 +11,11 @@ h1 {
 }
 
 h2 {
-    color: #fff;
-    font-size: 48px;
-    width: 100%;
-    max-width: 720px;
+    font: 24px / 6 "Raleway", sans-serif;
+    color: white;
     text-align: left;
-    height: 60px;
-    
+    font-weight: 600;
+    filter: contrast(12.83);
 }
 
 h3 {
