@@ -24,10 +24,24 @@ section {
   margin-top: 30px;
 }
 
+.class {
+  display: flex;
+  justify-content: center;
+  padding: 60px 24px;
+  margin: auto;
+  max-width: 100vw;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+}
+
 h1 {
+  width: 960px;
+  height: 60px;
   font-size: 48px;
-  padding: 30px;
   margin: 120px 0px 0px;
+  filter: contrast(12.83);
+  display: block;
 }
 
 h3 {
@@ -108,10 +122,11 @@ li {
 
   h1 {
     font-size: 2em;
-    margin: 0 20px;
+    margin: 0px;
     margin-top: 80px;
     padding: 0;
   }
+
   p {
     padding: 0;
     margin-bottom: 16px;

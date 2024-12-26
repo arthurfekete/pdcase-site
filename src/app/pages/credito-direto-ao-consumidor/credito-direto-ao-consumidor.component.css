@@ -15,22 +15,35 @@ section {
 }
 
 .container {
-  max-width: 1008px;
+  max-width: 960px;
   width: 100%;
 }
 
+.class {
+  display: flex;
+  justify-content: center;
+  padding: 60px 24px;
+  margin: auto;
+  max-width: 100vw;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+}
+
 h1 {
+  width: 960px;
+  height: 60px;
   font-size: 48px;
-  padding: 30px;
   margin: 120px 0px 0px;
   filter: contrast(12.83);
+  display: block;
 }
 
 h3 {
   font: 24.5px / 3.3 "Raleway", sans-serif;
-  color: #ffffffd9;
+  color: #FFFFFFD9;
   text-align: left;
-  font-weight: 400;
+  font-weight: 600;
   filter: contrast(12);
   letter-spacing: -0.4px;
 }
@@ -47,7 +60,7 @@ p {
 }
 
 a:hover {
-    color: #aa8520;
+  color: #aa8520;
 }
 
 @media screen and (max-width: 999px) {
@@ -62,15 +75,16 @@ a:hover {
 
   .class {
     height: 136px;
-}
+    padding: 60px 18px;
+  }
 
-h1 {
-  font-size: 2em;
-  margin: 0 16px;
-  margin-top: 80px;
-  padding: 0;
-  line-height: 40px;
-}
+  h1 {
+    font-size: 2em;
+    margin: 0px;
+    margin-top: 80px;
+    padding: 0;
+    line-height: 40px;
+  }
 
   p {
     padding: 0;
