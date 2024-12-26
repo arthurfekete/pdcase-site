@@ -153,7 +153,7 @@ h2 {
   .linha {
     flex-direction: column;
     /* Empilha os elementos verticalmente */
-    gap: 20px;
+    gap: 10px;
     /* Espaço entre texto e selos */
   }
 
@@ -187,7 +187,11 @@ h2 {
   .container-blocos {
     display: grid;
     grid-template-columns: 1fr;
-    gap: calc(var(--margem)* 2);
+    gap: 20px;
+  }
+
+  .coluna-bloco {
+    gap: 20px;
   }
 
   .amarelo,
