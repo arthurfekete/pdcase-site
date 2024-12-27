@@ -121,16 +121,9 @@ h4 {
   margin: 0;
 }
 
-.produtos-financeiros {
-  text-align: left;
-  width: 65%;
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
-
 h2 {
   font-size: 30px;
-  margin-left: 4.3em;
+  margin: 45px 0;
 }
 
 @media screen and (max-width: 999px) {
@@ -214,16 +207,6 @@ h2 {
 
   h2 {
     font-size: 22px;
-    margin-left: 0px;
+    margin: 25px 0;
   }
-
-  .produtos-financeiros {
-    text-align: left;
-    width: 95%;
-    padding-top: 45px;
-    padding-bottom: 45px;
-  }
-
-
-
 }
