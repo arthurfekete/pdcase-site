@@ -42,9 +42,6 @@ h2 {
   text-align: left;
 }
 
-
-
-
 p {
   font: 16px / 1.625 "Raleway", sans-serif;
   color: white;
@@ -94,13 +91,14 @@ p {
 
   .class {
     height: 136px;
+    padding: 60px 16px;
   }
 
   /* Container */
 
   .container {
-    padding-bottom: 20px;
-    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-top: 60px;
   }
 
   /* Títulos */
@@ -111,6 +109,11 @@ p {
     margin-top: 80px;
     padding: 0;
     line-height: 40px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
   }
 
   h3 {
@@ -162,6 +165,7 @@ p {
   p {
     margin-left: 0;
     padding-left: 0;
+    padding-bottom: 15px;
     text-align: left;
   }
 }

@@ -4,22 +4,40 @@
   color: white;
 }
 
+.class {
+  display: flex;
+  justify-content: center;
+  padding: 60px 24px;
+  margin: auto;
+  max-width: 100vw;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+}
+
 h1 {
+  width: 960px;
+  height: 60px;
   font-size: 48px;
-  padding: 30px;
   margin: 120px 0px 0px;
+  filter: contrast(12.83);
+  display: block;
 }
 
 h3 {
   font: 24.5px / 3.3 "Raleway", sans-serif;
-  color: #FFFFFFD9;
+  color: #ffffffd9;
   text-align: left;
   font-weight: 600;
   filter: contrast(12);
   letter-spacing: -0.4px;
-  padding-top: 35px;
+  padding-top: 50px;
   padding-bottom: 20px;
   line-height: 40px;
+}
+
+.first {
+  padding-top: 35px;
 }
 
 p {
@@ -84,9 +102,9 @@ a:hover .blocos {
 }
 
 @media screen and (max-width: 999px) {
-
   .class {
-    height: 20vh;
+    height: 136px;
+    padding: 60px 16px;
   }
 
   /* Formatação do texto */
@@ -94,19 +112,24 @@ a:hover .blocos {
   h1 {
     font-size: 32px;
     padding: 10px 0px -10px 10px;
-    margin: 70px 0px 0px;
+    margin: 0;
+    margin-top: 80px;
     filter: contrast(12.83);
   }
 
   h3 {
     font: 20px / 1.5 "Raleway", sans-serif;
-    color: #FFFFFFD9;
+    color: #ffffffd9;
     text-align: left;
     font-weight: 600;
     filter: contrast(12.83);
     letter-spacing: -0.4px;
     margin-top: 0px;
-    padding-top: 24px;
+    padding-top: 30px;
+  }
+
+  .first {
+    padding-top: 25px;
   }
 
   p {
@@ -119,14 +142,14 @@ a:hover .blocos {
   /* Formatação do container */
 
   .container {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 15px 0px 30px;
   }
 
   /* Formatação do corpo */
 
   .column-text {
-    max-width: 92vw;
+    max-width: 100vw;
+    padding: 0 16px;
     text-align: left;
   }
 
@@ -141,5 +164,11 @@ a:hover .blocos {
     width: 92vw;
     height: 58px;
     padding: 20px 0px 0px 17px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .column-text {
+    padding: 0 25px;
   }
 }

@@ -4,10 +4,24 @@
 
 /* Formatação das fontes */
 
+.class {
+    display: flex;
+    justify-content: center;
+    padding: 60px 24px;
+    margin: auto;
+    max-width: 100vw;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+}
+
 h1 {
+    width: 960px;
+    height: 60px;
     font-size: 48px;
-    padding: 30px;
     margin: 120px 0px 0px;
+    filter: contrast(12.83);
+    display: block;
 }
 
 h3 {
@@ -17,7 +31,7 @@ h3 {
     font-weight: 600;
     filter: contrast(12);
     letter-spacing: -0.4px;
-    padding-top: 55px;
+    padding-top: 36px;
     padding-bottom: 20px;
     line-height: 40px;
 }
@@ -27,7 +41,7 @@ p {
     color: white;
     line-height: 26px;
     opacity: 0.85;
-    padding-bottom: 5px;
+    margin-bottom: 24px;
 }
 
 /* Formatação do corpo */
@@ -112,15 +126,17 @@ a:hover {
 @media screen and (max-width: 999px) {
 
     .class {
-        height: 20vh;
-    }
+        height: 136px;
+        padding: 60px 16px;
+      }
 
     /* Formatação do texto */
 
     h1 {
         font-size: 32px;
         padding: 10px 0px -10px 10px;
-        margin: 70px 0px 0px;
+        margin: 0;
+        margin-top: 80px;
         filter: contrast(12.83);
     }
 
@@ -140,12 +156,14 @@ a:hover {
         color: white;
         line-height: 26px;
         filter: contrast(12.83);
+        margin-bottom: 16px;
     }
 
     /* Formatação do container */
 
     .container {
-        padding-top: 30px;
+        padding: 16px;
+        padding-top: 40px;
     }
 
     /* Formatação do corpo */
@@ -171,11 +189,11 @@ a:hover {
         display: grid;
         margin-top: 0px;
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 30px;
     }
 
     .blocos {
-        width: 96vw;
+        width: 92vw;
         height: 58px;
         padding: 20px 0px 0px 17px;
     }
