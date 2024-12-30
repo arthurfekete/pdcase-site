@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+footer {
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da página */
+    background-color: #0B0E13;
+    color: #FFFFFF;
+}
+
+#footer-contents {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em;
+    max-width: 1200px; /* Limita a largura do conteúdo centralizado */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+#footer-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 90px;
+    padding-left: 100px;
+    padding-right: 30px;
+}
+
+#footer-social-media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#footer-social-media .footer-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+img {
+    width: 72px;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    unicode-bidi: isolate;
+    line-height: 1.5em;
+    row-gap: 15px;
+}
+
+.footer-list:nth-child(2) {
+    margin-right: 6rem; /* Ajuste o valor para o espaço desejado */
+}
+
+.footer-list:nth-child(1) {
+    margin-right: 2rem; /* Ajuste o valor para o espaço desejado */
+}
+
+.footer-list .footer-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-list .footer-link:hover {
+    text-decoration: underline;
+}
+
+footer h3 {
+    margin: 0;
+    padding: 0;
+    opacity: 0.6; /* Torna o título mais sutil */
+    font-size: 1rem; /* Define um tamanho adequado para o título */
+    font-weight: normal; /* Remove o negrito para um estilo mais leve */
+}
+
+
+#copyright {
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 999px) {
+
+    #footer-contents {
+        flex-direction: column; 
+        padding: 1.5em;
+    }
+
+    .footer-list {
+        margin-bottom: 2rem; 
+        margin-right: 0; 
+    }
+
+    #footer-contacts {
+        padding: 2rem 0;
+        align-items: center;
+        padding-left: 0; 
+    }
+
+    #footer-social-media {
+        margin-top: 1rem;
+        justify-content: center;
+        gap: 1.5rem; 
+    }
+
+    img {
+        margin-left: 2.5rem; /* Centraliza a logo */
+        margin-bottom: 0rem; /* Espaçamento com o texto abaixo */
+    }
+
+    footer h3 {
+        text-align: left; 
+    }
+
+    #copyright {
+        margin-bottom: 1em;
+    }
+
+    .footer-link {
+        text-align: center; /* Centraliza os links */
+    }
+}

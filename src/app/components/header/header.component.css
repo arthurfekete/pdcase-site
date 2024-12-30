@@ -1,0 +1,191 @@
+* {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  max-width: 100vw;
+  height: 120px;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  margin: auto;
+  max-width: 1152px;
+  width: 100%;
+  height: 120px;
+}
+
+/* Estilizagem da brand */
+
+.brand,
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.brand img {
+  width: 72px;
+}
+
+/* Estilizagem dos links */
+
+.links {
+  margin-top: -30px;
+}
+
+.links li {
+  margin-right: 0.3em;
+  list-style: none;
+}
+
+.links a {
+  border-radius: 24px;
+  padding: 5px 0px 5px 0px;
+  margin: 0px 22px;
+  color: var(--cor-fonte);
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 1s ease;
+}
+
+/* Estilos para o efeito de sublinhado */
+
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #ABAFB4;
+  transition: width 0.18s ease, left 0.3s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.mobile-menu,
+.mobile-menu-icon {
+  display: none;
+}
+
+#barra {
+  /* Define a posição do elemento como absoluta, permitindo que ele seja posicionado em relação ao seu elemento pai ou ao corpo da página */
+  position: absolute;
+
+  /* Define a margem superior de 5.5em e margens laterais e inferior em 0. Isso posiciona a barra a 5.5em abaixo do topo do seu pai */
+  margin: 6em 0 0 0;
+
+  /* Define a largura da barra como 72px */
+  width: 72px;
+
+  /* Define a altura da barra como 12px */
+  height: 12px;
+
+  /* Usa flexbox para distribuir os itens filhos ao longo da barra, permitindo um layout flexível */
+  display: flex;
+
+  /* Aplica uma sombra interna de 1px ao redor da barra, com uma cor preta em 20% de opacidade. Isso cria um efeito de borda */
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
+
+  /* Define o índice z como -1, o que coloca a barra atrás de outros elementos com um índice z maior */
+  z-index: 1;
+
+  /* Define uma transição suave para todos os estilos, que levará 0,6 segundos e terá um efeito de easing 'ease-in-out' */
+  transition: all 0.6s ease-in-out;
+
+  filter: invert(1);
+}
+
+#barra a {
+  /* Faz com que cada link dentro da barra ocupe uma parte igual da largura total disponível, se espalhando igualmente */
+  flex: 1;
+}
+
+#barra a:hover {
+  transition: all 0.6s ease-in-out;
+  /* Quando o mouse passa sobre o link, a cor de fundo muda para um tom preto transparente com opacidade de 20% */
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#quadrado1 {
+  transition: all 0.6s ease-in-out;
+  box-shadow: 0 0 0 1px #000 inset;
+}
+
+#quadrado2 {
+  transition: all 0.6s ease-in-out;
+  box-shadow: none;
+}
+
+#quadrado3 {
+  transition: all 0.6s ease-in-out;
+  box-shadow: none;
+}
+
+#quadrado4 {
+  transition: all 0.6s ease-in-out;
+  box-shadow: none;
+}
+
+.logo {
+  position: absolute;
+  margin: 0 0 0 10px;
+  width: 72px;
+  opacity: 0;
+  transform: translateY(50px);
+  /* Começa fora da tela */
+  transition: opacity 0s ease, transform 0.2s ease;
+}
+
+.logo.active {
+  opacity: 1;
+  transform: translateY(0);
+  /* Volta para sua posição original */
+}
+
+.logo-exit1 {
+  opacity: 0;
+  transform: translateY(-50px);
+  /* Sai para cima */
+}
+
+.logo-exit2 {
+  opacity: 0;
+  transform: translateY(50px);
+  /* Sai para cima */
+}
+
+@media screen and (max-width: 999px) {
+  a {
+    display: none;
+  }
+
+  .logo {
+    margin: 0px 0px 0px 20px;
+    height: 80px;
+  }
+
+  #barra {
+    display: none;
+  }
+}

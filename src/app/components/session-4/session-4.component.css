@@ -1,0 +1,123 @@
+#clientes {
+  background-color: #141b23;
+}
+
+.container-decor {
+  display: flex;
+  flex-direction: column; /* Alinha os itens em uma coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza texto dentro de cada item */
+  height: 100vh; /* Altura da tela */
+  margin: auto; /* Garante centralização horizontal do container na tela */
+  box-sizing: border-box;
+  max-width: 1008px;
+  position: relative;
+}
+
+span {
+  position: relative;
+  background-color: #243650;
+  padding: 0 7.8px;
+  font-family: "Vollkorn", serif;
+  z-index: 1;
+}
+
+.grid-clientes {
+  display: grid; /* Define o container como um grid, permitindo organizar elementos em linhas e colunas. */
+  grid-template-columns: repeat(
+    6,
+    1fr
+  ); /* Cria 6 colunas de largura igual. Cada coluna ocupa 1 fração (1fr) do espaço disponível. */
+  margin-top: 48px;
+  gap: 0 48px; /*o primeiro define o espaçamento entre as linhas e o segundo entre as colunas */
+  max-width: 720px; /* Limita a largura máxima da grade a 720 pixels, para que não ultrapasse esse valor em telas grandes. */
+}
+
+.grid-clientes img {
+  display: block; /* Define a imagem como um elemento de bloco, removendo qualquer espaço extra abaixo dela. */
+  width: 80px; /* Ajusta a largura da imagem para ocupar 100% da largura da coluna onde está. */
+  height: 80px; /* Mantém a proporção original da imagem ao ajustar a largura, evitando distorções. */
+}
+
+span.txt-destaque::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -13px; /* Ajuste para posicionar o quadrado no lugar desejado */
+  width: 60px; /* Largura do quadrado */
+  height: 60px; /* Altura do quadrado */
+  background-color: #d3a520; /* Cor do quadrado (amarelo) */
+  z-index: -1; /* Coloca o quadrado atrás do texto */
+  transition: transform 0.2s ease-in-out; /* Transição para o quadrado */
+}
+
+h2.maior,
+span {
+  color: #fff;
+  font-size: 48px;
+  width: 100%;
+  max-width: 720px;
+  text-align: left;
+  height: 60px;
+}
+
+
+@media screen and (max-width: 999px) {
+  .container-decor {
+    height: auto; /* Permite que o conteúdo ocupe o espaço necessário */
+    padding: 35px 10px;
+    margin: 0;
+    width: 95vw;
+  }
+
+  .titulo {
+    max-width: 554px;
+    width: 100%; /* Ocupa toda a largura em telas menores */
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  h2.maior {
+    font-size: 27px; /* Reduz o tamanho da fonte */
+    text-align: left;
+    margin: 0px;
+    width: 100%;
+    max-width: 554px;
+    margin-left: 3vw;
+  }
+
+  h2.maior,
+  span {
+    color: #fff;
+  }
+
+  span {
+    font-size: 27px;
+  }
+
+  .grid-clientes {
+    grid-template-columns: repeat(4, 1fr); /* Duas colunas no grid */
+    gap: 2px 30px; /* Diminui o espaçamento entre os elementos */
+    max-width: 100%; /* Remove a largura máxima para ocupar todo o espaço */
+    margin-top: 0px;
+    max-height: 100%;
+  }
+
+  .grid-clientes img {
+    width: 98%;
+    height: auto; /* Reduz o tamanho das imagens */
+    margin: 0 auto; /* Centraliza as imagens */
+  }
+
+  span.txt-destaque {
+    margin-left: 0;
+  }
+
+  span.txt-destaque::before {
+    width: 40px; /* Reduz o tamanho do quadrado amarelo */
+    height: 40px;
+    top: -10px;
+    left: -10px;
+  }
+}

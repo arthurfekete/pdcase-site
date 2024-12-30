@@ -1,0 +1,212 @@
+* {
+  color: white;
+}
+
+h1 {
+  width: 960px;
+  height: 60px;
+  font-size: 48px;
+  margin: 120px 0px 0px;
+  filter: contrast(12.83);
+  display: block;
+}
+
+.class {
+  display: flex;
+  justify-content: center;
+  padding: 60px 24px;
+  margin: auto;
+  max-width: 100vw;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+}
+
+section {
+  background-color: #141b23;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 950px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.linha {
+  display: flex;
+  gap: 30px;
+}
+
+.coluna-texto {
+  flex: 4.5;
+  width: 70%;
+  /* Largura base (fora da media query) */
+}
+
+p {
+  line-height: 28px;
+  opacity: 0.85;
+}
+
+.coluna-selos {
+  flex: 1;
+}
+
+img {
+  flex-direction: column-reverse;
+}
+
+.selos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-blocos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 8px;
+}
+
+.coluna-bloco {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.bloco {
+  padding-bottom: 0px;
+}
+
+a.bloco {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+a.bloco:hover .verde,
+a.bloco:hover .amarelo {
+  background-color: var(--cor-terciaria);
+}
+
+.verde {
+  width: 288px;
+  height: 72px;
+  background-color: var(--cor-terciaria);
+  padding: 25px;
+}
+
+.amarelo {
+  width: 288px;
+  height: 72px;
+  background-color: var(--cor-secundaria);
+  padding: 25px;
+}
+
+.verde,
+.amarelo {
+  transition: background-color 0.3s ease;
+}
+
+h4 {
+  color: black;
+  font-weight: normal;
+  margin: 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 45px 0;
+}
+
+@media screen and (max-width: 999px) {
+
+
+  .class {
+    height: 136px;
+    padding: 60px 18px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0;
+    margin-top: 80px;
+    padding: 0;
+  }
+
+  /* Formatação dos selos e texto */
+
+  .linha {
+    flex-direction: column;
+    /* Empilha os elementos verticalmente */
+    gap: 20px;
+    /* Espaço entre texto e selos */
+  }
+
+  .coluna-texto {
+    width: 100%;
+    padding: 0px 16px;
+  }
+
+  .coluna-texto p {
+    line-height: 25px;
+  }
+
+  .coluna-selos {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .selos {
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .selos img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .coluna-bloco {
+    gap: 20px;
+  }
+  
+  /* Formatação do grid */
+
+  .container-blocos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .amarelo,
+  .verde {
+    width: 95vw;
+    height: 56px;
+  }
+
+  .amarelo {
+    padding: 20px;
+  }
+
+  .verde {
+    padding: 15px 0px 0px 20px;
+  }
+
+  .amarelo h4 {
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin: 25px 0;
+  }
+}

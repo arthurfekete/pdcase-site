@@ -1,0 +1,34 @@
+<!-- Exibe o cabeçalho principal para a página inicial -->
+<app-header *ngIf="isMainPage && !isMobilePage"></app-header>
+
+<!-- Exibe o cabeçalho de "Sobre Nós" -->
+<app-about-header *ngIf="isAboutPage && !isMobilePage"></app-about-header>
+
+<!-- Exibe o cabeçalho de "Serviços" -->
+<app-services-header *ngIf="isServicesPage && !isMobilePage"></app-services-header>
+
+<!-- Exibe o cabeçalho de "Carreiras" -->
+<app-carreiras-header *ngIf="isCarreirasPage && !isMobilePage"></app-carreiras-header>
+
+<!-- Exibe o cabeçalho de "Contato" -->
+<app-contact-header *ngIf="isContactPage && !isMobilePage"></app-contact-header>
+
+<!-- Exibe o cabeçalho alternativo caso não seja nenhuma das páginas específicas -->
+<app-other-header
+  *ngIf="!isMainPage && !isMobilePage && !(isAboutPage || isServicesPage || isCarreirasPage || isContactPage)">
+</app-other-header>
+
+<!-- Exemplo de componente de cabeçalho ou menu específico para dispositivos móveis -->
+<app-mobile-header *ngIf="isMobilePage" [isMainPage]="isMainPage"></app-mobile-header>
+
+<!-- Exibe o cabeçalho para dispositivos móveis -->
+<app-mobile-about-header *ngIf="isAboutPage && isMobilePage"></app-mobile-about-header>
+<app-mobile-services-header *ngIf="isServicesPage && isMobilePage"></app-mobile-services-header>
+<app-mobile-carreiras-header *ngIf="isCarreirasPage && isMobilePage"></app-mobile-carreiras-header>
+<app-mobile-contact-header *ngIf="isContactPage && isMobilePage"></app-mobile-contact-header>
+
+<!-- Área principal do conteúdo -->
+<router-outlet></router-outlet>
+
+<!-- Rodapé -->
+<app-footer></app-footer>

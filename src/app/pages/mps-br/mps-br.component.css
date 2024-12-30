@@ -1,0 +1,129 @@
+* {
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+  padding: 30px;
+  margin: 120px 0px 0px;
+}
+
+section {
+  background-color: #141b23;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.container {
+  max-width: 950px;
+  padding-bottom: 40px;
+  text-align: left;
+}
+
+p {
+  line-height: 1.6em;
+  padding-bottom: 1.5em;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: normal;
+  padding-bottom: 1.3em;
+}
+
+.linha {
+  display: flex;
+  gap: 49px;
+}
+
+.coluna {
+  flex: 1;
+}
+
+.p-coluna {
+  margin-bottom: 0.3em;
+}
+
+ul {
+  padding: 0px 0px 1em 24px;
+}
+
+li {
+  padding-bottom: 10px;
+  line-height: 30px;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: #ebb620;
+}
+
+a::after {
+  content: "";
+  display: inline-block;
+  background-image: url("/seta2.svg");
+  background-size: contain;
+  width: 8px;
+  height: 8px;
+  margin-top: 0.3em;
+  margin-left: 0.8em;
+  vertical-align: text-top;
+}
+
+a:hover::after {
+  background-image: url("/seta2branca.svg");
+}
+
+@media screen and (max-width: 999px) {
+  section {
+    padding: 40px 0;
+  }
+
+  .container {
+    max-width: 94.8%;
+    padding-bottom: 40px;
+  }
+
+  .container:last-child {
+    padding-bottom: 0%;
+  }
+
+  .class {
+    height: 136px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0 20px;
+    margin-top: 80px;
+    padding: 0;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  .p-margem,
+  .p-coluna {
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    padding: 0;
+    margin-bottom: 16px;
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+
+  .linha {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
