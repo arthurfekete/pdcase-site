@@ -23,7 +23,7 @@ export class AboutHeaderComponent {
     
     if (header) {
       if(scrollTop > 30) {
-        for (let i = 0; i < links.length; i++) {git
+        for (let i = 0; i < links.length; i++) {
           links[i].style.marginTop = '-10px'; 
         }
         header.style.backgroundColor = '#161D26';
