@@ -1,4 +1,4 @@
-import {Component, HostListener} from '@angular/core';
+import { Component, HostListener, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-contact-header',
@@ -8,6 +8,9 @@ import {Component, HostListener} from '@angular/core';
   styleUrl: './contact-header.component.css'
 })
 export class ContactHeaderComponent {
+
+  constructor(private renderer: Renderer2) {}
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -17,6 +20,8 @@ export class ContactHeaderComponent {
     const header = document.getElementById('header');
     const links = document.getElementsByClassName('links') as
         HTMLCollectionOf<HTMLElement>;
+        const nav = this.renderer.selectRootElement('#nav', true);
+
 
     if (header) {
       if (scrollTop > 30) {
@@ -25,6 +30,7 @@ export class ContactHeaderComponent {
         }
         header.style.backgroundColor = '#161D26';
         header.style.height = '96px';
+        nav.style.height = '96px';
         logo.src = '/logo-deitada.svg';
         logo.style.width = '154px';
         logo.style.height = '48px';
@@ -36,6 +42,8 @@ export class ContactHeaderComponent {
         logo.src = 'logo.svg';
         logo.style.width = '72px';
         logo.style.height = '72px';
+        header.style.height = '120px';
+        nav.style.height = '120px';
       }
     }
   }

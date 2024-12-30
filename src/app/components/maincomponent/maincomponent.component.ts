@@ -42,7 +42,7 @@ export class MainComponentComponent {
       if (scrollTop > viewportHeight) {
         nav.style.display = 'flex';
         nav.style.justifyContent = 'space-between';
-        nav.style.padding = '2em 5em';
+        nav.style.padding = '24px';
         links.forEach(link => {
           (link as HTMLElement).style.color =
               'black';  // Define a cor dos links (ex.: vermelho)
@@ -83,7 +83,7 @@ export class MainComponentComponent {
         if (sessao1 && scrollTop >= sessao1.offsetTop) {
           nav.style.display = 'flex';
           nav.style.justifyContent = 'space-between';
-          nav.style.padding = '2em 5em';
+          nav.style.padding = '24px';
           links.forEach(link => {
             (link as HTMLElement).style.color = 'var(--cor-fonte)';
           });

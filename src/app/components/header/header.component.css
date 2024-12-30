@@ -174,18 +174,3 @@ nav {
   transform: translateY(50px);
   /* Sai para cima */
 }
-
-@media screen and (max-width: 999px) {
-  a {
-    display: none;
-  }
-
-  .logo {
-    margin: 0px 0px 0px 20px;
-    height: 80px;
-  }
-
-  #barra {
-    display: none;
-  }
-}

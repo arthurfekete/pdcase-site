@@ -1,4 +1,4 @@
-import { Component, HostListener, Input } from '@angular/core';
+import { Component, HostListener, Renderer2 } from '@angular/core'; 
 
 @Component({
   selector: 'app-other-header',
@@ -8,6 +8,9 @@ import { Component, HostListener, Input } from '@angular/core';
   styleUrl: './other-header.component.css'
 })
 export class OtherHeaderComponent {
+
+  constructor(private renderer: Renderer2) {}
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -15,6 +18,7 @@ export class OtherHeaderComponent {
     const logo = document.getElementById('logo') as HTMLImageElement; // Garantir que é um elemento <img>
     const header = document.getElementById('header');
     const links = document.getElementsByClassName('links') as HTMLCollectionOf<HTMLElement>;
+    const nav = this.renderer.selectRootElement('#nav', true);
     
     if (header) {
       if(scrollTop > 30) {
@@ -23,6 +27,7 @@ export class OtherHeaderComponent {
         }
         header.style.backgroundColor = '#161D26';
         header.style.height = '96px';
+        nav.style.height = '96px';
         logo.src = '/logo-deitada.svg';
         logo.style.width = '154px';
         logo.style.height = '48px';
@@ -34,6 +39,8 @@ export class OtherHeaderComponent {
         logo.src = 'logo.svg';
         logo.style.width = '72px';
         logo.style.height = '72px';
+        header.style.height = '120px'; // Restaura a altura do header.
+        nav.style.height = '120px';
       }
     }
   }
